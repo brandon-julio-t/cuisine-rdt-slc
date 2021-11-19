@@ -1,0 +1,11 @@
+Model Information:
+* title:	Bowl - Lowpoly
+* source:	https://sketchfab.com/3d-models/bowl-lowpoly-a1e25d0e8f5d4b2199d5f1288ec9aedb
+* author:	RafaelScopel (https://sketchfab.com/RafaelScopel)
+
+Model License:
+* license type:	CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
+* requirements:	Author must be credited. Commercial use is allowed.
+
+If you use this 3D model in your project be sure to copy paste this credit wherever you share it:
+This work is based on "Bowl - Lowpoly" (https://sketchfab.com/3d-models/bowl-lowpoly-a1e25d0e8f5d4b2199d5f1288ec9aedb) by RafaelScopel (https://sketchfab.com/RafaelScopel) licensed under CC-BY-4.0 (http://creativecommons.org/licenses/by/4.0/)
