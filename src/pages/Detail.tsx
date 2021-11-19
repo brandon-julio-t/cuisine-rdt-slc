@@ -15,6 +15,7 @@ const Detail = (props: Props) => {
 
   const [food, setFood] = useState<Food | null>(null);
   const [model, setModel] = useState<GLTF | null>(null);
+  const canvas = useRef<HTMLCanvasElement | null>(null);
 
   useEffect(() => {
     (async () => {
@@ -28,35 +29,35 @@ const Detail = (props: Props) => {
   }, [id]);
 
   useEffect(() => {
-    if (food && model) setupCanvas(model);
-  }, [model]);
+    if (canvas.current && food && model) setupCanvas(canvas.current, food, model);
+  }, [canvas, food, model]);
 
   if (!food || !model) return <h1 className="text-4xl font-bold text-center">Loading...</h1>;
 
   return (
-    <div className="absolute w-screen h-screen">
-      <h1 className="text-3xl font-bold text-center">{food.name}</h1>
-    </div>
+    <>
+      <div className="absolute w-screen h-screen">
+        <h1 className="text-3xl font-bold text-center">{food.name}</h1>
+      </div>
+      <canvas ref={canvas} className="absolute top-0 left-0"></canvas>
+    </>
   );
 };
 
-function setupCanvas(model: GLTF) {
+function setupCanvas(canvas: HTMLCanvasElement, food: Food, model: GLTF) {
   const camera = new PerspectiveCamera();
   camera.position.set(7, 7, 7);
 
-  const renderer = new WebGLRenderer({ antialias: true, alpha: true });
+  const renderer = new WebGLRenderer({ antialias: true, alpha: true, canvas });
   renderer.setSize(window.innerWidth, window.innerHeight);
-  const dom = renderer.domElement;
-  dom.style.position = 'absolute';
-  dom.style.left = '0';
-  dom.style.top = '0';
-  document.body.appendChild(dom);
+
+  model.scene.scale.set(food.scale, food.scale, food.scale);
 
   const scene = new Scene();
   scene.add(model.scene);
   scene.add(new AmbientLight());
 
-  const controls = new OrbitControls(camera, dom);
+  const controls = new OrbitControls(camera, renderer.domElement);
   controls.enableDamping = true;
 
   function animate() {
