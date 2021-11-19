@@ -1,7 +1,7 @@
-import { Box, Html, OrbitControls, useGLTF, useProgress } from '@react-three/drei';
-import { Canvas, useLoader } from '@react-three/fiber';
-import React, { Suspense, useEffect, useState } from 'react';
+import React, { Suspense, useEffect, useRef, useState } from 'react';
 import { useParams } from 'react-router';
+import { AmbientLight, Color, PerspectiveCamera, Scene, WebGLRenderer } from 'three';
+import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import { GLTF, GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import FoodService from '../components/services/FoodService';
 import Food from '../models/Food';
@@ -12,8 +12,6 @@ const Detail = (props: Props) => {
   const { id } = useParams<'id'>();
 
   if (!id) return <h1 className="text-4xl font-bold text-center">Invalid ID.</h1>;
-
-  const { progress } = useProgress();
 
   const [food, setFood] = useState<Food | null>(null);
   const [model, setModel] = useState<GLTF | null>(null);
@@ -29,19 +27,45 @@ const Detail = (props: Props) => {
     })();
   }, [id]);
 
-  if (!food || !model) return <h1 className="text-4xl font-bold text-center">Loading {progress}%...</h1>;
+  useEffect(() => {
+    if (food && model) setupCanvas(model);
+  }, [model]);
+
+  if (!food || !model) return <h1 className="text-4xl font-bold text-center">Loading...</h1>;
 
   return (
     <div className="absolute w-screen h-screen">
-      <Canvas>
-        <Suspense fallback={<Html center>Loading {progress}%...</Html>}>
-          <OrbitControls enablePan={true} enableZoom={true} enableRotate={true} />
-          <ambientLight intensity={1} />
-          {model && <primitive object={model.scene} scale={food.scale} />}
-        </Suspense>
-      </Canvas>
+      <h1 className="text-3xl font-bold text-center">{food.name}</h1>
     </div>
   );
 };
+
+function setupCanvas(model: GLTF) {
+  const camera = new PerspectiveCamera();
+  camera.position.set(7, 7, 7);
+
+  const renderer = new WebGLRenderer({ antialias: true, alpha: true });
+  renderer.setSize(window.innerWidth, window.innerHeight);
+  const dom = renderer.domElement;
+  dom.style.position = 'absolute';
+  dom.style.left = '0';
+  dom.style.top = '0';
+  document.body.appendChild(dom);
+
+  const scene = new Scene();
+  scene.add(model.scene);
+  scene.add(new AmbientLight());
+
+  const controls = new OrbitControls(camera, dom);
+  controls.enableDamping = true;
+
+  function animate() {
+    requestAnimationFrame(animate);
+    controls.update();
+    renderer.render(scene, camera);
+  }
+
+  animate();
+}
 
 export default Detail;
