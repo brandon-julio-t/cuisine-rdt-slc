@@ -1,4 +1,4 @@
-import Food from '../../models/Food';
+import Food from '../models/Food';
 
 export default class FoodService {
   private static dummy: Food[] = [
@@ -44,11 +44,29 @@ export default class FoodService {
     ),
   ];
 
-  public static async getAllFoods(): Promise<Food[]> {
+  public static async getAll(): Promise<Food[]> {
     return this.dummy;
   }
 
-  public static async getFoodById(id: string): Promise<Food | null> {
+  public static async getOneById(id: string): Promise<Food | null> {
     return this.dummy.find(food => food.id === id) || null;
+  }
+
+  public static async create(food: Food): Promise<boolean> {
+    this.dummy.push(food);
+    return true;
+  }
+
+  public static async update(food: Food): Promise<boolean> {
+    const found = this.dummy.find(x => x.id === food.id);
+    if (!found) return false;
+    const idx = this.dummy.indexOf(found);
+    this.dummy[idx] = food;
+    return true;
+  }
+
+  public static async delete(food: Food): Promise<boolean> {
+    this.dummy = this.dummy.filter(x => x.id !== food.id);
+    return true;
   }
 }

@@ -1,11 +1,12 @@
-import React, { Suspense, useEffect, useRef, useState } from 'react';
+import { ChevronLeftIcon } from '@heroicons/react/solid';
+import React, { useEffect, useRef, useState } from 'react';
 import { useParams } from 'react-router';
-import { AmbientLight, Color, PerspectiveCamera, Scene, WebGLRenderer } from 'three';
-import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
+import { Link } from 'react-router-dom';
 import { GLTF, GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import Card from '../components/common/Card';
-import FoodService from '../components/services/FoodService';
+import FoodOrbitCanvas from '../facades/FoodOrbitCanvas';
 import Food from '../models/Food';
+import FoodService from '../services/FoodService';
 
 interface Props {}
 
@@ -14,23 +15,11 @@ const Detail = (props: Props) => {
 
   if (!id) return <h1 className="text-4xl font-bold text-center">Invalid ID.</h1>;
 
-  const [food, setFood] = useState<Food | null>(null);
-  const [model, setModel] = useState<GLTF | null>(null);
   const canvas = useRef<HTMLCanvasElement | null>(null);
+  const [food, model] = useFoodModel(id);
 
   useEffect(() => {
-    (async () => {
-      const food = await FoodService.getFoodById(id);
-      if (!food) return;
-      setFood(food);
-      new GLTFLoader().load(food?.modelUrl, gltf => {
-        setModel(gltf);
-      });
-    })();
-  }, [id]);
-
-  useEffect(() => {
-    if (canvas.current && food && model) setupCanvas(canvas.current, food, model);
+    if (canvas.current && food && model) new FoodOrbitCanvas(canvas.current, food, model);
   }, [canvas.current, food, model]);
 
   if (!food || !model)
@@ -42,7 +31,15 @@ const Detail = (props: Props) => {
 
   return (
     <>
-      <div className="w-full absolute top-8">
+      <div className="absolute top-8 left-8 z-20">
+        <Link to="/">
+          <div className="rounded-full shadow hover:shadow-md p-2">
+            <ChevronLeftIcon className="h-5 w-5" />
+          </div>
+        </Link>
+      </div>
+
+      <div className="w-full absolute top-8 z-10">
         <Card className="max-w-xl w-min mx-auto">
           <h1 className="text-3xl font-bold text-center z-10">{food.name}</h1>
         </Card>
@@ -56,37 +53,22 @@ const Detail = (props: Props) => {
   );
 };
 
-function setupCanvas(canvas: HTMLCanvasElement, food: Food, model: GLTF) {
-  const camera = new PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
-  camera.position.set(5, 2, 2);
+function useFoodModel(id: string): [Food | null, GLTF | null] {
+  const [food, setFood] = useState<Food | null>(null);
+  const [model, setModel] = useState<GLTF | null>(null);
 
-  const renderer = new WebGLRenderer({ antialias: true, alpha: true, canvas });
-  renderer.setSize(window.innerWidth, window.innerHeight);
+  useEffect(() => {
+    (async () => {
+      const food = await FoodService.getOneById(id);
+      if (!food) return;
+      setFood(food);
+      new GLTFLoader().load(food?.modelUrl, gltf => {
+        setModel(gltf);
+      });
+    })();
+  }, [id]);
 
-  model.scenes.forEach(scene => {
-    scene.scale.set(food.scale, food.scale, food.scale);
-  });
-
-  const scene = new Scene();
-  scene.add(model.scene);
-  scene.add(new AmbientLight());
-
-  const controls = new OrbitControls(camera, renderer.domElement);
-  controls.enableDamping = true;
-
-  window.onresize = () => {
-    camera.aspect = window.innerWidth / window.innerHeight;
-    camera.updateProjectionMatrix();
-    renderer.setSize(window.innerWidth, window.innerHeight);
-  };
-
-  function animate() {
-    requestAnimationFrame(animate);
-    controls.update();
-    renderer.render(scene, camera);
-  }
-
-  animate();
+  return [food, model];
 }
 
 export default Detail;

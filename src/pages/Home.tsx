@@ -2,7 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { Link } from 'react-router-dom';
 import Card from '../components/common/Card';
 import Container from '../components/common/Container';
-import FoodService from '../components/services/FoodService';
+import FoodService from '../services/FoodService';
 import Food from '../models/Food';
 
 interface Props {}
@@ -32,7 +32,7 @@ function useFoods(): Food[] {
 
   useEffect(() => {
     (async () => {
-      setFoods(await FoodService.getAllFoods());
+      setFoods(await FoodService.getAll());
     })();
   }, []);
 
