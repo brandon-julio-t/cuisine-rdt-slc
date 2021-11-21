@@ -6,7 +6,6 @@ import FoodService from '../../../services/FoodService';
 import Button from '../../../components/common/Button';
 import Input from '../../../components/common/forms/Input';
 import Textarea from '../../../components/common/forms/Textarea';
-import useClone from '../../../hooks/useClone';
 
 interface Props {
   isOpen: boolean;
