@@ -1,6 +1,6 @@
-import React from 'react';
+import { InputHTMLAttributes } from 'react';
 
-interface Props extends React.InputHTMLAttributes<HTMLInputElement> {}
+interface Props extends InputHTMLAttributes<HTMLInputElement> {}
 
 const Input = (props: Props) => {
   return <input {...props} className={`rounded ${props.className}`} />;

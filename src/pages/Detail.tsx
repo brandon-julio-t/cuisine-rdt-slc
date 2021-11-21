@@ -1,5 +1,5 @@
 import { ChevronLeftIcon } from '@heroicons/react/solid';
-import React, { useEffect, useRef, useState } from 'react';
+import { useEffect, useRef, useState } from 'react';
 import { useParams } from 'react-router';
 import { Link } from 'react-router-dom';
 import { GLTF, GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';

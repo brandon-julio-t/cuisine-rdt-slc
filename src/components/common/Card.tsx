@@ -1,6 +1,6 @@
-import React from 'react';
+import { HTMLAttributes } from "react";
 
-interface Props extends React.HTMLAttributes<HTMLDivElement> {}
+interface Props extends HTMLAttributes<HTMLDivElement> {}
 
 const Card = (props: Props) => {
   return (

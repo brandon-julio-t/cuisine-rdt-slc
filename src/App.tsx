@@ -1,4 +1,3 @@
-import React from 'react';
 import { RouteObject, useRoutes } from 'react-router-dom';
 import Layout from './components/layout/Layout';
 import Detail from './pages/Detail';

@@ -1,6 +1,6 @@
 import { XIcon } from '@heroicons/react/solid';
 import { Dialog, Transition } from '@headlessui/react';
-import React, { FormEvent, Fragment, useEffect, useState } from 'react';
+import { FormEvent, Fragment, useEffect, useState } from 'react';
 import Food from '../../../models/Food';
 import FoodService from '../../../services/FoodService';
 import Button from '../../../components/common/Button';
