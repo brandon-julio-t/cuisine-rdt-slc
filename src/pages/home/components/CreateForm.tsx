@@ -15,6 +15,7 @@ interface Props {
 }
 
 const CreateForm = ({ isOpen, food, onClose, action }: Props) => {
+  const [id, setId] = useState('');
   const [name, setName] = useState('');
   const [description, setDescription] = useState('');
   const [modelUrl, setModelUrl] = useState('');
@@ -22,6 +23,7 @@ const CreateForm = ({ isOpen, food, onClose, action }: Props) => {
   const [scale, setScale] = useState(1);
 
   useEffect(() => {
+    setId(food?.id ?? '00000000-0000-0000-0000-000000000000');
     setName(food?.name ?? '');
     setDescription(food?.description ?? '');
     setModelUrl(food?.modelUrl ?? '');
@@ -29,9 +31,7 @@ const CreateForm = ({ isOpen, food, onClose, action }: Props) => {
     setScale(food?.scale ?? 1);
   }, [food]);
 
-  const closeModal = () => {
-    onClose();
-  };
+  const closeModal = () => onClose();
 
   const onCreate = (food: Food) => {
     FoodService.create(food);
@@ -45,7 +45,7 @@ const CreateForm = ({ isOpen, food, onClose, action }: Props) => {
 
   const onSubmit = (e: FormEvent) => {
     e.preventDefault();
-    const food = new Food('00000000-0000-0000-0000-000000000000', name, description, modelUrl, videoUrl, scale);
+    const food = new Food(id, name, description, modelUrl, videoUrl, scale);
     const fn = {
       Create: onCreate,
       Update: onUpdate,
