@@ -5,7 +5,7 @@ import Card from '../../components/common/Card';
 import Container from '../../components/common/Container';
 import Food from '../../models/Food';
 import FoodService from '../../services/FoodService';
-import CreateForm from './components/CreateForm';
+import FoodForm from './components/CreateForm';
 
 interface Props {}
 
@@ -13,7 +13,13 @@ const Home = (props: Props) => {
   const [action, setAction] = useState<'Create' | 'Update'>('Create');
   const [isCreateFormOpen, setIsCreateFormOpen] = useState(false);
   const [food, setFood] = useState<Food | null>(null);
-  const [foods, setFoods] = useFoods();
+  const [foods, setFoods] = useState<Food[]>([]);
+
+  const fetchFoods = async () => setFoods(await FoodService.getAll())
+
+  useEffect(() => {
+    fetchFoods();
+  }, []);
 
   const reset = () => {
     setAction('Create');
@@ -64,21 +70,9 @@ const Home = (props: Props) => {
         </div>
       </Container>
 
-      <CreateForm isOpen={isCreateFormOpen} food={food} onClose={reset} action={action} />
+      <FoodForm isOpen={isCreateFormOpen} food={food} onClose={reset} action={action} refresh={fetchFoods} />
     </>
   );
 };
-
-function useFoods(): [Food[], (foods: Food[]) => void] {
-  const [foods, setFoods] = useState<Food[]>([]);
-
-  useEffect(() => {
-    (async () => {
-      setFoods(await FoodService.getAll());
-    })();
-  }, []);
-
-  return [foods, setFoods];
-}
 
 export default Home;

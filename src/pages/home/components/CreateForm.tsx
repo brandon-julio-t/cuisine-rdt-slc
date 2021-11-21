@@ -12,9 +12,10 @@ interface Props {
   food: Food | null;
   onClose: () => void;
   action: 'Create' | 'Update';
+  refresh: () => void;
 }
 
-const CreateForm = ({ isOpen, food, onClose, action }: Props) => {
+const FoodForm = ({ isOpen, food, onClose, action, refresh }: Props) => {
   const [id, setId] = useState('');
   const [name, setName] = useState('');
   const [description, setDescription] = useState('');
@@ -32,16 +33,8 @@ const CreateForm = ({ isOpen, food, onClose, action }: Props) => {
   }, [food]);
 
   const closeModal = () => onClose();
-
-  const onCreate = (food: Food) => {
-    FoodService.create(food);
-    closeModal();
-  };
-
-  const onUpdate = (food: Food) => {
-    FoodService.update(food);
-    closeModal();
-  };
+  const onCreate = (food: Food) => FoodService.create(food);
+  const onUpdate = (food: Food) => FoodService.update(food);
 
   const onSubmit = (e: FormEvent) => {
     e.preventDefault();
@@ -51,6 +44,7 @@ const CreateForm = ({ isOpen, food, onClose, action }: Props) => {
       Update: onUpdate,
     }[action];
     fn(food);
+    refresh();
     closeModal();
   };
 
@@ -147,4 +141,4 @@ const CreateForm = ({ isOpen, food, onClose, action }: Props) => {
   );
 };
 
-export default CreateForm;
+export default FoodForm;
