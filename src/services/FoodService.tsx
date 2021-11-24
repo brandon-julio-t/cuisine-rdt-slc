@@ -46,6 +46,14 @@ export default class FoodService {
       '6',
       'Red Rice with vegetables',
       'Red rice paired together with vegetables which brings nutritions to the body for RnD\'s long and hard day.',
+      '/models/Rice.glb',
+      'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+      1
+    ),
+    new Food(
+      '7',
+      'Red Rice with vegetables 2',
+      'Sequel to the first red rice with vegetables. Red Rice with vegetables 2 comes back with more nutrition than ever.',
       '/models/Rice 2.glb',
       'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
       1

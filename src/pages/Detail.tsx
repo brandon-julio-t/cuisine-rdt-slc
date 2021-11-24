@@ -19,7 +19,11 @@ const Detail = (props: Props) => {
   const [food, model] = useFoodModel(id);
 
   useEffect(() => {
-    if (canvas.current && food && model) new FoodOrbitCanvas(canvas.current, food, model);
+    let system: FoodOrbitCanvas | null = null;
+    if (canvas.current && food && model) system = new FoodOrbitCanvas(canvas.current, food, model);
+    return () => {
+      system?.cleanUp();
+    };
   }, [canvas.current, food, model]);
 
   if (!food || !model)
