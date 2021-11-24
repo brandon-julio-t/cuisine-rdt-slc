@@ -42,6 +42,14 @@ export default class FoodService {
       'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
       1
     ),
+    new Food(
+      '6',
+      'Red Rice with vegetables',
+      'Red rice paired together with vegetables which brings nutritions to the body for RnD\'s long and hard day.',
+      '/models/Rice 2.glb',
+      'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+      1
+    ),
   ];
 
   public static async getAll(): Promise<Food[]> {

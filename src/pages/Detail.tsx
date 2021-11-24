@@ -40,8 +40,8 @@ const Detail = (props: Props) => {
       </div>
 
       <div className="w-full absolute top-8 z-10">
-        <Card className="max-w-xl w-min mx-auto">
-          <h1 className="text-3xl font-bold text-center z-10">{food.name}</h1>
+        <Card className="max-w-xl mx-auto">
+          <h1 className="text-3xl font-bold text-center">{food.name}</h1>
         </Card>
       </div>
       <div className="w-full absolute bottom-8 z-10">

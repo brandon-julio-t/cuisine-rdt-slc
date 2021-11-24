@@ -54,17 +54,19 @@ const Home = (props: Props) => {
         </div>
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
           {foods.map(food => (
-            <Card key={food.id}>
-              <h2 className="text-lg font-medium">{food.name}</h2>
-              <div>{food.description}</div>
-              <div className="mt-2 grid grid-cols-1 md:grid-cols-3 gap-2">
-                <Link to={`/detail/${food.id}`}>
-                  <Button className="w-full">View</Button>
-                </Link>
-                <Button onClick={() => onUpdate(food)}>Update</Button>
-                <Button onClick={() => onDelete(food)}>Delete</Button>
-              </div>
-            </Card>
+            <div key={food.id}>
+              <Card>
+                <h2 className="text-lg font-medium">{food.name}</h2>
+                <div>{food.description}</div>
+                <div className="mt-2 grid grid-cols-1 md:grid-cols-3 gap-2">
+                  <Link to={`/detail/${food.id}`}>
+                    <Button className="w-full">View</Button>
+                  </Link>
+                  <Button onClick={() => onUpdate(food)}>Update</Button>
+                  <Button onClick={() => onDelete(food)}>Delete</Button>
+                </div>
+              </Card>
+            </div>
           ))}
         </div>
       </Container>
