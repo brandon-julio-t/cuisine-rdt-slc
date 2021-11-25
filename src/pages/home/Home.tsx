@@ -5,6 +5,7 @@ import Card from '../../components/common/Card';
 import Container from '../../components/common/Container';
 import Food from '../../models/Food';
 import FoodService from '../../services/FoodService';
+import FoodCard from './components/FoodCard';
 import FoodForm from './components/FoodForm';
 
 interface Props {}
@@ -41,37 +42,35 @@ const Home = (props: Props) => {
 
   const onDelete = (food: Food) => {
     FoodService.delete(food);
-    setFoods(foods.filter(x => x.id !== food.id));
+    setFoods(foods.filter((x) => x.id !== food.id));
     reset();
   };
 
   return (
     <>
       <Container>
-        <h1 className="my-4 text-3xl font-medium">Menus</h1>
-        <div className="my-4">
-          <Button onClick={onCreate}>Create</Button>
-        </div>
-        <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
-          {foods.map(food => (
-            <div key={food.id}>
-              <Card>
-                <h2 className="text-lg font-medium">{food.name}</h2>
-                <div>{food.description}</div>
-                <div className="mt-2 grid grid-cols-1 md:grid-cols-3 gap-2">
-                  <Link to={`/detail/${food.id}`}>
-                    <Button className="w-full">View</Button>
-                  </Link>
-                  <Button onClick={() => onUpdate(food)}>Update</Button>
-                  <Button onClick={() => onDelete(food)}>Delete</Button>
-                </div>
-              </Card>
-            </div>
+        <div className='bg-primary-light-blue h-28 rounded-md mt-4'></div>
+
+        <input
+          type='search'
+          className='w-full rounded-md border border-gray-300 outline-none ring-0 my-4'
+          placeholder='Search...'
+        />
+
+        <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-4'>
+          {foods.map((food) => (
+            <FoodCard food={food} key={food.id}></FoodCard>
           ))}
         </div>
       </Container>
 
-      <FoodForm isOpen={isCreateFormOpen} food={food} onClose={reset} action={action} refresh={fetchFoods} />
+      <FoodForm
+        isOpen={isCreateFormOpen}
+        food={food}
+        onClose={reset}
+        action={action}
+        refresh={fetchFoods}
+      />
     </>
   );
 };

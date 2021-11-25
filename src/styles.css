@@ -3,3 +3,7 @@
 body {
   font-family: 'Montserrat', sans-serif;
 }
+
+.bg-primary-light-blue {
+  background: #00a9e2;
+}

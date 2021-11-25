@@ -5,6 +5,7 @@ export default class Food {
     public description: string = '',
     public modelUrl: string = '',
     public videoUrl: string = '',
-    public scale: number = 1
+    public imageUrl: string = '',
+    public scale: number = 1,
   ) {}
 }

@@ -8,7 +8,8 @@ export default class FoodService {
       'Sand. But which one?',
       '/models/sandwich/scene.gltf',
       'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-      0.1
+      '/models/sandwich/preview.jpg',
+      0.1,
     ),
     new Food(
       '2',
@@ -16,7 +17,8 @@ export default class FoodService {
       'Curry is goodies.',
       '/models/curry/scene.gltf',
       'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-      1
+      '/models/curry/preview.jpg',
+      1,
     ),
     new Food(
       '3',
@@ -24,7 +26,8 @@ export default class FoodService {
       'A dog that is hot.',
       '/models/hotdog/scene.gltf',
       'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-      0.01
+      '/models/hotdog/preview.jpg',
+      0.01,
     ),
     new Food(
       '4',
@@ -32,7 +35,8 @@ export default class FoodService {
       'Make a toast!',
       '/models/toast/scene.gltf',
       'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-      0.1
+      '/models/toast/preview.jpg',
+      0.1,
     ),
     new Food(
       '5',
@@ -40,23 +44,26 @@ export default class FoodService {
       'It could be a food or a code style.',
       '/models/spaghetti/scene.gltf',
       'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-      1
+      '/models/spaghetti/preview.jpg',
+      1,
     ),
     new Food(
       '6',
       'Red Rice with vegetables',
-      'Red rice paired together with vegetables which brings nutritions to the body for RnD\'s long and hard day.',
-      '/models/Rice.glb',
+      "Red rice paired together with vegetables which brings nutritions to the body for RnD's long and hard day.",
+      '/models/red_rice/Rice.glb',
       'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-      1
+      '/models/red_rice/preview.jpg',
+      1,
     ),
     new Food(
       '7',
       'Red Rice with vegetables 2',
       'Sequel to the first red rice with vegetables. Red Rice with vegetables 2 comes back with more nutrition than ever.',
-      '/models/Rice 2.glb',
+      '/models/red_rice/Rice 2.glb',
       'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-      1
+      '/models/red_rice/preview.jpg',
+      1,
     ),
   ];
 
@@ -65,7 +72,7 @@ export default class FoodService {
   }
 
   public static async getOneById(id: string): Promise<Food | null> {
-    return this.dummy.find(food => food.id === id) || null;
+    return this.dummy.find((food) => food.id === id) || null;
   }
 
   public static async create(food: Food): Promise<boolean> {
@@ -74,7 +81,7 @@ export default class FoodService {
   }
 
   public static async update(food: Food): Promise<boolean> {
-    const found = this.dummy.find(x => x.id === food.id);
+    const found = this.dummy.find((x) => x.id === food.id);
     if (!found) return false;
     const idx = this.dummy.indexOf(found);
     this.dummy[idx] = food;
@@ -82,7 +89,7 @@ export default class FoodService {
   }
 
   public static async delete(food: Food): Promise<boolean> {
-    this.dummy = this.dummy.filter(x => x.id !== food.id);
+    this.dummy = this.dummy.filter((x) => x.id !== food.id);
     return true;
   }
 }
