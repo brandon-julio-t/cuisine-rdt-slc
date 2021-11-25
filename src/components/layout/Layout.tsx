@@ -4,12 +4,7 @@ import Navbar from '../common/Navbar';
 interface Props {}
 
 const Layout = (props: Props) => {
-  return (
-    <>
-      <Navbar />
-      <Outlet {...props} />
-    </>
-  );
+  return <Outlet {...props} />;
 };
 
 export default Layout;

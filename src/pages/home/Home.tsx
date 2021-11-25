@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import Button from '../../components/common/Button';
 import Card from '../../components/common/Card';
 import Container from '../../components/common/Container';
+import Navbar from '../../components/common/Navbar';
 import Food from '../../models/Food';
 import FoodService from '../../services/FoodService';
 import FoodCard from './components/FoodCard';
@@ -48,6 +49,7 @@ const Home = (props: Props) => {
 
   return (
     <>
+      <Navbar />
       <Container>
         <div className='bg-primary-light-blue h-28 rounded-md mt-4'></div>
 
