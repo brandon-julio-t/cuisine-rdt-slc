@@ -36,7 +36,7 @@ const ModalProvider = ({ children }: Props) => {
         <Transition appear show={modal.show} as={Fragment}>
           <Dialog
             as='div'
-            className='fixed inset-0 z-10 overflow-y-auto'
+            className='fixed inset-0 z-30 overflow-y-auto'
             style={{ background: 'rgba(0,0,0,0.8)' }}
             onClose={closeModal}>
             <div className='min-h-screen px-4 text-center'>
@@ -65,7 +65,7 @@ const ModalProvider = ({ children }: Props) => {
                 leave='ease-in duration-200'
                 leaveFrom='opacity-100 scale-100'
                 leaveTo='opacity-0 scale-95'>
-                <div className='inline-block w-full max-w-md p-6 my-8 overflow-hidden text-left align-middle transition-all transform bg-white shadow-xl rounded-2xl'>
+                <div className='inline-block w-full max-w-md lg:max-w-2xl p-6 my-8 overflow-hidden text-left align-middle transition-all transform bg-white shadow-xl rounded-2xl'>
                   {modal.title !== '' && (
                     <Dialog.Title
                       as='h3'
