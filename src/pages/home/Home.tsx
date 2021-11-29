@@ -29,24 +29,6 @@ const Home = (props: Props) => {
     setIsCreateFormOpen(false);
   };
 
-  const onCreate = () => {
-    setAction('Create');
-    setFood(null);
-    setIsCreateFormOpen(true);
-  };
-
-  const onUpdate = (food: Food) => {
-    setAction('Update');
-    setFood(food);
-    setIsCreateFormOpen(true);
-  };
-
-  const onDelete = (food: Food) => {
-    FoodService.delete(food);
-    setFoods(foods.filter((x) => x.id !== food.id));
-    reset();
-  };
-
   return (
     <>
       <Navbar />

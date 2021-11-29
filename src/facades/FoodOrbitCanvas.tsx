@@ -1,4 +1,14 @@
-import { AmbientLight, PerspectiveCamera, Scene, WebGLRenderer } from 'three';
+import {
+  AmbientLight,
+  BoxGeometry,
+  Mesh,
+  MeshNormalMaterial,
+  MeshStandardMaterial,
+  PerspectiveCamera,
+  Scene,
+  Vector3,
+  WebGLRenderer,
+} from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import { GLTF } from 'three/examples/jsm/loaders/GLTFLoader';
 import Food from '../models/Food';
@@ -10,7 +20,7 @@ export default class FoodOrbitCanvas {
   private scene: Scene;
   private controls: OrbitControls;
 
-  constructor(canvas: HTMLCanvasElement, food: Food, private model: GLTF) {
+  constructor(canvas: HTMLCanvasElement, food: Food, model: GLTF) {
     this.camera = new PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
     this.camera.position.set(5, 2, 2);
 
@@ -23,7 +33,15 @@ export default class FoodOrbitCanvas {
 
     this.scene = new Scene();
     this.scene.add(model.scene);
-    this.scene.add(new AmbientLight());
+    this.scene.add(new AmbientLight(0xffffff, 2));
+
+    // Point of interest helper
+    // food.pointOfInterests.forEach(pointOfInterest => {
+    //   const placeholder = new Mesh(new BoxGeometry(), new MeshNormalMaterial({ wireframe: true }));
+    //   const { x, y, z } = pointOfInterest.position;
+    //   placeholder.position.set(x, y, z);
+    //   this.scene.add(placeholder);
+    // });
 
     this.controls = new OrbitControls(this.camera, this.renderer.domElement);
     this.controls.enableDamping = true;
@@ -41,6 +59,17 @@ export default class FoodOrbitCanvas {
     }
 
     animate(this);
+  }
+
+  public setCameraFocus(position: Vector3) {
+    // this.camera.lookAt(position);
+    const { x, y, z } = position;
+    this.controls.target.set(x, y, z);
+  }
+
+  public resetCameraFocus() {
+    // this.camera.lookAt(0, 0, 0);
+    this.controls.target.set(0, 0, 0);
   }
 
   public cleanUp(): void {

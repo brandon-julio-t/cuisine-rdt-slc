@@ -1,3 +1,5 @@
+import PointOfInterest from "./PointOfInterest";
+
 export default class Food {
   constructor(
     public id: string = '',
@@ -7,5 +9,6 @@ export default class Food {
     public videoUrl: string = '',
     public imageUrl: string = '',
     public scale: number = 1,
+    public pointOfInterests: PointOfInterest[] = []
   ) {}
 }
