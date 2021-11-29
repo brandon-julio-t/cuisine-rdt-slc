@@ -11,7 +11,7 @@ const DetailPopUp = ({ food }: Props) => {
   const [isShowPopup, setIsShowPopup] = useState(false);
 
   return (
-    <div className="mx-2 max-w-3xl lg:mx-auto rounded-t-lg overflow-hidden">
+    <div className="mx-2 max-w-3xl lg:mx-auto rounded-t-lg overflow-hidden flex-1">
       <button
         onClick={() => setIsShowPopup(!isShowPopup)}
         className="bg-primary-blue px-3 py-2 text-gray-50 w-full flex justify-center items-center"

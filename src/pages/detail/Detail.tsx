@@ -45,7 +45,7 @@ const Detail = (props: Props) => {
   return (
     <>
       {/* Top Left */}
-      <div className="absolute top-5 md:top-8 left-8 z-20">
+      <div className="absolute top-3 md:top-4 lg:top-8 left-2 md:left-4 lg:left-8 z-20">
         <Link to="/">
           <div className="rounded-full shadow hover:shadow-md p-2 bg-white">
             <ChevronLeftIcon className="h-5 w-5" />
@@ -54,18 +54,20 @@ const Detail = (props: Props) => {
       </div>
 
       {/* Top Middle */}
-      <div className="absolute md:top-8 w-full z-10">
-        <Card className="max-w-xl mx-auto">
-          <h1 className="text-3xl font-semibold text-center">{food.name}</h1>
+      <div className="absolute md:top-4 lg:top-8 w-full z-10 flex justify-center">
+        <Card className="w-full md:w-auto">
+          <h1 className="text-md sm:text-lg md:text-xl lg:text-2xl font-semibold text-center">{food.name}</h1>
         </Card>
       </div>
 
       {/* Middle Left */}
       {food.pointOfInterests.length ? (
-        <div className="absolute left-0 md:left-8 top-0 bottom-0 z-10 flex items-center">
+        <div className="absolute left-0 md:left-4 lg:left-8 top-0 bottom-0 z-10 hidden md:flex items-center">
           <Card className="max-h-64 overflow-auto">
             <div className="flex flex-col space-y-2">
-              <h2 className="font-medium text-center text-lg">Point of Interests</h2>
+              <h2 className="text-md sm:text-lg md:text-xl lg:text-2xl font-semibold text-center">
+                Point of Interests
+              </h2>
               {food.pointOfInterests.map(pointOfInterest => (
                 <div
                   key={pointOfInterest.title}
@@ -84,16 +86,18 @@ const Detail = (props: Props) => {
 
       {/* Middle Right */}
       {currentPointOfInterest ? (
-        <div className="absolute right-0 md:right-8 top-0 bottom-0 z-10 flex items-center">
+        <div className="absolute right-0 md:right-4 lg:right-8 top-0 bottom-0 z-10 hidden md:flex items-center">
           <Card className="max-h-64 max-w-xs overflow-auto">
-            <h2 className="font-medium text-center text-lg mb-4">{currentPointOfInterest.title}</h2>
+            <h2 className="text-md sm:text-lg md:text-xl lg:text-2xl font-semibold text-center mb-2">
+              {currentPointOfInterest.title}
+            </h2>
             <p>{currentPointOfInterest.description}</p>
           </Card>
         </div>
       ) : null}
 
       {/* Bottom Middle */}
-      <div className="w-full absolute bottom-0 z-10">
+      <div className="w-full absolute bottom-0 z-10 flex justify-center">
         <DetailPopUp food={food} />
       </div>
 
