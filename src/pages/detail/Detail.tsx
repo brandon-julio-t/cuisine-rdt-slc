@@ -65,6 +65,7 @@ const Detail = (props: Props) => {
         <div className="absolute left-0 md:left-8 top-0 bottom-0 z-10 flex items-center">
           <Card className="max-h-64 overflow-auto">
             <div className="flex flex-col space-y-2">
+              <h2 className="font-medium text-center text-lg">Point of Interests</h2>
               {food.pointOfInterests.map(pointOfInterest => (
                 <div
                   key={pointOfInterest.title}
