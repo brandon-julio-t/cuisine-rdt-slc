@@ -89,14 +89,14 @@ const Detail = (props: Props) => {
 
       {/* Top Right */}
       <div className="absolute top-4 right-1 sm:right-2 md:right-4 w-full text-right z-20">
-        <button title="Play Video" onClick={() => onVideoBtnClicked()}>
+        <button title="Play Video" onClick={onVideoBtnClicked}>
           <PlayIcon className="h-8 w-8" />
         </button>
       </div>
 
       {/* Middle Left */}
       {food.pointOfInterests.length ? (
-        <div className="absolute left-1 sm:left-2 md:left-4 top-0 bottom-0 z-30 hidden md:flex items-center">
+        <div className="absolute left-1 sm:left-2 md:left-4 top-0 bottom-0 z-30 hidden sm:flex items-center">
           {openPointOfInterest ? (
             <Card className="max-h-[50%] overflow-auto mr-1">
               <div className="flex flex-col space-y-2 relative">
@@ -129,8 +129,8 @@ const Detail = (props: Props) => {
 
       {/* Middle Right */}
       {currentPointOfInterest ? (
-        <div className="absolute right-1 sm:right-2 md:right-4 top-0 bottom-0 z-30 hidden md:flex items-center">
-          <Card className="max-h-[50%] max-w-xs overflow-auto relative">
+        <div className="absolute right-1 sm:right-2 md:right-4 top-0 bottom-0 max-w-[30%] z-30 hidden sm:flex justify-end items-center">
+          <Card className="max-h-[50%] overflow-auto relative">
             <div className="flex justify-between items-center mb-2 sticky top-0 bg-white py-2">
               <h2 className="text-md sm:text-lg md:text-xl lg:text-2xl font-semibold text-center">
                 {currentPointOfInterest.title}
@@ -169,7 +169,7 @@ function useFoodModel(id: string): [Food | null, GLTF | null, string] {
       const loader = new GLTFLoader();
       const gltf = await loader.loadAsync(food?.modelUrl, e => {
         const progress = Number((e.loaded / e.total) * 100).toFixed(1);
-        console.log(progress);
+        console.log(`${e.loaded} / ${e.total} * 100 = `, progress);
         setProgress(progress);
       });
 
