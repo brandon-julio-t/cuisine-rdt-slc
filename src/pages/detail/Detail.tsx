@@ -1,4 +1,11 @@
-import { ChevronLeftIcon, PlayIcon, XIcon } from '@heroicons/react/solid';
+import {
+  ChevronDoubleLeftIcon,
+  ChevronDoubleRightIcon,
+  ChevronLeftIcon,
+  ChevronRightIcon,
+  PlayIcon,
+  XIcon,
+} from '@heroicons/react/solid';
 import { useContext, useEffect, useRef, useState } from 'react';
 import { useParams } from 'react-router';
 import { Link } from 'react-router-dom';
@@ -24,10 +31,11 @@ const Detail = (props: Props) => {
   const [currentPointOfInterest, setCurrentPointOfInterest] = useState<PointOfInterest | null>(null);
   const [canvasSystem, setCanvasSystem] = useState<FoodOrbitCanvas | null>(null);
   const [openModal, closeModal] = useContext(ModalContext);
+  const [openPointOfInterest, setOpenPointOfInterest] = useState(false);
 
   useEffect(() => {
     let system: FoodOrbitCanvas | null = null;
-    // if (canvas.current && food && model) system = new FoodOrbitCanvas(canvas.current, food, model);
+    if (canvas.current && food && model) system = new FoodOrbitCanvas(canvas.current, food, model);
     setCanvasSystem(system);
     return () => system?.cleanUp();
   }, [canvas.current, food, model]);
@@ -42,7 +50,7 @@ const Detail = (props: Props) => {
   const onSetCurrentPointOfInterest = (pointOfInterest: PointOfInterest | null) => {
     pointOfInterest = pointOfInterest === currentPointOfInterest ? null : pointOfInterest;
     setCurrentPointOfInterest(pointOfInterest);
-    canvasSystem?.setCameraFocus(currentPointOfInterest?.position ?? new Vector3(0, 0, 0));
+    canvasSystem?.setCameraFocus(pointOfInterest?.position ?? new Vector3(0, 0, 0));
   };
 
   const onVideoBtnClicked = () => {
@@ -64,7 +72,7 @@ const Detail = (props: Props) => {
   return (
     <>
       {/* Top Left */}
-      <div className="absolute top-3 md:top-4 lg:top-8 left-2 md:left-4 lg:left-8 z-40">
+      <div className="absolute top-3 md:top-4 left-1 sm:left-2 md:left-4 z-40">
         <Link to="/">
           <div className="rounded-full shadow hover:shadow-md p-2 bg-white">
             <ChevronLeftIcon className="h-5 w-5" />
@@ -73,14 +81,14 @@ const Detail = (props: Props) => {
       </div>
 
       {/* Top Middle */}
-      <div className="absolute md:top-4 lg:top-8 w-full z-10 flex justify-center">
+      <div className="absolute top-1 sm:top-2 md:top-4 w-full z-10 flex justify-center">
         <Card className="w-full md:w-auto">
           <h1 className="text-md sm:text-lg md:text-xl lg:text-2xl font-semibold text-center">{food.name}</h1>
         </Card>
       </div>
 
       {/* Top Right */}
-      <div className="absolute top-4 md:top-8 right-4 w-full text-right z-20">
+      <div className="absolute top-4 right-1 sm:right-2 md:right-4 w-full text-right z-20">
         <button title="Play Video" onClick={() => onVideoBtnClicked()}>
           <PlayIcon className="h-8 w-8" />
         </button>
@@ -88,31 +96,40 @@ const Detail = (props: Props) => {
 
       {/* Middle Left */}
       {food.pointOfInterests.length ? (
-        <div className="absolute left-0 md:left-4 lg:left-8 top-0 bottom-0 z-30 hidden md:flex items-center">
-          <Card className="max-h-[50%] overflow-auto">
-            <div className="flex flex-col space-y-2 relative">
-              <h2 className="text-md sm:text-lg md:text-xl lg:text-2xl font-semibold text-center sticky top-0 bg-white py-2">
-                Point of Interests
-              </h2>
-              {food.pointOfInterests.map(pointOfInterest => (
-                <div
-                  key={pointOfInterest.title}
-                  className={`cursor-pointer ${
-                    pointOfInterest.title === currentPointOfInterest?.title ? 'bg-blue-50' : ''
-                  } hover:bg-blue-100 rounded-lg p-2`}
-                  onClick={() => onSetCurrentPointOfInterest(pointOfInterest)}
-                >
-                  {pointOfInterest.title}
-                </div>
-              ))}
-            </div>
-          </Card>
+        <div className="absolute left-1 sm:left-2 md:left-4 top-0 bottom-0 z-30 hidden md:flex items-center">
+          {openPointOfInterest ? (
+            <Card className="max-h-[50%] overflow-auto mr-1">
+              <div className="flex flex-col space-y-2 relative">
+                <h2 className="text-md sm:text-lg md:text-xl lg:text-2xl font-semibold text-center sticky top-0 bg-white py-2">
+                  Point of Interests
+                </h2>
+                {food.pointOfInterests.map(pointOfInterest => (
+                  <div
+                    key={pointOfInterest.title}
+                    className={`cursor-pointer ${
+                      pointOfInterest.title === currentPointOfInterest?.title ? 'bg-blue-50' : ''
+                    } hover:bg-blue-100 rounded-lg p-2`}
+                    onClick={() => onSetCurrentPointOfInterest(pointOfInterest)}
+                  >
+                    {pointOfInterest.title}
+                  </div>
+                ))}
+              </div>
+            </Card>
+          ) : null}
+          <button onClick={() => setOpenPointOfInterest(!openPointOfInterest)}>
+            {openPointOfInterest ? (
+              <ChevronDoubleLeftIcon className="h-6 w-6" />
+            ) : (
+              <ChevronDoubleRightIcon className="h-6 w-6" />
+            )}
+          </button>
         </div>
       ) : null}
 
       {/* Middle Right */}
       {currentPointOfInterest ? (
-        <div className="absolute right-0 md:right-4 lg:right-8 top-0 bottom-0 z-30 hidden md:flex items-center">
+        <div className="absolute right-1 sm:right-2 md:right-4 top-0 bottom-0 z-30 hidden md:flex items-center">
           <Card className="max-h-[50%] max-w-xs overflow-auto relative">
             <div className="flex justify-between items-center mb-2 sticky top-0 bg-white py-2">
               <h2 className="text-md sm:text-lg md:text-xl lg:text-2xl font-semibold text-center">
@@ -123,19 +140,17 @@ const Detail = (props: Props) => {
                 <XIcon className="h-5 w-5" />
               </button>
             </div>
-            <p>
-              {currentPointOfInterest.description}
-            </p>
+            <p>{currentPointOfInterest.description}</p>
           </Card>
         </div>
       ) : null}
 
       {/* Bottom Middle */}
-      <div className="w-full absolute bottom-0 z-2s0 flex justify-center">
+      <div className="w-full absolute bottom-0 z-20 flex justify-center">
         <DetailPopUp food={food} />
       </div>
 
-      <canvas ref={canvas} className="absolute top-0 left-0"></canvas>
+      <canvas ref={canvas} className="absolute inset-0"></canvas>
     </>
   );
 };
