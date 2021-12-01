@@ -11,7 +11,7 @@ const DetailPopUp = ({ food }: Props) => {
   const [isShowPopup, setIsShowPopup] = useState(false);
 
   return (
-    <div className="mx-2 max-w-3xl lg:mx-auto rounded-t-lg overflow-hidden flex-1">
+    <div className="max-w-prose mx-2 lg:mx-auto rounded-t-lg overflow-hidden flex-1">
       <button
         onClick={() => setIsShowPopup(!isShowPopup)}
         className="bg-primary-blue px-3 py-2 text-gray-50 w-full flex justify-center items-center"
@@ -32,12 +32,7 @@ const DetailPopUp = ({ food }: Props) => {
         leaveTo="h-0"
         className={`bg-gray-100 ${isShowPopup && 'px-3 py-2'}`}
       >
-        <p className="text-sm">
-          {food.description}
-          {/* Sandwich, in its basic form, slices of meat, cheese, or other food placed between two slices of bread.
-          Although this mode of consumption must be as old as meat and bread, the name was adopted only in the 18th
-          century for John Montagu, 4th earl of Sandwich. */}
-        </p>
+        <p className="text-sm">{food.description}</p>
 
         {/* <div>
               <button>Button 1</button>

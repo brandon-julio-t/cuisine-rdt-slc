@@ -1,13 +1,14 @@
-import { Disclosure } from '@headlessui/react';
-import { ChevronLeftIcon, ChevronUpIcon } from '@heroicons/react/solid';
-import { useEffect, useRef, useState } from 'react';
+import { ChevronLeftIcon, PlayIcon, XIcon } from '@heroicons/react/solid';
+import { useContext, useEffect, useRef, useState } from 'react';
 import { useParams } from 'react-router';
 import { Link } from 'react-router-dom';
+import { Vector3 } from 'three';
 import { GLTF, GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import Card from '../../components/common/Card';
 import FoodOrbitCanvas from '../../facades/FoodOrbitCanvas';
 import Food from '../../models/Food';
 import PointOfInterest from '../../models/PointOfInterest';
+import { ModalContext } from '../../providers/ModalProvider';
 import FoodService from '../../services/FoodService';
 import DetailPopUp from './components/DetailPopUp';
 
@@ -22,10 +23,11 @@ const Detail = (props: Props) => {
   const [food, model, progress] = useFoodModel(id);
   const [currentPointOfInterest, setCurrentPointOfInterest] = useState<PointOfInterest | null>(null);
   const [canvasSystem, setCanvasSystem] = useState<FoodOrbitCanvas | null>(null);
+  const [openModal, closeModal] = useContext(ModalContext);
 
   useEffect(() => {
     let system: FoodOrbitCanvas | null = null;
-    if (canvas.current && food && model) system = new FoodOrbitCanvas(canvas.current, food, model);
+    // if (canvas.current && food && model) system = new FoodOrbitCanvas(canvas.current, food, model);
     setCanvasSystem(system);
     return () => system?.cleanUp();
   }, [canvas.current, food, model]);
@@ -37,16 +39,32 @@ const Detail = (props: Props) => {
       </div>
     );
 
-  const onPointOfInterestClicked = (pointOfInterest: PointOfInterest) => {
+  const onSetCurrentPointOfInterest = (pointOfInterest: PointOfInterest | null) => {
+    pointOfInterest = pointOfInterest === currentPointOfInterest ? null : pointOfInterest;
     setCurrentPointOfInterest(pointOfInterest);
-    canvasSystem?.setCameraFocus(pointOfInterest.position);
-    console.log('focus', canvasSystem);
+    canvasSystem?.setCameraFocus(currentPointOfInterest?.position ?? new Vector3(0, 0, 0));
+  };
+
+  const onVideoBtnClicked = () => {
+    const content = (
+      <div>
+        <iframe
+          className="w-full h-60 lg:h-96"
+          src="https://www.youtube.com/embed/1bSd78FL6gk"
+          title="YouTube video player"
+          frameBorder={0}
+          allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+          allowFullScreen
+        ></iframe>
+      </div>
+    );
+    openModal('', content);
   };
 
   return (
     <>
       {/* Top Left */}
-      <div className="absolute top-3 md:top-4 lg:top-8 left-2 md:left-4 lg:left-8 z-20">
+      <div className="absolute top-3 md:top-4 lg:top-8 left-2 md:left-4 lg:left-8 z-40">
         <Link to="/">
           <div className="rounded-full shadow hover:shadow-md p-2 bg-white">
             <ChevronLeftIcon className="h-5 w-5" />
@@ -61,37 +79,31 @@ const Detail = (props: Props) => {
         </Card>
       </div>
 
+      {/* Top Right */}
+      <div className="absolute top-4 md:top-8 right-4 w-full text-right z-20">
+        <button title="Play Video" onClick={() => onVideoBtnClicked()}>
+          <PlayIcon className="h-8 w-8" />
+        </button>
+      </div>
+
       {/* Middle Left */}
       {food.pointOfInterests.length ? (
-        <div className="absolute left-0 md:left-4 lg:left-8 top-0 bottom-0 z-10 hidden md:flex items-center">
-          <Card className="max-h-64 max-w-[15rem] overflow-auto">
-            <div className="flex flex-col space-y-2">
-              <h2 className="text-md sm:text-lg md:text-xl lg:text-2xl font-semibold text-center">
+        <div className="absolute left-0 md:left-4 lg:left-8 top-0 bottom-0 z-30 hidden md:flex items-center">
+          <Card className="max-h-[50%] overflow-auto">
+            <div className="flex flex-col space-y-2 relative">
+              <h2 className="text-md sm:text-lg md:text-xl lg:text-2xl font-semibold text-center sticky top-0 bg-white py-2">
                 Point of Interests
               </h2>
               {food.pointOfInterests.map(pointOfInterest => (
-                // <div
-                //   key={pointOfInterest.title}
-                //   className={`cursor-pointer ${
-                //     pointOfInterest.title === currentPointOfInterest?.title ? 'font-medium' : ''
-                //   }`}
-                //   onClick={() => onPointOfInterestClicked(pointOfInterest)}
-                // >
-                //   {pointOfInterest.title}
-                // </div>
-                <Disclosure as="div" className="mt-2">
-                  {({ open }) => (
-                    <>
-                      <Disclosure.Button className="flex justify-between w-full px-4 py-2 text-sm font-medium text-left text-purple-900 bg-purple-100 rounded-lg hover:bg-purple-200 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
-                        <span>{pointOfInterest.title}</span>
-                        <ChevronUpIcon className={`${open ? 'transform rotate-180' : ''} w-5 h-5 text-purple-500`} />
-                      </Disclosure.Button>
-                      <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">
-                        {pointOfInterest.description}
-                      </Disclosure.Panel>
-                    </>
-                  )}
-                </Disclosure>
+                <div
+                  key={pointOfInterest.title}
+                  className={`cursor-pointer ${
+                    pointOfInterest.title === currentPointOfInterest?.title ? 'bg-blue-50' : ''
+                  } hover:bg-blue-100 rounded-lg p-2`}
+                  onClick={() => onSetCurrentPointOfInterest(pointOfInterest)}
+                >
+                  {pointOfInterest.title}
+                </div>
               ))}
             </div>
           </Card>
@@ -100,18 +112,26 @@ const Detail = (props: Props) => {
 
       {/* Middle Right */}
       {currentPointOfInterest ? (
-        <div className="absolute right-0 md:right-4 lg:right-8 top-0 bottom-0 z-10 hidden md:flex items-center">
-          <Card className="max-h-64 max-w-xs overflow-auto">
-            <h2 className="text-md sm:text-lg md:text-xl lg:text-2xl font-semibold text-center mb-2">
-              {currentPointOfInterest.title}
-            </h2>
-            <p>{currentPointOfInterest.description}</p>
+        <div className="absolute right-0 md:right-4 lg:right-8 top-0 bottom-0 z-30 hidden md:flex items-center">
+          <Card className="max-h-[50%] max-w-xs overflow-auto relative">
+            <div className="flex justify-between items-center mb-2 sticky top-0 bg-white py-2">
+              <h2 className="text-md sm:text-lg md:text-xl lg:text-2xl font-semibold text-center">
+                {currentPointOfInterest.title}
+              </h2>
+
+              <button onClick={() => onSetCurrentPointOfInterest(null)}>
+                <XIcon className="h-5 w-5" />
+              </button>
+            </div>
+            <p>
+              {currentPointOfInterest.description}
+            </p>
           </Card>
         </div>
       ) : null}
 
       {/* Bottom Middle */}
-      <div className="w-full absolute bottom-0 z-10 flex justify-center">
+      <div className="w-full absolute bottom-0 z-2s0 flex justify-center">
         <DetailPopUp food={food} />
       </div>
 
@@ -132,11 +152,13 @@ function useFoodModel(id: string): [Food | null, GLTF | null, string] {
       setFood(food);
 
       const loader = new GLTFLoader();
-      loader.load(
-        food?.modelUrl,
-        gltf => setModel(gltf),
-        e => setProgress(Number((e.loaded / e.total) * 100).toFixed(1))
-      );
+      const gltf = await loader.loadAsync(food?.modelUrl, e => {
+        const progress = Number((e.loaded / e.total) * 100).toFixed(1);
+        console.log(progress);
+        setProgress(progress);
+      });
+
+      setModel(gltf);
     })();
   }, [id]);
 

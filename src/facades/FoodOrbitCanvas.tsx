@@ -1,14 +1,4 @@
-import {
-  AmbientLight,
-  BoxGeometry,
-  Mesh,
-  MeshNormalMaterial,
-  MeshStandardMaterial,
-  PerspectiveCamera,
-  Scene,
-  Vector3,
-  WebGLRenderer,
-} from 'three';
+import { AmbientLight, PerspectiveCamera, Scene, Vector3, WebGLRenderer } from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import { GLTF } from 'three/examples/jsm/loaders/GLTFLoader';
 import Food from '../models/Food';
@@ -33,7 +23,7 @@ export default class FoodOrbitCanvas {
 
     this.scene = new Scene();
     this.scene.add(model.scene);
-    this.scene.add(new AmbientLight(0xffffff, 2));
+    this.scene.add(new AmbientLight(0xffffff, 1.5));
 
     // Point of interest helper
     // food.pointOfInterests.forEach(pointOfInterest => {
