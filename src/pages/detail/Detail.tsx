@@ -1,4 +1,5 @@
-import { ChevronLeftIcon } from '@heroicons/react/solid';
+import { Disclosure } from '@headlessui/react';
+import { ChevronLeftIcon, ChevronUpIcon } from '@heroicons/react/solid';
 import { useEffect, useRef, useState } from 'react';
 import { useParams } from 'react-router';
 import { Link } from 'react-router-dom';
@@ -63,21 +64,34 @@ const Detail = (props: Props) => {
       {/* Middle Left */}
       {food.pointOfInterests.length ? (
         <div className="absolute left-0 md:left-4 lg:left-8 top-0 bottom-0 z-10 hidden md:flex items-center">
-          <Card className="max-h-64 overflow-auto">
+          <Card className="max-h-64 max-w-[15rem] overflow-auto">
             <div className="flex flex-col space-y-2">
               <h2 className="text-md sm:text-lg md:text-xl lg:text-2xl font-semibold text-center">
                 Point of Interests
               </h2>
               {food.pointOfInterests.map(pointOfInterest => (
-                <div
-                  key={pointOfInterest.title}
-                  className={`cursor-pointer ${
-                    pointOfInterest.title === currentPointOfInterest?.title ? 'font-medium' : ''
-                  }`}
-                  onClick={() => onPointOfInterestClicked(pointOfInterest)}
-                >
-                  {pointOfInterest.title}
-                </div>
+                // <div
+                //   key={pointOfInterest.title}
+                //   className={`cursor-pointer ${
+                //     pointOfInterest.title === currentPointOfInterest?.title ? 'font-medium' : ''
+                //   }`}
+                //   onClick={() => onPointOfInterestClicked(pointOfInterest)}
+                // >
+                //   {pointOfInterest.title}
+                // </div>
+                <Disclosure as="div" className="mt-2">
+                  {({ open }) => (
+                    <>
+                      <Disclosure.Button className="flex justify-between w-full px-4 py-2 text-sm font-medium text-left text-purple-900 bg-purple-100 rounded-lg hover:bg-purple-200 focus:outline-none focus-visible:ring focus-visible:ring-purple-500 focus-visible:ring-opacity-75">
+                        <span>{pointOfInterest.title}</span>
+                        <ChevronUpIcon className={`${open ? 'transform rotate-180' : ''} w-5 h-5 text-purple-500`} />
+                      </Disclosure.Button>
+                      <Disclosure.Panel className="px-4 pt-4 pb-2 text-sm text-gray-500">
+                        {pointOfInterest.description}
+                      </Disclosure.Panel>
+                    </>
+                  )}
+                </Disclosure>
               ))}
             </div>
           </Card>

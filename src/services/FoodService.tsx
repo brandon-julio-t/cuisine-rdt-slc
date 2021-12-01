@@ -65,11 +65,11 @@ export default class FoodService {
     ),
     new Food(
       '7',
-      'Red Rice with vegetables 2',
-      'Sequel to the first red rice with vegetables. Red Rice with vegetables 2 comes back with more nutrition than ever.',
-      '/models/red_rice/Rice 2.glb',
+      'Sushi',
+      'A Japanese food that wraps rice with seaweed.',
+      '/models/sushi/gltf/sushi.gltf',
       'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-      '/models/red_rice/preview.jpg',
+      '/models/sushi/preview.png',
       1
     ),
   ];
