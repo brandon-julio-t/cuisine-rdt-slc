@@ -1,4 +1,4 @@
-import { AmbientLight, PerspectiveCamera, Scene, Vector3, WebGLRenderer } from 'three';
+import { AmbientLight, Color, PerspectiveCamera, Scene, SpotLight, sRGBEncoding, Vector3, WebGLRenderer } from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import { GLTF } from 'three/examples/jsm/loaders/GLTFLoader';
 import Food from '../models/Food';
@@ -15,15 +15,14 @@ export default class FoodOrbitCanvas {
     this.camera.position.set(5, 2, 2);
 
     this.renderer = new WebGLRenderer({ antialias: true, alpha: true, canvas });
+    this.renderer.outputEncoding = sRGBEncoding;
     this.renderer.setSize(window.innerWidth, window.innerHeight);
 
-    model.scenes.forEach(scene => {
-      scene.scale.set(food.scale, food.scale, food.scale);
-    });
+    model.scenes.forEach(scene => scene.scale.set(food.scale, food.scale, food.scale));
 
     this.scene = new Scene();
     this.scene.add(model.scene);
-    this.scene.add(new AmbientLight(0xffffff, 1.5));
+    this.scene.add(new AmbientLight());
 
     // Point of interest helper
     // food.pointOfInterests.forEach(pointOfInterest => {
