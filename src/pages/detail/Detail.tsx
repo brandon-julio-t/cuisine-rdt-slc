@@ -27,7 +27,7 @@ const Detail = (props: Props) => {
   if (!id) return <h1 className="text-4xl font-bold text-center">Invalid ID.</h1>;
 
   const canvas = useRef<HTMLCanvasElement | null>(null);
-  const [food, model, progress] = useFoodModel(id);
+  const [food, model] = useFoodModel(id);
   const [currentPointOfInterest, setCurrentPointOfInterest] = useState<PointOfInterest | null>(null);
   const [canvasSystem, setCanvasSystem] = useState<FoodOrbitCanvas | null>(null);
   const [openModal, closeModal] = useContext(ModalContext);
@@ -43,7 +43,7 @@ const Detail = (props: Props) => {
   if (!food || !model)
     return (
       <div className="flex justify-center items-center h-screen w-screen">
-        <h1 className="text-4xl font-bold text-center">Loading {progress}%...</h1>
+        <h1 className="text-4xl font-bold text-center">Loading...</h1>
       </div>
     );
 
@@ -158,26 +158,19 @@ const Detail = (props: Props) => {
 function useFoodModel(id: string): [Food | null, GLTF | null, string] {
   const [food, setFood] = useState<Food | null>(null);
   const [model, setModel] = useState<GLTF | null>(null);
-  const [progress, setProgress] = useState<string>('0');
 
   useEffect(() => {
     (async () => {
       const food = await FoodService.getOneById(id);
       if (!food) return;
       setFood(food);
-
       const loader = new GLTFLoader();
-      const gltf = await loader.loadAsync(food?.modelUrl, e => {
-        const progress = Number((e.loaded / e.total) * 100).toFixed(1);
-        console.log(`${e.loaded} / ${e.total} * 100 = `, progress);
-        setProgress(progress);
-      });
-
+      const gltf = await loader.loadAsync(food?.modelUrl);
       setModel(gltf);
     })();
   }, [id]);
 
-  return [food, model, progress];
+  return [food, model];
 }
 
 export default Detail;
