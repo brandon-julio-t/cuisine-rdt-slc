@@ -155,7 +155,7 @@ const Detail = (props: Props) => {
   );
 };
 
-function useFoodModel(id: string): [Food | null, GLTF | null, string] {
+function useFoodModel(id: string): [Food | null, GLTF | null] {
   const [food, setFood] = useState<Food | null>(null);
   const [model, setModel] = useState<GLTF | null>(null);
 
