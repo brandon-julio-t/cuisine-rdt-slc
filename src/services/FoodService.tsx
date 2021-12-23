@@ -5,72 +5,76 @@ import PointOfInterest from '../models/PointOfInterest';
 export default class FoodService {
   private static dummy: Food[] = [
     new Food(
-      '1',
-      'Sandwich',
-      'Sand. But which one?',
-      '/models/sandwich/scene.gltf',
+      '70552965-d750-48c2-9c70-be1ad63fc2b9',
+      'Alo Rajma',
+      'Rājmā[2] [raːdʒmaː] (Hindi: राजमा, Urdu: راجما), also known as rajmah, rāzmā, or lal lobia, is a vegetarian dish, originating from the Indian subcontinent, consisting of red kidney beans in a thick gravy with many Indian whole spices, and is usually served with rice. It is a part of regular diet in India, Nepal, Bangladesh and Punjab province of Pakistan.[1] The dish developed after the red kidney bean was brought to the Indian subcontinent from Mexico.[3] Rajma chawal is kidney beans served with boiled rice.',
+      '/models/Alo Rajma.glb',
       'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-      '/models/sandwich/preview.jpg',
-      0.1
+      'https://picsum.photos/200'
     ),
     new Food(
-      '2',
-      'Curry',
-      'Curry is goodies.',
-      '/models/curry/scene.gltf',
+      '8021765f-0347-49ff-ba90-955fdeb8ba63',
+      'Asam Udeng',
+      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam libero quidem itaque eum esse officiis quis sit obcaecati inventore, ratione harum? Minus dolorum hic tenetur sequi! Repudiandae sequi mollitia adipisci.',
+      '/models/asam udeng.glb',
       'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-      '/models/curry/preview.jpg',
-      1
+      'https://picsum.photos/200'
     ),
     new Food(
-      '3',
-      'Hotdog',
-      'A dog that is hot.',
-      '/models/hotdog/scene.gltf',
+      '892979cf-23c5-42dd-a60a-21b7e77e3f45',
+      'Ayam Padang',
+      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam libero quidem itaque eum esse officiis quis sit obcaecati inventore, ratione harum? Minus dolorum hic tenetur sequi! Repudiandae sequi mollitia adipisci.',
+      '/models/ayam padang.glb',
       'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-      '/models/hotdog/preview.jpg',
-      0.01
+      'https://picsum.photos/200'
     ),
     new Food(
-      '4',
-      'Toast',
-      'Make a toast!',
-      '/models/toast/scene.gltf',
+      'a7147808-2cb2-4b31-8231-d4ad3bf86170',
+      'Ayam Tangkap',
+      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam libero quidem itaque eum esse officiis quis sit obcaecati inventore, ratione harum? Minus dolorum hic tenetur sequi! Repudiandae sequi mollitia adipisci.',
+      '/models/ayam_tangkap_med.glb',
       'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-      '/models/toast/preview.jpg',
-      0.1
+      'https://picsum.photos/200'
     ),
     new Food(
-      '5',
-      'Spaghetti',
-      'It could be a food or a code style.',
-      '/models/spaghetti/scene.gltf',
+      '195ea4a1-400f-4544-a183-cf9b1b3c849a',
+      'Ayangan',
+      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam libero quidem itaque eum esse officiis quis sit obcaecati inventore, ratione harum? Minus dolorum hic tenetur sequi! Repudiandae sequi mollitia adipisci.',
+      '/models/ayangan.glb',
       'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-      '/models/spaghetti/preview.jpg',
-      1
+      'https://picsum.photos/200'
     ),
     new Food(
-      '6',
-      'Red Rice with vegetables',
-      "Red rice paired together with vegetables which brings nutritions to the body for RnD's long and hard day.",
-      '/models/red_rice/Rice.glb',
+      '59618bc6-03e9-407e-af96-88e49be96742',
+      'Rendang',
+      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam libero quidem itaque eum esse officiis quis sit obcaecati inventore, ratione harum? Minus dolorum hic tenetur sequi! Repudiandae sequi mollitia adipisci.',
+      '/models/rendang.glb',
       'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-      '/models/red_rice/preview.jpg',
-      1,
-      [
-        new PointOfInterest(new Vector3(0.4, 0, 1.5), 'Broccoli', 'Broccoli, your best bro for nutrition.'),
-        new PointOfInterest(new Vector3(0, 0, 0), 'Red rice', 'Rice that is red in colour and helpful for your diet.'),
-        new PointOfInterest(new Vector3(-0.8, 0, 2.4), 'Carrot', 'Carrot, a healthy vegetables for your eyes.'),
-      ]
+      'https://picsum.photos/200'
     ),
     new Food(
-      '7',
+      '21c13683-b0fe-4c20-9693-13614d12aa2c',
+      'Salad Padang',
+      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam libero quidem itaque eum esse officiis quis sit obcaecati inventore, ratione harum? Minus dolorum hic tenetur sequi! Repudiandae sequi mollitia adipisci.',
+      '/models/salad_padang.glb',
+      'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+      'https://picsum.photos/200'
+    ),
+    new Food(
+      'bde17f81-2e30-4ecc-adef-8d4de9c67f6c',
       'Sushi',
-      'A Japanese food that wraps rice with seaweed.',
-      '/models/sushi/gltf/sushi.gltf',
+      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam libero quidem itaque eum esse officiis quis sit obcaecati inventore, ratione harum? Minus dolorum hic tenetur sequi! Repudiandae sequi mollitia adipisci.',
+      '/models/sushi.glb',
       'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
-      '/models/sushi/preview.png',
-      1
+      'https://picsum.photos/200'
+    ),
+    new Food(
+      'd8aea1f8-2676-4c1e-8c15-814f354083b3',
+      'Timpan',
+      'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam libero quidem itaque eum esse officiis quis sit obcaecati inventore, ratione harum? Minus dolorum hic tenetur sequi! Repudiandae sequi mollitia adipisci.',
+      '/models/timpan.glb',
+      'https://www.youtube.com/watch?v=dQw4w9WgXcQ',
+      'https://picsum.photos/200'
     ),
   ];
 

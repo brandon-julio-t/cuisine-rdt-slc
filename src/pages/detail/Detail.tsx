@@ -2,15 +2,15 @@ import {
   ChevronDoubleLeftIcon,
   ChevronDoubleRightIcon,
   ChevronLeftIcon,
-  ChevronRightIcon,
   PlayIcon,
   XIcon,
 } from '@heroicons/react/solid';
 import { useContext, useEffect, useRef, useState } from 'react';
 import { useParams } from 'react-router';
 import { Link } from 'react-router-dom';
-import { Vector3 } from 'three';
-import { GLTF, GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
+import { Group, Vector3 } from 'three';
+import { GLTFLoader, GLTF } from 'three/examples/jsm/loaders/GLTFLoader';
+import { FBXLoader } from 'three/examples/jsm/loaders/FBXLoader';
 import Card from '../../components/common/Card';
 import FoodOrbitCanvas from '../../facades/FoodOrbitCanvas';
 import Food from '../../models/Food';
@@ -18,6 +18,8 @@ import PointOfInterest from '../../models/PointOfInterest';
 import { ModalContext } from '../../providers/ModalProvider';
 import FoodService from '../../services/FoodService';
 import DetailPopUp from './components/DetailPopUp';
+import { LocalStorageCacheAdapter } from '../../adapters/LocalStorageCacheAdapter';
+import { MemoryCacheAdapter } from '../../adapters/MemoryCacheAdapter';
 
 interface Props {}
 
@@ -74,7 +76,7 @@ const Detail = (props: Props) => {
       {/* Top Left */}
       <div className="absolute top-3 md:top-4 left-1 sm:left-2 md:left-4 z-40">
         <Link to="/">
-          <div className="rounded-full shadow hover:shadow-md p-2 bg-white">
+          <div className="rounded-full border shadow hover:shadow-md p-2 bg-white/80 backdrop-blur">
             <ChevronLeftIcon className="h-5 w-5" />
           </div>
         </Link>
@@ -82,7 +84,7 @@ const Detail = (props: Props) => {
 
       {/* Top Middle */}
       <div className="absolute top-1 sm:top-2 md:top-4 w-full z-10 flex justify-center">
-        <Card className="w-full md:w-auto">
+        <Card className="w-full md:w-auto bg-white/80 backdrop-blur">
           <h1 className="text-md sm:text-lg md:text-xl lg:text-2xl font-semibold text-center">{food.name}</h1>
         </Card>
       </div>
@@ -100,7 +102,7 @@ const Detail = (props: Props) => {
           {openPointOfInterest ? (
             <Card className="max-h-[50%] overflow-auto mr-1">
               <div className="flex flex-col space-y-2 relative">
-                <h2 className="text-md sm:text-lg md:text-xl lg:text-2xl font-semibold text-center sticky top-0 bg-white py-2">
+                <h2 className="text-md sm:text-lg md:text-xl lg:text-2xl font-semibold text-center sticky top-0 bg-white/80 backdrop-blur py-2">
                   Point of Interests
                 </h2>
                 {food.pointOfInterests.map(pointOfInterest => (
@@ -131,7 +133,7 @@ const Detail = (props: Props) => {
       {currentPointOfInterest ? (
         <div className="absolute right-1 sm:right-2 md:right-4 top-0 bottom-0 max-w-[30%] z-30 hidden sm:flex justify-end items-center">
           <Card className="max-h-[50%] overflow-auto relative">
-            <div className="flex justify-between items-center mb-2 sticky top-0 bg-white py-2">
+            <div className="flex justify-between items-center mb-2 sticky top-0 bg-white/80 backdrop-blur py-2">
               <h2 className="text-md sm:text-lg md:text-xl lg:text-2xl font-semibold text-center">
                 {currentPointOfInterest.title}
               </h2>
@@ -155,18 +157,26 @@ const Detail = (props: Props) => {
   );
 };
 
-function useFoodModel(id: string): [Food | null, GLTF | null] {
+function useFoodModel(id: string): [Food | null, Group | null] {
   const [food, setFood] = useState<Food | null>(null);
-  const [model, setModel] = useState<GLTF | null>(null);
+  const [model, setModel] = useState<Group | null>(null);
 
   useEffect(() => {
     (async () => {
       const food = await FoodService.getOneById(id);
       if (!food) return;
       setFood(food);
-      const loader = new GLTFLoader();
-      const gltf = await loader.loadAsync(food?.modelUrl);
-      setModel(gltf);
+
+      const key = `${food.id}:${food.modelUrl}`;
+      let foodModel = MemoryCacheAdapter.get<Group>(key);
+      if (!foodModel) {
+        const loader = new GLTFLoader();
+        const model = await loader.loadAsync(food.modelUrl);
+        foodModel = model.scene;
+        MemoryCacheAdapter.save(key, foodModel);
+      }
+
+      setModel(foodModel);
     })();
   }, [id]);
 

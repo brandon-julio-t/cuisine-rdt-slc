@@ -1,6 +1,5 @@
 module.exports = {
-  mode: 'jit',
-  purge: ['./src/**/*.tsx'],
+  content: ['./src/**/*.tsx'],
   darkMode: 'class', // or 'media' or 'class'
   theme: {
     extend: {},
@@ -8,5 +7,5 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [require('@tailwindcss/forms')],
+  plugins: [require('@tailwindcss/forms'), require('@tailwindcss/typography')],
 };

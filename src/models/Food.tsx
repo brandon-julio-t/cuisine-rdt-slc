@@ -1,6 +1,7 @@
-import PointOfInterest from "./PointOfInterest";
+import { BaseModel } from './BaseModel';
+import PointOfInterest from './PointOfInterest';
 
-export default class Food {
+export default class Food extends BaseModel {
   constructor(
     public id: string = '',
     public name: string = '',
@@ -8,7 +9,8 @@ export default class Food {
     public modelUrl: string = '',
     public videoUrl: string = '',
     public imageUrl: string = '',
-    public scale: number = 1,
     public pointOfInterests: PointOfInterest[] = []
-  ) {}
+  ) {
+    super(id);
+  }
 }
