@@ -3,14 +3,14 @@ import {
   ChevronDoubleRightIcon,
   ChevronLeftIcon,
   PlayIcon,
-  XIcon,
+  XIcon
 } from '@heroicons/react/solid';
 import { useContext, useEffect, useRef, useState } from 'react';
 import { useParams } from 'react-router';
 import { Link } from 'react-router-dom';
 import { Group, Vector3 } from 'three';
-import { GLTFLoader, GLTF } from 'three/examples/jsm/loaders/GLTFLoader';
-import { FBXLoader } from 'three/examples/jsm/loaders/FBXLoader';
+import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
+import { MemoryCacheAdapter } from '../../adapters/MemoryCacheAdapter';
 import Card from '../../components/common/Card';
 import FoodOrbitCanvas from '../../facades/FoodOrbitCanvas';
 import Food from '../../models/Food';
@@ -18,8 +18,6 @@ import PointOfInterest from '../../models/PointOfInterest';
 import { ModalContext } from '../../providers/ModalProvider';
 import FoodService from '../../services/FoodService';
 import DetailPopUp from './components/DetailPopUp';
-import { LocalStorageCacheAdapter } from '../../adapters/LocalStorageCacheAdapter';
-import { MemoryCacheAdapter } from '../../adapters/MemoryCacheAdapter';
 
 interface Props {}
 
