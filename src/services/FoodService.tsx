@@ -31,4 +31,13 @@ export default class FoodService {
     this.foods = this.foods.filter((x) => x.id !== food.id);
     return true;
   }
+
+  public static async filter(nameQuery: string): Promise<Food[]> {
+    if (!nameQuery.length) return this.foods;
+
+    const filtered = this.foods.filter((x) =>
+      x.name.toLowerCase().includes(nameQuery.toLowerCase()),
+    );
+    return filtered;
+  }
 }

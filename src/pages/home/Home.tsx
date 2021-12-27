@@ -1,13 +1,11 @@
 import { useEffect, useState } from 'react';
-import { Link } from 'react-router-dom';
-import Button from '../../components/common/Button';
-import Card from '../../components/common/Card';
 import Container from '../../components/common/Container';
 import Navbar from '../../components/common/Navbar';
 import Food from '../../models/Food';
 import FoodService from '../../services/FoodService';
 import FoodCard from './components/FoodCard';
 import FoodForm from './components/FoodForm';
+import pattern from '../../images/pattern.png';
 
 interface Props {}
 
@@ -29,14 +27,26 @@ const Home = (props: Props) => {
     setIsCreateFormOpen(false);
   };
 
+  const filterFood = async (e: any) => {
+    const query: string = e.target.value;
+    setFoods(await FoodService.filter(query));
+  };
+
   return (
     <>
       <Navbar />
       <Container>
-        <div className='bg-primary-light-blue h-28 rounded-md mt-4'></div>
+        <div
+          style={{
+            backgroundImage: `url(${pattern})`,
+            backgroundSize: 'contain',
+            backgroundRepeat: 'repeat',
+          }}
+          className='bg-primary-light-blue h-28 rounded-md mt-4'></div>
 
         <input
           type='search'
+          onChange={filterFood}
           className='w-full rounded-md border border-gray-300 outline-none ring-0 my-4'
           placeholder='Search...'
         />
