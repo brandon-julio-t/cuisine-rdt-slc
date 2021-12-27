@@ -8,6 +8,6 @@ export default class Food {
     public modelUrl: string = '',
     public videoUrl: string = '',
     public imageUrl: string = '',
-    public pointOfInterests: PointOfInterest[] = []
+    public pointOfInterests: PointOfInterest[] = [],
   ) {}
 }

@@ -1,0 +1,85 @@
+{
+  "foods": [
+    {
+      "id": "70552965-d750-48c2-9c70-be1ad63fc2b9",
+      "name": "Alo Rajma",
+      "description": "Rājmā[2] [raːdʒmaː] (Hindi: राजमा, Urdu: راجما), also known as rajmah, rāzmā, or lal lobia, is a vegetarian dish, originating from the Indian subcontinent, consisting of red kidney beans in a thick gravy with many Indian whole spices, and is usually served with rice. It is a part of regular diet in India, Nepal, Bangladesh and Punjab province of Pakistan.[1] The dish developed after the red kidney bean was brought to the Indian subcontinent from Mexico.[3] Rajma chawal is kidney beans served with boiled rice.",
+      "modelUrl": "/models/Alo Rajma.glb",
+      "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "imageUrl": "https://picsum.photos/200",
+      "pointOfInterests": []
+    },
+    {
+      "id": "8021765f-0347-49ff-ba90-955fdeb8ba63",
+      "name": "Asam Udeng",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam libero quidem itaque eum esse officiis quis sit obcaecati inventore, ratione harum? Minus dolorum hic tenetur sequi! Repudiandae sequi mollitia adipisci.",
+      "modelUrl": "/models/asam udeng.glb",
+      "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "imageUrl": "https://picsum.photos/200",
+      "pointOfInterests": []
+    },
+    {
+      "id": "892979cf-23c5-42dd-a60a-21b7e77e3f45",
+      "name": "Ayam Padang",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam libero quidem itaque eum esse officiis quis sit obcaecati inventore, ratione harum? Minus dolorum hic tenetur sequi! Repudiandae sequi mollitia adipisci.",
+      "modelUrl": "/models/ayam padang.glb",
+      "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "imageUrl": "https://picsum.photos/200",
+      "pointOfInterests": []
+    },
+    {
+      "id": "a7147808-2cb2-4b31-8231-d4ad3bf86170",
+      "name": "Ayam Tangkap",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam libero quidem itaque eum esse officiis quis sit obcaecati inventore, ratione harum? Minus dolorum hic tenetur sequi! Repudiandae sequi mollitia adipisci.",
+      "modelUrl": "/models/ayam_tangkap_med.glb",
+      "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "imageUrl": "https://picsum.photos/200",
+      "pointOfInterests": []
+    },
+    {
+      "id": "195ea4a1-400f-4544-a183-cf9b1b3c849a",
+      "name": "Ayangan",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam libero quidem itaque eum esse officiis quis sit obcaecati inventore, ratione harum? Minus dolorum hic tenetur sequi! Repudiandae sequi mollitia adipisci.",
+      "modelUrl": "/models/ayangan.glb",
+      "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "imageUrl": "https://picsum.photos/200",
+      "pointOfInterests": []
+    },
+    {
+      "id": "59618bc6-03e9-407e-af96-88e49be96742",
+      "name": "Rendang",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam libero quidem itaque eum esse officiis quis sit obcaecati inventore, ratione harum? Minus dolorum hic tenetur sequi! Repudiandae sequi mollitia adipisci.",
+      "modelUrl": "/models/rendang.glb",
+      "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "imageUrl": "https://picsum.photos/200",
+      "pointOfInterests": []
+    },
+    {
+      "id": "21c13683-b0fe-4c20-9693-13614d12aa2c",
+      "name": "Salad Padang",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam libero quidem itaque eum esse officiis quis sit obcaecati inventore, ratione harum? Minus dolorum hic tenetur sequi! Repudiandae sequi mollitia adipisci.",
+      "modelUrl": "/models/salad_padang.glb",
+      "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "imageUrl": "https://picsum.photos/200",
+      "pointOfInterests": []
+    },
+    {
+      "id": "bde17f81-2e30-4ecc-adef-8d4de9c67f6c",
+      "name": "Sushi",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam libero quidem itaque eum esse officiis quis sit obcaecati inventore, ratione harum? Minus dolorum hic tenetur sequi! Repudiandae sequi mollitia adipisci.",
+      "modelUrl": "/models/sushi.glb",
+      "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "imageUrl": "https://picsum.photos/200",
+      "pointOfInterests": []
+    },
+    {
+      "id": "d8aea1f8-2676-4c1e-8c15-814f354083b3",
+      "name": "Timphan",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam libero quidem itaque eum esse officiis quis sit obcaecati inventore, ratione harum? Minus dolorum hic tenetur sequi! Repudiandae sequi mollitia adipisci.",
+      "modelUrl": "/models/timpan.glb",
+      "videoUrl": "https://www.youtube.com/watch?v=dQw4w9WgXcQ",
+      "imageUrl": "https://picsum.photos/200",
+      "pointOfInterests": []
+    }
+  ]
+}
