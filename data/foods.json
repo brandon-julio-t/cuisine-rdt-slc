@@ -29,11 +29,11 @@
     },
     {
       "id": "195ea4a1-400f-4544-a183-cf9b1b3c849a",
-      "name": "Ayangan",
+      "name": "Anyang",
       "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam libero quidem itaque eum esse officiis quis sit obcaecati inventore, ratione harum? Minus dolorum hic tenetur sequi! Repudiandae sequi mollitia adipisci.",
-      "modelUrl": "/models/ayangan.glb",
+      "modelUrl": "/models/anyang.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
-      "imageUrl": "/images/ayangan.jpg",
+      "imageUrl": "/images/anyang.jpg",
       "pointOfInterests": []
     },
     {
@@ -47,11 +47,11 @@
     },
     {
       "id": "21c13683-b0fe-4c20-9693-13614d12aa2c",
-      "name": "Salad Padang",
+      "name": "Selada Padang",
       "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam libero quidem itaque eum esse officiis quis sit obcaecati inventore, ratione harum? Minus dolorum hic tenetur sequi! Repudiandae sequi mollitia adipisci.",
-      "modelUrl": "/models/salad_padang.glb",
+      "modelUrl": "/models/selada_padang.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
-      "imageUrl": "/images/salad-padang.jpg",
+      "imageUrl": "/images/selada-padang.jpg",
       "pointOfInterests": []
     },
     {
