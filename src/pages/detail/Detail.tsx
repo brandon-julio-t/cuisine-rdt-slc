@@ -81,7 +81,7 @@ const Detail = (props: Props) => {
   return (
     <>
       {/* Top Left */}
-      <div className='absolute top-3 md:top-4 left-1 sm:left-2 md:left-4 z-40'>
+      <div className='absolute top-4 md:top-4 left-3 sm:left-3 md:left-4 z-40'>
         <Link to='/'>
           <div className='rounded-full border shadow hover:shadow-md p-2 bg-white/80 backdrop-blur'>
             <ChevronLeftIcon className='h-5 w-5' />
@@ -99,9 +99,9 @@ const Detail = (props: Props) => {
       </div>
 
       {/* Top Right */}
-      <div className='absolute top-4 right-1 sm:right-2 md:right-4 w-full text-right z-20'>
+      <div className='absolute top-4 right-3 sm:right-3 md:right-4 w-full text-right z-20'>
         <button title='Play Video' onClick={onVideoBtnClicked}>
-          <PlayIcon className='h-8 w-8' />
+          <PlayIcon className='h-9 w-9' />
         </button>
       </div>
 
