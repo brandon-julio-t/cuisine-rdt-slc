@@ -68,7 +68,7 @@ const Detail = (props: Props) => {
       <div>
         <iframe
           className='w-full h-60 lg:h-96'
-          src='https://www.youtube.com/embed/GbZj3DjUnGY'
+          src='https://www.youtube.com/embed/ThJC7LwgidU'
           title='YouTube video player'
           frameBorder={0}
           allow='accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture'
