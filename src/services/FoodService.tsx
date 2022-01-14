@@ -1,6 +1,4 @@
-import { Vector3 } from 'three';
 import Food from '../models/Food';
-import PointOfInterest from '../models/PointOfInterest';
 import foodJson from '../../data/foods.json';
 
 export default class FoodService {
