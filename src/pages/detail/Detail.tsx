@@ -3,7 +3,7 @@ import {
   ChevronDoubleRightIcon,
   ChevronLeftIcon,
   PlayIcon,
-  XIcon
+  XIcon,
 } from '@heroicons/react/solid';
 import { useContext, useEffect, useRef, useState } from 'react';
 import { useParams } from 'react-router';
@@ -58,7 +58,7 @@ const Detail = (props: Props) => {
       <div>
         <iframe
           className="w-full h-60 lg:h-96"
-          src="https://www.youtube.com/embed/1bSd78FL6gk"
+          src={food.videoUrl}
           title="YouTube video player"
           frameBorder={0}
           allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
