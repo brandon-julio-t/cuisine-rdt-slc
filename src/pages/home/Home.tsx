@@ -1,15 +1,13 @@
-import { useEffect, useState } from 'react';
+import { FunctionComponent, useEffect, useState } from 'react';
 import Container from '../../components/common/Container';
 import Navbar from '../../components/common/Navbar';
+import pattern from '../../images/pattern.png';
 import Food from '../../models/Food';
 import FoodService from '../../services/FoodService';
 import FoodCard from './components/FoodCard';
 import FoodForm from './components/FoodForm';
-import pattern from '../../images/pattern.png';
 
-interface Props {}
-
-const Home = (props: Props) => {
+const Home: FunctionComponent = () => {
   const [action, setAction] = useState<'Create' | 'Update'>('Create');
   const [isCreateFormOpen, setIsCreateFormOpen] = useState(false);
   const [food, setFood] = useState<Food | null>(null);
@@ -35,36 +33,28 @@ const Home = (props: Props) => {
   return (
     <>
       <Navbar />
+
       <Container>
         <div
-          style={{
-            backgroundImage: `url(${pattern})`,
-            backgroundSize: 'contain',
-            backgroundRepeat: 'repeat',
-          }}
-          className='bg-primary-light-blue h-28 rounded-md mt-4'></div>
+          style={{ backgroundImage: `url(${pattern})` }}
+          className="bg-primary-light-blue h-28 rounded-md mt-4 bg-contain bg-repeat"
+        ></div>
 
         <input
-          type='search'
+          type="search"
           onChange={filterFood}
-          className='w-full rounded-md border border-gray-300 outline-none ring-0 my-4'
-          placeholder='Search...'
+          className="w-full rounded-md border border-gray-300 outline-none ring-0 my-4"
+          placeholder="Search..."
         />
 
-        <div className='grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-4'>
-          {foods.map((food) => (
-            <FoodCard food={food} key={food.id}></FoodCard>
+        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-4">
+          {foods.map(food => (
+            <FoodCard food={food} key={food.id} />
           ))}
         </div>
       </Container>
 
-      <FoodForm
-        isOpen={isCreateFormOpen}
-        food={food}
-        onClose={reset}
-        action={action}
-        refresh={fetchFoods}
-      />
+      <FoodForm isOpen={isCreateFormOpen} food={food} onClose={reset} action={action} refresh={fetchFoods} />
     </>
   );
 };

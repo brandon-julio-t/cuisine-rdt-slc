@@ -1,11 +1,9 @@
-import { ButtonHTMLAttributes } from 'react';
+import { FunctionComponent, HTMLAttributes } from 'react';
 
-interface Props extends ButtonHTMLAttributes<HTMLButtonElement> {}
-
-const Button = (props: Props) => {
+const Button: FunctionComponent<HTMLAttributes<HTMLButtonElement>> = ({ className, children, ...rest }) => {
   return (
-    <button {...props} className={`shadow hover:shadow-md rounded px-4 py-2 ${props.className}`}>
-      {props.children}
+    <button {...rest} className={`transition shadow hover:shadow-md rounded px-4 py-2 ${className}`}>
+      {children}
     </button>
   );
 };

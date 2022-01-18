@@ -1,11 +1,24 @@
-import { HTMLAttributes } from "react";
+import { FunctionComponent, HTMLAttributes } from 'react';
 
-interface Props extends HTMLAttributes<HTMLDivElement> {}
-
-const Card = (props: Props) => {
+const Card: FunctionComponent<HTMLAttributes<HTMLDivElement>> = ({ className, children, ...rest }) => {
   return (
-    <div className={`bg-white border overflow-auto shadow hover:shadow-md rounded-lg transition-all ${props.className}`}>
-      <div className="px-4 py-5 sm:p-6">{props.children}</div>
+    <div
+      {...rest}
+      className={`${[
+        'bg-white',
+        'border',
+        'overflow-auto',
+        'shadow',
+        'hover:shadow-md',
+        'rounded-lg',
+        'transition-all',
+        'px-4',
+        'py-5',
+        'sm:p-6',
+        className,
+      ].join(' ')}`}
+    >
+      {children}
     </div>
   );
 };

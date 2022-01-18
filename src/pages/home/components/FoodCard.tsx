@@ -1,11 +1,9 @@
+import { FunctionComponent } from 'react';
 import { Link } from 'react-router-dom';
 import Food from '../../../models/Food';
 
-interface Props {
-  food: Food;
-}
 
-const FoodCard = ({ food }: Props) => {
+const FoodCard: FunctionComponent<{ food: Food;}> = ({ food }) => {
   return (
     <Link
       to={`/detail/${food.id}`}

@@ -1,10 +1,17 @@
 import {
   AmbientLight,
-  Box3, Group, Object3D,
+  Box3,
+  BoxGeometry,
+  Color,
+  Group,
+  Mesh,
+  MeshStandardMaterial,
+  Object3D,
   PerspectiveCamera,
-  Scene, sRGBEncoding,
+  Scene,
+  sRGBEncoding,
   Vector3,
-  WebGLRenderer
+  WebGLRenderer,
 } from 'three';
 import { OrbitControls } from 'three/examples/jsm/controls/OrbitControls';
 import Food from '../models/Food';
@@ -15,8 +22,9 @@ export default class FoodOrbitCanvas {
   private renderer: WebGLRenderer;
   private scene: Scene;
   private controls: OrbitControls;
+  private dummy: Mesh;
 
-  constructor(canvas: HTMLCanvasElement, food: Food, model: Group) {
+  constructor(canvas: HTMLCanvasElement) {
     this.camera = new PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
     this.camera.position.set(5, 2, 2);
 
@@ -25,21 +33,11 @@ export default class FoodOrbitCanvas {
     this.renderer.setSize(window.innerWidth, window.innerHeight);
 
     this.scene = new Scene();
-    this.scene.add(model);
+    this.scene.add((this.dummy = new Mesh(new BoxGeometry(), new MeshStandardMaterial({ color: new Color('gray') }))));
     this.scene.add(new AmbientLight());
-
-    // Point of interest helper
-    // food.pointOfInterests.forEach(pointOfInterest => {
-    //   const placeholder = new Mesh(new BoxGeometry(), new MeshNormalMaterial({ wireframe: true }));
-    //   const { x, y, z } = pointOfInterest.position;
-    //   placeholder.position.set(x, y, z);
-    //   this.scene.add(placeholder);
-    // });
 
     this.controls = new OrbitControls(this.camera, this.renderer.domElement);
     this.controls.enableDamping = true;
-
-    this.fitCameraToSelection(this.camera, this.controls, [model]);
 
     window.onresize = () => {
       this.camera.aspect = window.innerWidth / window.innerHeight;
@@ -54,6 +52,12 @@ export default class FoodOrbitCanvas {
     }
 
     animate(this);
+  }
+
+  public loadModel(model: Group) {
+    this.scene.remove(this.dummy);
+    this.scene.add(model);
+    this.fitCameraToSelection(this.camera, this.controls, [model]);
   }
 
   public setCameraFocus(position: Vector3): void {

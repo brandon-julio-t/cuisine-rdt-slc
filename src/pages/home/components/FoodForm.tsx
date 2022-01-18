@@ -1,21 +1,19 @@
-import { XIcon } from '@heroicons/react/solid';
 import { Dialog, Transition } from '@headlessui/react';
-import { FormEvent, Fragment, useEffect, useState } from 'react';
-import Food from '../../../models/Food';
-import FoodService from '../../../services/FoodService';
+import { XIcon } from '@heroicons/react/solid';
+import { FormEvent, Fragment, FunctionComponent, useEffect, useState } from 'react';
 import Button from '../../../components/common/Button';
 import Input from '../../../components/common/forms/Input';
 import Textarea from '../../../components/common/forms/Textarea';
+import Food from '../../../models/Food';
+import FoodService from '../../../services/FoodService';
 
-interface Props {
+const FoodForm: FunctionComponent<{
   isOpen: boolean;
   food: Food | null;
   onClose: () => void;
   action: 'Create' | 'Update';
   refresh: () => void;
-}
-
-const FoodForm = ({ isOpen, food, onClose, action, refresh }: Props) => {
+}> = ({ isOpen, food, onClose, action, refresh }) => {
   const [id, setId] = useState('');
   const [name, setName] = useState('');
   const [description, setDescription] = useState('');
