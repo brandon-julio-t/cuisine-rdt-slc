@@ -2,13 +2,12 @@ import { ChevronLeftIcon, InformationCircleIcon, PlayIcon, QuestionMarkCircleIco
 import { FunctionComponent, useEffect, useRef, useState } from 'react';
 import { useParams } from 'react-router';
 import { Link } from 'react-router-dom';
-import { Group, Vector3 } from 'three';
+import { Group } from 'three';
 import { GLTFLoader } from 'three/examples/jsm/loaders/GLTFLoader';
 import Card from '../../components/common/Card';
 import Skeleton from '../../components/common/Skeleton';
 import FoodOrbitCanvas from '../../facades/FoodOrbitCanvas';
 import Food from '../../models/Food';
-import PointOfInterest from '../../models/PointOfInterest';
 import FoodService from '../../services/FoodService';
 import DetailPopUp from './components/DetailPopUp';
 import IngredientsModal from './components/IngredientModal';
@@ -22,7 +21,6 @@ const Detail: FunctionComponent = () => {
 
   const canvas = useRef<HTMLCanvasElement | null>(null);
   const [food, foodModel] = useFoodModel(id);
-  const [currentPointOfInterest, setCurrentPointOfInterest] = useState<PointOfInterest | null>(null);
   const [canvasSystem, setCanvasSystem] = useState<FoodOrbitCanvas | null>(null);
   const [showVideoModal, setShowVideoModal] = useState(false);
   const [showRecipeModal, setShowRecipeModal] = useState(false);

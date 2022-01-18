@@ -5,12 +5,8 @@ import pattern from '../../images/pattern.png';
 import Food from '../../models/Food';
 import FoodService from '../../services/FoodService';
 import FoodCard from './components/FoodCard';
-import FoodForm from './components/FoodForm';
 
 const Home: FunctionComponent = () => {
-  const [action, setAction] = useState<'Create' | 'Update'>('Create');
-  const [isCreateFormOpen, setIsCreateFormOpen] = useState(false);
-  const [food, setFood] = useState<Food | null>(null);
   const [foods, setFoods] = useState<Food[]>([]);
 
   const fetchFoods = async () => setFoods(await FoodService.getAll());
@@ -18,12 +14,6 @@ const Home: FunctionComponent = () => {
   useEffect(() => {
     fetchFoods();
   }, []);
-
-  const reset = () => {
-    setAction('Create');
-    setFood(null);
-    setIsCreateFormOpen(false);
-  };
 
   const filterFood = async (e: any) => {
     const query: string = e.target.value;
@@ -53,8 +43,6 @@ const Home: FunctionComponent = () => {
           ))}
         </div>
       </Container>
-
-      <FoodForm isOpen={isCreateFormOpen} food={food} onClose={reset} action={action} refresh={fetchFoods} />
     </>
   );
 };

@@ -21,7 +21,7 @@ const DetailPopUp: FunctionComponent<HTMLAttributes<HTMLDivElement> & { food: Fo
         leave="transform transform-gpu transition-all ease-in-out duration-500"
         leaveFrom="translate-y-0 opacitgy-100"
         leaveTo="translate-y-full opacity-0"
-        className="prose bg-white/80 backdrop-blur border rounded-lg shadow hover:shadow-md p-4 max-h-64 overflow-y-auto"
+        className="prose whitespace-pre-wrap bg-white/80 backdrop-blur border rounded-lg shadow hover:shadow-md p-4 max-h-64 overflow-y-auto"
       >
         {food ? food.description : <Skeleton />}
       </Transition>
