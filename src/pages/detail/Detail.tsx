@@ -27,7 +27,6 @@ const Detail: FunctionComponent = () => {
   const [showVideoModal, setShowVideoModal] = useState(false);
   const [showRecipeModal, setShowRecipeModal] = useState(false);
   const [showIngredientsModal, setShowIngredientsModal] = useState(false);
-  const [openPointOfInterest, setOpenPointOfInterest] = useState(false);
 
   useEffect(() => {
     const system = canvas.current ? new FoodOrbitCanvas(canvas.current) : null;
@@ -40,12 +39,6 @@ const Detail: FunctionComponent = () => {
       canvasSystem?.loadModel(foodModel);
     }
   }, [foodModel]);
-
-  const onSetCurrentPointOfInterest = (pointOfInterest: PointOfInterest | null) => {
-    pointOfInterest = pointOfInterest === currentPointOfInterest ? null : pointOfInterest;
-    setCurrentPointOfInterest(pointOfInterest);
-    canvasSystem?.setCameraFocus(pointOfInterest?.position ?? new Vector3(0, 0, 0));
-  };
 
   return (
     <>
