@@ -71,6 +71,51 @@
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
       "imageUrl": "/images/timpan.jpg",
       "pointOfInterests": []
+    },
+    {
+      "id": "f9c92a84-05bd-423b-b2da-303cc9d99c67",
+      "name": "Makanan 1",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam libero quidem itaque eum esse officiis quis sit obcaecati inventore, ratione harum? Minus dolorum hic tenetur sequi! Repudiandae sequi mollitia adipisci.",
+      "modelUrl": "/models/Makanan_1.glb",
+      "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
+      "imageUrl": "/images/makanan1.jpg",
+      "pointOfInterests": []
+    },
+    {
+      "id": "d294ddd7-a76d-4cfb-bb12-d31db10aa0a1",
+      "name": "Makanan 3",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam libero quidem itaque eum esse officiis quis sit obcaecati inventore, ratione harum? Minus dolorum hic tenetur sequi! Repudiandae sequi mollitia adipisci.",
+      "modelUrl": "/models/Makanan_3.glb",
+      "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
+      "imageUrl": "/images/makanan3.jpg",
+      "pointOfInterests": []
+    },
+    {
+      "id": "bf20d682-5989-4cd3-b1eb-4c90f399887e",
+      "name": "Makanan 4",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam libero quidem itaque eum esse officiis quis sit obcaecati inventore, ratione harum? Minus dolorum hic tenetur sequi! Repudiandae sequi mollitia adipisci.",
+      "modelUrl": "/models/Makanan_4.glb",
+      "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
+      "imageUrl": "/images/makanan4.jpg",
+      "pointOfInterests": []
+    },
+    {
+      "id": "ca1a3bbc-688d-4d9d-b48d-cc0f088a504a",
+      "name": "Makanan 5",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam libero quidem itaque eum esse officiis quis sit obcaecati inventore, ratione harum? Minus dolorum hic tenetur sequi! Repudiandae sequi mollitia adipisci.",
+      "modelUrl": "/models/Makanan_5.glb",
+      "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
+      "imageUrl": "/images/makanan5.jpg",
+      "pointOfInterests": []
+    },
+    {
+      "id": "bbeb80f2-72b0-48b4-bd09-64d53835e2a4",
+      "name": "Makanan 6",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam libero quidem itaque eum esse officiis quis sit obcaecati inventore, ratione harum? Minus dolorum hic tenetur sequi! Repudiandae sequi mollitia adipisci.",
+      "modelUrl": "/models/Makanan_6.glb",
+      "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
+      "imageUrl": "/images/timpan.jpg",
+      "pointOfInterests": []
     }
   ]
 }
