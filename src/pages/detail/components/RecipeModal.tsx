@@ -2,20 +2,20 @@ import { FunctionComponent } from 'react';
 import Modal from '../../../components/common/Modal';
 import Food from '../../../models/Food';
 
-const RecipeModal: FunctionComponent<{ show: boolean; onClose: () => void; food: Food | null }> = ({
-  show,
-  onClose,
-  food,
-}) => {
+const RecipeModal: FunctionComponent<{
+  show: boolean;
+  onClose: () => void;
+  food: Food | null;
+}> = ({ show, onClose, food }) => {
   return (
-    <Modal show={show} onClose={onClose}>
-      <ul className="overflow-auto max-h-[60vh]">
+    <Modal title='How to Cook' show={show} onClose={onClose}>
+      <ul className='overflow-auto max-h-[60vh]'>
         {dummySteps.map((step, idx) => (
-          <li key={idx} className="flex mb-1">
-            <span className="block mr-1 font-bold">{idx + 1}. </span>
-            <span className="block">
-              <span className="block font-semibold">{step.title}</span>
-              <span className="block">{step.description}</span>
+          <li key={idx} className='flex mb-1'>
+            <span className='block mr-1 font-bold'>{idx + 1}. </span>
+            <span className='block'>
+              <span className='block font-semibold'>{step.title}</span>
+              <span className='block text-sm'>{step.description}</span>
             </span>
           </li>
         ))}
@@ -41,7 +41,8 @@ const dummySteps = [
   },
   {
     title: 'Saute the spice',
-    description: 'Heat up the vegetable oil in a wok. Saute the spice paste (B) over low heat until aromatic.',
+    description:
+      'Heat up the vegetable oil in a wok. Saute the spice paste (B) over low heat until aromatic.',
   },
   {
     title: 'Add coconut milk',
@@ -49,7 +50,8 @@ const dummySteps = [
   },
   {
     title: 'Add the beef',
-    description: 'Add the beef and cook over medium heat. Bring the coconut milk to a boil.',
+    description:
+      'Add the beef and cook over medium heat. Bring the coconut milk to a boil.',
   },
   {
     title: 'Simmer the beef',
