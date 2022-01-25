@@ -1,4 +1,6 @@
 import { FunctionComponent, useEffect, useState } from 'react';
+import { Else, If, Then } from 'react-if';
+import Card from '../../components/common/Card';
 import Container from '../../components/common/Container';
 import Navbar from '../../components/common/Navbar';
 import pattern from '../../images/pattern.png';
@@ -6,19 +8,29 @@ import Food from '../../models/Food';
 import FoodService from '../../services/FoodService';
 import FoodCard from './components/FoodCard';
 
-const Home: FunctionComponent = () => {
-  const [foods, setFoods] = useState<Food[]>([]);
+interface CategoryFoodsMapping {
+  [category: string]: Food[];
+}
 
-  const fetchFoods = async () => setFoods(await FoodService.getAll());
+const Home: FunctionComponent = () => {
+  const [categoryFoodsMapping, setCategoryFoodsMapping] = useState<CategoryFoodsMapping>({});
+  const [filter, setFilter] = useState('');
 
   useEffect(() => {
+    const fetchFoods = async () => {
+      const foods = await FoodService.getAll();
+      const categorizedFoods = {} as CategoryFoodsMapping;
+      foods.forEach(food => (categorizedFoods[food.category] = [...(categorizedFoods[food.category] ?? []), food]));
+      setCategoryFoodsMapping(categorizedFoods);
+    };
     fetchFoods();
   }, []);
 
-  const filterFood = async (e: any) => {
-    const query: string = e.target.value;
-    setFoods(await FoodService.filter(query));
-  };
+  const onFilterChange = async (e: any) => setFilter(e.target.value);
+  const filterFn = (food: Food): boolean =>
+    [food.name, food.category, food.description]
+      .map(value => value.toLowerCase())
+      .some(value => value.includes(filter.toLowerCase()));
 
   return (
     <>
@@ -32,14 +44,28 @@ const Home: FunctionComponent = () => {
 
         <input
           type="search"
-          onChange={filterFood}
+          onChange={onFilterChange}
           className="w-full rounded-md border border-gray-300 outline-none ring-0 my-4"
-          placeholder="Search..."
+          placeholder="Search by name, category, or description..."
         />
 
-        <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-4">
-          {foods.map(food => (
-            <FoodCard food={food} key={food.id} />
+        <div className="grid grid-cols-1 gap-4">
+          {Object.entries(categoryFoodsMapping).map(([category, foods]) => (
+            <Card key={category}>
+              <h2 className="text-xl font-medium mb-4 capitalize">{category}</h2>
+              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-4">
+                <If condition={foods.filter(filterFn).length}>
+                  <Then>
+                    {foods.filter(filterFn).map(food => (
+                      <FoodCard food={food} key={food.id} />
+                    ))}
+                  </Then>
+                  <Else>
+                    <h3 className="col-span-12 text-center text-lg font-medium">No foods.</h3>
+                  </Else>
+                </If>
+              </div>
+            </Card>
           ))}
         </div>
       </Container>

@@ -3,6 +3,7 @@
     {
       "id": "70552965-d750-48c2-9c70-be1ad63fc2b9",
       "name": "Alo Rajma",
+      "category": "traditional",
       "description": "Rājmā[2] [raːdʒmaː] (Hindi: राजमा, Urdu: راجما), also known as rajmah, rāzmā, or lal lobia, is a vegetarian dish, originating from the Indian subcontinent, consisting of red kidney beans in a thick gravy with many Indian whole spices, and is usually served with rice. It is a part of regular diet in India, Nepal, Bangladesh and Punjab province of Pakistan.[1] The dish developed after the red kidney bean was brought to the Indian subcontinent from Mexico.[3] Rajma chawal is kidney beans served with boiled rice.",
       "modelUrl": "/models/Alo Rajma.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
@@ -12,6 +13,7 @@
     {
       "id": "8021765f-0347-49ff-ba90-955fdeb8ba63",
       "name": "Asam Udeng",
+      "category": "traditional",
       "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam libero quidem itaque eum esse officiis quis sit obcaecati inventore, ratione harum? Minus dolorum hic tenetur sequi! Repudiandae sequi mollitia adipisci.",
       "modelUrl": "/models/asam udeng.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
@@ -21,6 +23,7 @@
     {
       "id": "a7147808-2cb2-4b31-8231-d4ad3bf86170",
       "name": "Ayam Tangkap",
+      "category": "traditional",
       "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam libero quidem itaque eum esse officiis quis sit obcaecati inventore, ratione harum? Minus dolorum hic tenetur sequi! Repudiandae sequi mollitia adipisci.",
       "modelUrl": "/models/ayam_tangkap_med.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
@@ -30,6 +33,7 @@
     {
       "id": "195ea4a1-400f-4544-a183-cf9b1b3c849a",
       "name": "Anyang",
+      "category": "traditional",
       "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam libero quidem itaque eum esse officiis quis sit obcaecati inventore, ratione harum? Minus dolorum hic tenetur sequi! Repudiandae sequi mollitia adipisci.",
       "modelUrl": "/models/anyang.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
@@ -39,6 +43,7 @@
     {
       "id": "59618bc6-03e9-407e-af96-88e49be96742",
       "name": "Rendang",
+      "category": "dessert",
       "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam libero quidem itaque eum esse officiis quis sit obcaecati inventore, ratione harum? Minus dolorum hic tenetur sequi! Repudiandae sequi mollitia adipisci.",
       "modelUrl": "/models/rendang.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
@@ -48,6 +53,7 @@
     {
       "id": "21c13683-b0fe-4c20-9693-13614d12aa2c",
       "name": "Selada Padang",
+      "category": "dessert",
       "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam libero quidem itaque eum esse officiis quis sit obcaecati inventore, ratione harum? Minus dolorum hic tenetur sequi! Repudiandae sequi mollitia adipisci.",
       "modelUrl": "/models/selada_padang.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
@@ -57,6 +63,7 @@
     {
       "id": "bde17f81-2e30-4ecc-adef-8d4de9c67f6c",
       "name": "Sushi",
+      "category": "dessert",
       "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam libero quidem itaque eum esse officiis quis sit obcaecati inventore, ratione harum? Minus dolorum hic tenetur sequi! Repudiandae sequi mollitia adipisci.",
       "modelUrl": "/models/sushi.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
@@ -66,6 +73,7 @@
     {
       "id": "d8aea1f8-2676-4c1e-8c15-814f354083b3",
       "name": "Timphan",
+      "category": "dessert",
       "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam libero quidem itaque eum esse officiis quis sit obcaecati inventore, ratione harum? Minus dolorum hic tenetur sequi! Repudiandae sequi mollitia adipisci.",
       "modelUrl": "/models/timpan.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
@@ -75,6 +83,7 @@
     {
       "id": "f9c92a84-05bd-423b-b2da-303cc9d99c67",
       "name": "Makanan 1",
+      "category": "snack",
       "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam libero quidem itaque eum esse officiis quis sit obcaecati inventore, ratione harum? Minus dolorum hic tenetur sequi! Repudiandae sequi mollitia adipisci.",
       "modelUrl": "/models/Makanan_1.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
@@ -84,6 +93,7 @@
     {
       "id": "d294ddd7-a76d-4cfb-bb12-d31db10aa0a1",
       "name": "Makanan 3",
+      "category": "snack",
       "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam libero quidem itaque eum esse officiis quis sit obcaecati inventore, ratione harum? Minus dolorum hic tenetur sequi! Repudiandae sequi mollitia adipisci.",
       "modelUrl": "/models/Makanan_3.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
@@ -93,6 +103,7 @@
     {
       "id": "bf20d682-5989-4cd3-b1eb-4c90f399887e",
       "name": "Makanan 4",
+      "category": "snack",
       "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam libero quidem itaque eum esse officiis quis sit obcaecati inventore, ratione harum? Minus dolorum hic tenetur sequi! Repudiandae sequi mollitia adipisci.",
       "modelUrl": "/models/Makanan_4.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
@@ -102,6 +113,7 @@
     {
       "id": "ca1a3bbc-688d-4d9d-b48d-cc0f088a504a",
       "name": "Makanan 5",
+      "category": "snack",
       "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam libero quidem itaque eum esse officiis quis sit obcaecati inventore, ratione harum? Minus dolorum hic tenetur sequi! Repudiandae sequi mollitia adipisci.",
       "modelUrl": "/models/Makanan_5.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
@@ -111,10 +123,41 @@
     {
       "id": "bbeb80f2-72b0-48b4-bd09-64d53835e2a4",
       "name": "Makanan 6",
+      "category": "Soup",
       "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam libero quidem itaque eum esse officiis quis sit obcaecati inventore, ratione harum? Minus dolorum hic tenetur sequi! Repudiandae sequi mollitia adipisci.",
       "modelUrl": "/models/Makanan_6.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
       "imageUrl": "/images/makanan6.jpg",
+      "pointOfInterests": []
+    },
+    {
+      "id": "759f9ce0-8a5d-4a31-ab65-be0502c43640",
+      "name": "Makanan 2_2",
+      "category": "Soup",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam libero quidem itaque eum esse officiis quis sit obcaecati inventore, ratione harum? Minus dolorum hic tenetur sequi! Repudiandae sequi mollitia adipisci.",
+      "modelUrl": "/models/Makanan_2_2.glb",
+      "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
+      "imageUrl": "https://picsum.photos/500",
+      "pointOfInterests": []
+    },
+    {
+      "id": "81cb0d99-6312-45cc-ba95-e581b6af2eee",
+      "name": "Makanan 2_3",
+      "category": "Soup",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam libero quidem itaque eum esse officiis quis sit obcaecati inventore, ratione harum? Minus dolorum hic tenetur sequi! Repudiandae sequi mollitia adipisci.",
+      "modelUrl": "/models/Makanan_2_3.glb",
+      "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
+      "imageUrl": "https://picsum.photos/500",
+      "pointOfInterests": []
+    },
+    {
+      "id": "4096baf5-7fca-4141-9aae-2db29212e73f",
+      "name": "Makanan 2_4",
+      "category": "Soup",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam libero quidem itaque eum esse officiis quis sit obcaecati inventore, ratione harum? Minus dolorum hic tenetur sequi! Repudiandae sequi mollitia adipisci.",
+      "modelUrl": "/models/Makanan_2_4.glb",
+      "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
+      "imageUrl": "https://picsum.photos/500",
       "pointOfInterests": []
     }
   ]
