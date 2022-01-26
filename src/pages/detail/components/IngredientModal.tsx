@@ -15,7 +15,7 @@ const IngredientsModal: FunctionComponent<{
       {food ? (
         <div className='w-full px-1 mx-auto bg-white rounded-2xl max-h-[60vh] overflow-auto space-y-3'>
           {dummyIngredients.map((ingredient) => (
-            <Disclosure>
+            <Disclosure key={ingredient.header}>
               {({ open }) => (
                 <>
                   <Disclosure.Button className='flex justify-between w-full px-4 py-2 text-sm font-medium text-left text-blue-900 bg-blue-100 rounded-lg hover:bg-blue-200 focus:outline-none focus-visible:ring focus-visible:ring-blue-500 focus-visible:ring-opacity-75'>

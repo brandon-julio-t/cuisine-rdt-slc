@@ -3,10 +3,13 @@ import {
   Box3,
   BoxGeometry,
   Color,
+  DirectionalLight,
+  DirectionalLightHelper,
   Group,
   Mesh,
   MeshStandardMaterial,
   Object3D,
+  PCFSoftShadowMap,
   PerspectiveCamera,
   Scene,
   sRGBEncoding,
@@ -31,10 +34,17 @@ export default class FoodOrbitCanvas {
     this.renderer = new WebGLRenderer({ antialias: true, alpha: true, canvas });
     this.renderer.outputEncoding = sRGBEncoding;
     this.renderer.setSize(window.innerWidth, window.innerHeight);
+    this.renderer.shadowMap.enabled = true;
+    this.renderer.shadowMap.type = PCFSoftShadowMap;
 
     this.scene = new Scene();
     this.scene.add((this.dummy = new Mesh(new BoxGeometry(), new MeshStandardMaterial({ color: new Color('gray') }))));
-    this.scene.add(new AmbientLight());
+    this.scene.add(new AmbientLight(0xffffff, 0.75));
+    const light = new DirectionalLight();
+    light.position.set(10, 10, 10);
+    light.castShadow = true;
+    this.scene.add(light);
+    this.scene.add(new DirectionalLightHelper(light));
 
     this.controls = new OrbitControls(this.camera, this.renderer.domElement);
     this.controls.enableDamping = true;
@@ -55,6 +65,15 @@ export default class FoodOrbitCanvas {
   }
 
   public loadModel(model: Group) {
+    model.traverse(node => {
+      node.castShadow = true;
+      node.receiveShadow = true;
+      if (node instanceof Mesh) {
+        node.material.roughness = 1;
+      }
+    });
+    model.castShadow = true;
+    model.receiveShadow = true;
     this.scene.remove(this.dummy);
     this.scene.add(model);
     this.fitCameraToSelection(this.camera, this.controls, [model]);
