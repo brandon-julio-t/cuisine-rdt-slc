@@ -28,7 +28,12 @@ export default class FoodOrbitCanvas {
   private dummy: Mesh;
 
   constructor(canvas: HTMLCanvasElement) {
-    this.camera = new PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
+    this.camera = new PerspectiveCamera(
+      75,
+      window.innerWidth / window.innerHeight,
+      0.1,
+      1000,
+    );
     this.camera.position.set(5, 2, 2);
 
     this.renderer = new WebGLRenderer({ antialias: true, alpha: true, canvas });
@@ -38,13 +43,18 @@ export default class FoodOrbitCanvas {
     this.renderer.shadowMap.type = PCFSoftShadowMap;
 
     this.scene = new Scene();
-    this.scene.add((this.dummy = new Mesh(new BoxGeometry(), new MeshStandardMaterial({ color: new Color('gray') }))));
-    this.scene.add(new AmbientLight(0xffffff, 0.75));
+    this.scene.add(
+      (this.dummy = new Mesh(
+        new BoxGeometry(),
+        new MeshStandardMaterial({ color: new Color('gray') }),
+      )),
+    );
+    this.scene.add(new AmbientLight(0xffffff, 1));
     const light = new DirectionalLight();
     light.position.set(10, 10, 10);
     light.castShadow = true;
-    this.scene.add(light);
-    this.scene.add(new DirectionalLightHelper(light));
+    // this.scene.add(light);
+    // this.scene.add(new DirectionalLightHelper(light));
 
     this.controls = new OrbitControls(this.camera, this.renderer.domElement);
     this.controls.enableDamping = true;
@@ -65,7 +75,7 @@ export default class FoodOrbitCanvas {
   }
 
   public loadModel(model: Group) {
-    model.traverse(node => {
+    model.traverse((node) => {
       node.castShadow = true;
       node.receiveShadow = true;
       if (node instanceof Mesh) {
@@ -92,7 +102,7 @@ export default class FoodOrbitCanvas {
     cancelAnimationFrame(this.requestAnimationFrameId);
     this.requestAnimationFrameId = -1;
     window.onresize = null;
-    this.scene.children.forEach(child => this.scene.remove(child));
+    this.scene.children.forEach((child) => this.scene.remove(child));
     this.renderer.dispose();
     this.controls.dispose();
   }
@@ -101,7 +111,7 @@ export default class FoodOrbitCanvas {
     camera: PerspectiveCamera,
     controls: OrbitControls,
     selection: Object3D[],
-    fitOffset = 0.75
+    fitOffset = 0.75,
   ): void {
     const box = new Box3();
 
@@ -111,11 +121,16 @@ export default class FoodOrbitCanvas {
     const center = box.getCenter(new Vector3());
 
     const maxSize = Math.max(size.x, size.y, size.z);
-    const fitHeightDistance = maxSize / (2 * Math.atan((Math.PI * camera.fov) / 360));
+    const fitHeightDistance =
+      maxSize / (2 * Math.atan((Math.PI * camera.fov) / 360));
     const fitWidthDistance = fitHeightDistance / camera.aspect;
     const distance = fitOffset * Math.max(fitHeightDistance, fitWidthDistance);
 
-    const direction = controls.target.clone().sub(camera.position).normalize().multiplyScalar(distance);
+    const direction = controls.target
+      .clone()
+      .sub(camera.position)
+      .normalize()
+      .multiplyScalar(distance);
 
     controls.maxDistance = distance * 10;
     // controls.target.copy(center);

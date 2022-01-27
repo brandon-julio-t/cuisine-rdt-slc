@@ -13,14 +13,21 @@ interface CategoryFoodsMapping {
 }
 
 const Home: FunctionComponent = () => {
-  const [categoryFoodsMapping, setCategoryFoodsMapping] = useState<CategoryFoodsMapping>({});
+  const [categoryFoodsMapping, setCategoryFoodsMapping] =
+    useState<CategoryFoodsMapping>({});
   const [filter, setFilter] = useState('');
 
   useEffect(() => {
     const fetchFoods = async () => {
       const foods = await FoodService.getAll();
       const categorizedFoods = {} as CategoryFoodsMapping;
-      foods.forEach(food => (categorizedFoods[food.category] = [...(categorizedFoods[food.category] ?? []), food]));
+      foods.forEach(
+        (food) =>
+          (categorizedFoods[food.category] = [
+            ...(categorizedFoods[food.category] ?? []),
+            food,
+          ]),
+      );
       setCategoryFoodsMapping(categorizedFoods);
     };
     fetchFoods();
@@ -29,8 +36,8 @@ const Home: FunctionComponent = () => {
   const onFilterChange = async (e: any) => setFilter(e.target.value);
   const filterFn = (food: Food): boolean =>
     [food.name, food.category, food.description]
-      .map(value => value.toLowerCase())
-      .some(value => value.includes(filter.toLowerCase()));
+      .map((value) => value.toLowerCase())
+      .some((value) => value.includes(filter.toLowerCase()));
 
   return (
     <>
@@ -39,33 +46,36 @@ const Home: FunctionComponent = () => {
       <Container>
         <div
           style={{ backgroundImage: `url(${pattern})` }}
-          className="bg-primary-light-blue h-28 rounded-md mt-4 bg-contain bg-repeat"
-        ></div>
+          className='bg-primary-light-blue h-28 rounded-md mt-4 bg-contain bg-repeat'></div>
 
         <input
-          type="search"
+          type='search'
           onChange={onFilterChange}
-          className="w-full rounded-md border border-gray-300 outline-none ring-0 my-4"
-          placeholder="Search by name, category, or description..."
+          className='w-full rounded-md border border-gray-300 outline-none ring-0 my-4'
+          placeholder='Search by name, category, or description...'
         />
 
-        <div className="grid grid-cols-1 gap-4">
+        <div className='grid grid-cols-1 gap-4'>
           {Object.entries(categoryFoodsMapping).map(([category, foods]) => (
-            <Card key={category}>
-              <h2 className="text-xl font-medium mb-4 capitalize">{category}</h2>
-              <div className="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4 mb-4">
+            <div key={category}>
+              <h2 className='text-xl font-medium mb-4 capitalize'>
+                {category}
+              </h2>
+              <div className='flex space-x-4 overflow-auto pb-3'>
                 <If condition={foods.filter(filterFn).length}>
                   <Then>
-                    {foods.filter(filterFn).map(food => (
+                    {foods.filter(filterFn).map((food) => (
                       <FoodCard food={food} key={food.id} />
                     ))}
                   </Then>
                   <Else>
-                    <h3 className="col-span-12 text-center text-lg font-medium">No foods.</h3>
+                    <h3 className='col-span-12 text-center text-lg font-medium'>
+                      No foods.
+                    </h3>
                   </Else>
                 </If>
               </div>
-            </Card>
+            </div>
           ))}
         </div>
       </Container>
