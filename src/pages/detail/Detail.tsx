@@ -74,7 +74,7 @@ const Detail: FunctionComponent = () => {
       <div className='absolute top-4 w-full z-20'>
         <div className='relative'>
           {/* Top Left */}
-          <Link className='absolute top-3 left-4' to='/'>
+          <Link className='absolute top-3 left-4 z-30' to='/'>
             <div className='rounded-full border shadow hover:shadow-md p-2 bg-white/80 backdrop-blur max-w-min'>
               <ChevronLeftIcon className='h-5 w-5' />
             </div>
@@ -82,7 +82,7 @@ const Detail: FunctionComponent = () => {
 
           {/* Top Middle */}
           <div>
-            <Card className='w-72 md:min-w-xl mx-auto bg-white/80 backdrop-blur'>
+            <Card className='w-52 md:min-w-xl mx-auto bg-white/80 backdrop-blur'>
               <h1 className='text-md sm:text-lg md:text-xl lg:text-2xl font-semibold text-center'>
                 {food ? food.name : <Skeleton />}
               </h1>
