@@ -99,22 +99,23 @@ const Detail: FunctionComponent = () => {
                 className='h-5 w-5'
               />
 
-              {showPopupMenu && (
-                <ul className='p-1 absolute divide-y-2 bg-white shadow-lg border border-gray-200 rounded top-10 right-8'>
-                  {buttons.map((btn) => (
-                    <li key={btn.id}>
-                      <button
-                        onClick={() => {
-                          btn.callback(true);
-                        }}
-                        className='flex py-2 pl-2 pr-8 items-center'>
-                        {btn.iconElm}
-                        <span className='ml-1'>{btn.title}</span>
-                      </button>
-                    </li>
-                  ))}
-                </ul>
-              )}
+              <ul
+                className={`${
+                  showPopupMenu ? 'opacity-100' : 'opacity-0'
+                } transition-all duration-300 p-1 absolute divide-y-2 bg-white shadow-lg border border-gray-200 rounded top-10 right-8`}>
+                {buttons.map((btn) => (
+                  <li key={btn.id}>
+                    <button
+                      onClick={() => {
+                        btn.callback(true);
+                      }}
+                      className='flex py-2 pl-2 pr-8 items-center'>
+                      {btn.iconElm}
+                      <span className='ml-1'>{btn.title}</span>
+                    </button>
+                  </li>
+                ))}
+              </ul>
             </div>
           </div>
         </div>
