@@ -37,7 +37,7 @@ const IngredientsModal: FunctionComponent<{
                     <Disclosure.Panel className='px-2 text-sm text-gray-500'>
                       <ul className='space-y-3'>
                         {ingredient.items.map((item) => (
-                          <div className='flex'>
+                          <div key={item.name} className='flex'>
                             <div className='w-12 h-12'>
                               <img
                                 className='w-full object-cover rounded-lg'
