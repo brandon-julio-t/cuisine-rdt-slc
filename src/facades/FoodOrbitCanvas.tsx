@@ -49,12 +49,19 @@ export default class FoodOrbitCanvas {
         new MeshStandardMaterial({ color: new Color('gray') }),
       )),
     );
-    this.scene.add(new AmbientLight(0xffffff, 1));
+
+    this.scene.add(new AmbientLight(0xffffff, 0.6));
     const light = new DirectionalLight();
-    light.position.set(10, 10, 10);
+    light.position.set(10, 20, 10);
     light.castShadow = true;
-    // this.scene.add(light);
-    // this.scene.add(new DirectionalLightHelper(light));
+    this.scene.add(light);
+    this.scene.add(new DirectionalLightHelper(light));
+
+    const dLight = new DirectionalLight(0xffffff, 0.125);
+    dLight.position.set(0, -20, 0);
+    dLight.castShadow = true;
+    this.scene.add(dLight);
+    this.scene.add(new DirectionalLightHelper(dLight));
 
     this.controls = new OrbitControls(this.camera, this.renderer.domElement);
     this.controls.enableDamping = true;
@@ -79,7 +86,17 @@ export default class FoodOrbitCanvas {
       node.castShadow = true;
       node.receiveShadow = true;
       if (node instanceof Mesh) {
-        node.material.roughness = 1;
+        if (
+          node.name.toLowerCase().includes('cylinder') ||
+          node.name.toLowerCase().includes('plate') ||
+          node.name.toLowerCase().includes('cube')
+        ) {
+          node.material.metalness = 0.25;
+          node.material.roughness = 0.25;
+        } else {
+          node.material.metalness = 0;
+          node.material.roughness = 1;
+        }
       }
     });
     model.castShadow = true;
