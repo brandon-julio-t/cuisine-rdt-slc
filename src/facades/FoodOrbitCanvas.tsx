@@ -55,13 +55,13 @@ export default class FoodOrbitCanvas {
     light.position.set(10, 20, 10);
     light.castShadow = true;
     this.scene.add(light);
-    this.scene.add(new DirectionalLightHelper(light));
+    // this.scene.add(new DirectionalLightHelper(light));
 
     const dLight = new DirectionalLight(0xffffff, 0.125);
     dLight.position.set(0, -20, 0);
     dLight.castShadow = true;
     this.scene.add(dLight);
-    this.scene.add(new DirectionalLightHelper(dLight));
+    // this.scene.add(new DirectionalLightHelper(dLight));
 
     this.controls = new OrbitControls(this.camera, this.renderer.domElement);
     this.controls.enableDamping = true;
@@ -86,11 +86,7 @@ export default class FoodOrbitCanvas {
       node.castShadow = true;
       node.receiveShadow = true;
       if (node instanceof Mesh) {
-        if (
-          node.name.toLowerCase().includes('cylinder') ||
-          node.name.toLowerCase().includes('plate') ||
-          node.name.toLowerCase().includes('cube')
-        ) {
+        if (this.isBase(node)) {
           node.material.metalness = 0.25;
           node.material.roughness = 0.25;
         } else {
@@ -122,6 +118,14 @@ export default class FoodOrbitCanvas {
     this.scene.children.forEach((child) => this.scene.remove(child));
     this.renderer.dispose();
     this.controls.dispose();
+  }
+
+  private isBase(mesh: Mesh) {
+    return (
+      mesh.name.toLowerCase().includes('cylinder') ||
+      mesh.name.toLowerCase().includes('plate') ||
+      mesh.name.toLowerCase().includes('cube')
+    );
   }
 
   private fitCameraToSelection(
