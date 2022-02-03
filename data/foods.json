@@ -199,6 +199,36 @@
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
       "imageUrl": "/images/makanan13.jpg",
       "pointOfInterests": []
+    },
+    {
+      "id": "b4bf684d-497f-4fc  3-8574-efcd0ea5f152",
+      "name": "Makanan 14",
+      "category": "Part 3",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam libero quidem itaque eum esse officiis quis sit obcaecati inventore, ratione harum? Minus dolorum hic tenetur sequi! Repudiandae sequi mollitia adipisci.",
+      "modelUrl": "/models/Makanan_3_1.glb",
+      "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
+      "imageUrl": "/images/makanan14.jpg",
+      "pointOfInterests": []
+    },
+    {
+      "id": "b4bf684d-427f-4fb3-8574-efcd0ea5f152",
+      "name": "Makanan 15",
+      "category": "Part 3",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam libero quidem itaque eum esse officiis quis sit obcaecati inventore, ratione harum? Minus dolorum hic tenetur sequi! Repudiandae sequi mollitia adipisci.",
+      "modelUrl": "/models/Makanan_3_3.glb",
+      "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
+      "imageUrl": "/images/makanan15.jpg",
+      "pointOfInterests": []
+    },
+    {
+      "id": "b4bf684e-497f-4fb3-8574-efcd0ea5f152",
+      "name": "Makanan 16",
+      "category": "Part 3",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam libero quidem itaque eum esse officiis quis sit obcaecati inventore, ratione harum? Minus dolorum hic tenetur sequi! Repudiandae sequi mollitia adipisci.",
+      "modelUrl": "/models/Makanan_3_4.glb",
+      "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
+      "imageUrl": "/images/makanan16.jpg",
+      "pointOfInterests": []
     }
   ]
 }
