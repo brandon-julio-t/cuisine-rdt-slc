@@ -82,73 +82,805 @@
     },
     {
       "id": "f9c92a84-05bd-423b-b2da-303cc9d99c67",
-      "name": "Makanan 1",
-      "category": "snack",
-      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam libero quidem itaque eum esse officiis quis sit obcaecati inventore, ratione harum? Minus dolorum hic tenetur sequi! Repudiandae sequi mollitia adipisci.",
+      "name": "Brenebon Soup",
+      "category": "Soup",
+      "description": "Brenebon is a soup from the Netherlands. Its name comes from the Dutch language, namely Bruine Bonen, Bruine means Brown (Brown Color) and Bonen means Peanut, which means Brown / red beans. Brenebon is one of the typical dishes from North Sulawesi.  Usually, to strengthen the taste of the brenebon soup, which is originally bland, Indonesian spices are added such as nutmeg, cloves, garlic and pepper.",
       "modelUrl": "/models/Makanan_1.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
       "imageUrl": "/images/makanan1.jpg",
-      "pointOfInterests": []
+      "pointOfInterests": [],
+      "cookingProcess": [
+        {
+          "headers": "Brenebon Soup",
+          "steps": [
+            "Bring the water to boil, add the meat. Skim the foam.",
+            "Add red beans, bring to a boil again",
+            "Reduce heat, cook until meat and red beans are cooked and tender. While continuing to Skim the foam.",
+            "Sauté shallots with margarine until browned, mix with meat broth.",
+            "Add salt, nutmeg, pepper, and tomatoes. Keep cooking on low heat until the red beans and meat crumble if you touch them with your fingers.",
+            "Add boiling water if you feel the water is lacking.",
+            "Before removing, take 1 tablespoon of red beans and crush them. Then put it back into the soup.",
+            "Add the scallions and celery and a sprinkling of fried shallot",
+            "Ready to be served."
+          ]
+        }
+      ],
+      "ingredients": [
+        {
+          "header": "Ingredients",
+          "items": [
+            {
+              "name": "Red Beans",
+              "amount": "250 gr"
+            },
+            {
+              "name": "Beef Reebs/Shank Meat (Diced)",
+              "amount": "1kg/500 gr"
+            },
+            {
+              "name": "Tomato",
+              "amount": "1-2 pc",
+              "description": "Cut into 4 - 6"
+            },
+            {
+              "name": "Shallow",
+              "amount": "8 pcs",
+              "description": "thinly sliced"
+            },
+            {
+              "name": "nutmeg powder",
+              "amount": "1 tsp"
+            },
+            {
+              "name": "pepper powder",
+              "amount": "1 tsp"
+            },
+            {
+              "name": "scallions",
+              "amount": "2 pcs"
+            },
+            {
+              "name": "cellery",
+              "amount": "2 stalks"
+            },
+            {
+              "name": "water",
+              "amount": "2 liters"
+            },
+            {
+              "name": "salt",
+              "amount": "as per taste"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "d294ddd7-a76d-4cfb-bb12-d31db10aa0a1",
-      "name": "Makanan 3",
-      "category": "snack",
-      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam libero quidem itaque eum esse officiis quis sit obcaecati inventore, ratione harum? Minus dolorum hic tenetur sequi! Repudiandae sequi mollitia adipisci.",
+      "name": "Melon Sago",
+      "category": "Cold Dessert",
+      "description": "Sago Melon is a dessert which is a combination of Sago Pearl, Melon balls, Melon Juice and coconut milk. Included in the cold dessert category. One light dessert that can complement any type of heavy meal.",
       "modelUrl": "/models/Makanan_3.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
       "imageUrl": "/images/makanan3.jpg",
-      "pointOfInterests": []
+      "pointOfInterests": [],
+      "cookingProcess": [
+        {
+          "headers": "Melon Sago",
+          "steps": [
+            "Boil the water in a pot then add tapioca pearls, stir it once while cooked. After it is cooked, chill it for a moment.",
+            "Prepare another pan and boil the water then add coconut milk on it after that add the sugar and salt too. After it is cooked, chill it for a moment.",
+            "After all is done, mix them in the bowl then add the honey dew melon in it.",
+            "Serve it on the cup"
+          ]
+        }
+      ],
+      "ingredients": [
+        {
+          "headers": "Ingredients",
+          "items": [
+            {
+              "name": "Honeydew Melon",
+              "amount": "1/2",
+              "description": "diced"
+            },
+            {
+              "name": "Tapioca Pearls",
+              "amount": "150gr"
+            },
+            {
+              "name": "Sugar",
+              "amount": "1/2 cup"
+            },
+            {
+              "name": "Water",
+              "amount": "1/2 cup"
+            },
+            {
+              "name": "Coconut Milk",
+              "amount": "1 cup"
+            },
+            {
+              "name": "Salt",
+              "amount": "a pinch"
+            },
+            {
+              "name": "Mint Leaves",
+              "description": "For garnish purpose"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "bf20d682-5989-4cd3-b1eb-4c90f399887e",
-      "name": "Makanan 4",
-      "category": "snack",
-      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam libero quidem itaque eum esse officiis quis sit obcaecati inventore, ratione harum? Minus dolorum hic tenetur sequi! Repudiandae sequi mollitia adipisci.",
+      "name": "Bok Choy Singaporean Style",
+      "category": "Side Dish",
+      "description": "It is a side dish. Can accompany meat, chicken or fish and seafood dishes.",
       "modelUrl": "/models/Makanan_4.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
       "imageUrl": "/images/makanan4.jpg",
-      "pointOfInterests": []
+      "pointOfInterests": [],
+      "cookingProcess": [
+        {
+          "headers": "Bok Choy",
+          "steps": [
+            "Sauté garlic and lemon grass than add oyster sauce",
+            "Add bok choy  than season with salt and pepper "
+          ]
+        }
+      ],
+      "ingredients": [
+        {
+          "headers": "Ingredients",
+          "items": [
+            {
+              "name": "Bok Choy",
+              "amount": "250 gr",
+              "description": "Cut, Clean, then Blanch"
+            },
+            {
+              "name": "Garlic",
+              "amount": "4 pcs",
+              "description": "Chopped"
+            },
+            {
+              "name": "Lemongrass",
+              "amount": "1 stalk"
+            },
+            {
+              "name": "Oyster Sauce",
+              "amount": "1 tbsp"
+            },
+            {
+              "name": "Salt & Pepper",
+              "amount": "as needed"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "ca1a3bbc-688d-4d9d-b48d-cc0f088a504a",
-      "name": "Makanan 5",
-      "category": "snack",
-      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam libero quidem itaque eum esse officiis quis sit obcaecati inventore, ratione harum? Minus dolorum hic tenetur sequi! Repudiandae sequi mollitia adipisci.",
+      "name": "Bo Xao Xa (Vietnam)",
+      "category": "Main Course",
+      "description": "Main course from Vietnam which is made from beef. The cooking technique used is Saute. Served with steam white rice, and can also include vegetable side dish",
       "modelUrl": "/models/Makanan_5.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
       "imageUrl": "/images/makanan5.jpg",
-      "pointOfInterests": []
+      "pointOfInterests": [],
+      "cookingProcess": [
+        {
+          "headers": "Bo Xao Xa",
+          "steps": [
+            "Sauté garlic and onion",
+            "Add the sliced beef",
+            "Add lemon grass",
+            "Put the red chili together into the pan",
+            "Add fish sauce, sugar, salt, and crack black pepper",
+            "Stir it well until it’s mix",
+            "Add cornstarch",
+            "Simmer to make the beef even more tender",
+            "Served with plain rice and garnish it with roasted peanuts and cilantro"
+          ]
+        }
+      ],
+      "ingredients": [
+        {
+          "headers": "Ingredients",
+          "items": [
+            {
+              "name": "Lemongrass ",
+              "amount": "2 slices",
+              "description": "slice thinly"
+            },
+            {
+              "name": "Sliced Beef",
+              "amount": "500 gr"
+            },
+            {
+              "name": "Slice Red Chili",
+              "amount": "50 gr",
+              "description": "seedless"
+            },
+            {
+              "name": "Garlic",
+              "amount": "3 cloves",
+              "description": "chopped"
+            },
+            {
+              "name": "Fish Sauce",
+              "amount": "1-2 tbsp"
+            },
+            {
+              "name": "Black Pepper",
+              "amount": "5 gr",
+              "description": "Crack"
+            },
+            {
+              "name": "Onion",
+              "amount": "1 pc",
+              "description": "Sliced"
+            },
+            {
+              "name": "Sugar",
+              "description": "as per needed"
+            },
+            {
+              "name": "Cornstarch",
+              "amount": "1/2 - 1 tspn",
+              "description": "mix with water as thickening agent"
+            },
+            {
+              "name": "Vegetable Oil",
+              "description": "2 tbsp"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "bbeb80f2-72b0-48b4-bd09-64d53835e2a4",
-      "name": "Makanan 6",
-      "category": "Soup",
-      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam libero quidem itaque eum esse officiis quis sit obcaecati inventore, ratione harum? Minus dolorum hic tenetur sequi! Repudiandae sequi mollitia adipisci.",
+      "name": "Lumpia Semarang",
+      "category": "Appetizer",
+      "description": "A typical snack from Semarang, Central Java, which was first introduced in the 19th century.  Lumpia is an Indonesian food that is influenced by Chinese culture.  The name spring roll or lunpia comes from the Hokkien dialect, 'lun' or 'lum' means soft and 'pia' means cake. In the beginning, Semarang spring rolls were not fried, so in accordance with the meaning of spring rolls, soft cakes.  There are two types of spring rolls in Semarang, namely ‘basah’ and ‘goreng’. This typical Semarang dish has a delicious taste and a crunchy texture.  The sweet taste of spring rolls adapts to the taste that the local people like.",
       "modelUrl": "/models/Makanan_6.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
       "imageUrl": "/images/makanan6.jpg",
-      "pointOfInterests": []
+      "pointOfInterests": [],
+      "cookingProcess": [
+        {
+          "headers": "Lumpia",
+          "steps": [
+            "With 5 tablespoons of oil, fry the ebi until fragrant. Side a side",
+            "Sauté the garlic with the remaining oil, stir-fry until fragrant, add the tauco, chicken, shrimp. Stir until the meat is half cooked.",
+            "Pour 1 liter of water, add ebi and all remaining ingredients except eggs. Cook on low heat until the water runs out.",
+            "Add the scrambled eggs, stir until the bamboo shoots are slightly dry. Remove and cool",
+            "Roll the stuffing with spring roll skin, apply the sauce to glue the skin. Fry spring rolls until golden brown in spring roll"
+          ]
+        },
+        {
+          "headers": "Lumpia Sauce",
+          "steps": [
+            "Bring water, brown sugar and garlic to a boil.",
+            "Add flower lawing, add salt and strain.",
+            "Bring to a boil again and thicken with corn/sago flour."
+          ]
+        }
+      ],
+      "ingredients": [
+        {
+          "headers": "Ingredients",
+          "items": [
+            {
+              "name": "Spring Roll Skin ",
+              "amount": "20 pcs"
+            },
+            {
+              "name": "Bamboo Shoots",
+              "amount": "750 gr",
+              "description": "ready to process, cut into fine julienne"
+            },
+            {
+              "name": "Chicken",
+              "amount": "250 gr",
+              "description": "Coarsely chopped"
+            },
+            {
+              "name": "Beaten Egg",
+              "amount": "2 pc"
+            },
+            {
+              "name": "Ebi",
+              "amount": "1 tbsp",
+              "description": "Soaked and crushed"
+            },
+            {
+              "name": "minced garlic",
+              "amount": "1 tbsp"
+            },
+            {
+              "name": "sweet soy sauce",
+              "amount": "1 tbsp"
+            },
+            {
+              "name": "tauco",
+              "amount": "1 tablespon",
+              "description": "Mashed"
+            },
+            {
+              "name": "Salt",
+              "amount": "1 tsp"
+            },
+            {
+              "name": "Brown Sugar",
+              "description": "1 tbsp"
+            }
+          ]
+        },
+        {
+          "headers": "Spring roll sauce",
+          "items": [
+            {
+              "name": "Garlic",
+              "amount": "1 tsp",
+              "description": "Mashed"
+            },
+            {
+              "name": "Water",
+              "amount": "20 ml"
+            },
+            {
+              "name": "Flower Lawing",
+              "amount": "1 pc"
+            },
+            {
+              "name": "Brown Sugar",
+              "amount": "5 tbsp"
+            },
+            {
+              "name": "Salt",
+              "amount": "1 tsp"
+            },
+            {
+              "name": "Sago flour",
+              "amount": "1 tbsp",
+              "description": "mix with 2 tbsp of water"
+            }
+          ]
+        },
+        {
+          "headers": "Accompaniment",
+          "items": [
+            {
+              "name": "Pickled  cucumber"
+            },
+            {
+              "name": "Onion"
+            },
+            {
+              "name": "Chili Padi"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "759f9ce0-8a5d-4a31-ab65-be0502c43640",
-      "name": "Makanan 7",
-      "category": "Soup",
-      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam libero quidem itaque eum esse officiis quis sit obcaecati inventore, ratione harum? Minus dolorum hic tenetur sequi! Repudiandae sequi mollitia adipisci.",
+      "name": "Rawon",
+      "category": "Main Course",
+      "description": "Rawon is a typical black soup from East Java. Rawon is a food made from various herbs, spices, and pieces of beef. One of the spices used to make rawon is kluwek or keluak, which gives it a black color.  The specialty of rawon which is usually eaten with rice is the addition of rawon chili sauce. Like a match, rawon will never be complete without chili sauce,  short bean sprouts, fried onions, and don't miss the crackers, both shrimp crackers and white crackers. The slightly sweet taste of the sauce will make this black soup a delicious",
       "modelUrl": "/models/Makanan_2_2.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
       "imageUrl": "/images/makanan7.jpg",
-      "pointOfInterests": []
+      "pointOfInterests": [],
+      "cookingProcess": [
+        {
+          "headers": "Cooking Process",
+          "steps": [
+            "with 3-4 tablespoons of oil, stir-fry spiced paste, keluak, galangal, and all the leaves until fragrant",
+            "Add meat, stir until stiff.",
+            "Pour the water keluak and 1 liter of water. Bring to a boil.",
+            "Reduce the heat, cook until the meat is tender and the remaining gravy + 800 ml.",
+            "Ready to be served with the accompaniment"
+          ]
+        }
+      ],
+      "ingredients": [
+        {
+          "headers": "Ingredients",
+          "items": [
+            {
+              "name": "Brisket Meat",
+              "amount": "750 gr",
+              "description": "Cut into large cubes"
+            },
+            {
+              "name": "Keluak",
+              "amount": "5 pcs",
+              "description": "Soak, strain and puree. Marinated water set aside"
+            },
+            {
+              "name": "Galangal",
+              "amount": "2 cm"
+            },
+            {
+              "name": "Salam Leaves",
+              "amount": "3 pcs"
+            },
+            {
+              "name": "Lemongrass",
+              "amount": "2 stalks",
+              "description": "Crushed"
+            },
+            {
+              "name": "Lime Leaves",
+              "amount": "5 pcs",
+              "description": "Shredded"
+            },
+            {
+              "name": "Salt and sugar",
+              "amount": "to taste"
+            }
+          ]
+        },
+        {
+          "headers": "Spiced Paste",
+          "items": [
+            {
+              "name": "Shallots",
+              "amount": "6 pcs"
+            },
+            {
+              "name": "Garlic",
+              "amount": "3 cloves"
+            },
+            {
+              "name": "Red Chilli Pepper",
+              "amount": "1"
+            },
+            {
+              "name": "Turmeric",
+              "amount": "1 cm"
+            },
+            {
+              "name": "Ginger",
+              "amount": "1 cm"
+            },
+            {
+              "name": "Candlenut",
+              "amount": "3 pcs",
+              "description": "Fried"
+            },
+            {
+              "name": "Coriander",
+              "amount": "1 pc",
+              "description": "Sangrai"
+            },
+            {
+              "name": "Shrimp Paste",
+              "amount": "1/2 tsp"
+            },
+            {
+              "name": "Tamarind Water",
+              "amount": "1 tbsp"
+            }
+          ]
+        },
+        {
+          "headers": "Accompaniment",
+          "items": [
+            {
+              "name": "Salted Egg"
+            },
+            {
+              "name": "Sprouts"
+            },
+            {
+              "name": "Shrimp Crackers"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "81cb0d99-6312-45cc-ba95-e581b6af2eee",
-      "name": "Makanan 8",
-      "category": "Soup",
-      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam libero quidem itaque eum esse officiis quis sit obcaecati inventore, ratione harum? Minus dolorum hic tenetur sequi! Repudiandae sequi mollitia adipisci.",
+      "name": "Lontong Cap Gomeh",
+      "category": "Main Course",
+      "description": "Lontong Cap Go Meh is an adaptation of the Chinese Indonesian community to local Indonesian cuisine, especially in Java.  Lontong Cap Go Meh is believed to be a food that brings good luck, such as dense lontong which is the opposite of porridge which is not eaten when celebrating Chinese New Year.  The long shape of the rice cake is also considered to symbolize a long life. Eggs in various cultures are also believed to be a symbol of good luck, while coconut milk and spices with turmeric are believed to be symbols of gold and luck.  ",
       "modelUrl": "/models/Makanan_2_3.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
       "imageUrl": "/images/makanan8.jpg",
-      "pointOfInterests": []
+      "pointOfInterests": [],
+      "cookingProcess": [
+        {
+          "headers": "Lontong",
+          "steps": [
+            "Wash rice, boil until water is absorbed or half cooked (diaron).",
+            "Lift. Bring large amounts of water to a boil, using a large saucepan. ",
+            "Take 2 banana leaves, stack. Put 2-3 tablespoons of aron rice.",
+            "Reduce the heat, cook until the meat is tender and the remaining gravy + 800 ml.",
+            "Do this step until the rice aron runs out.",
+            "Put raw lontong in a pot of boiling water.",
+            "Make sure the rice cake is submerged. Boil for about 4 hours over medium heat, stirring occasionally.",
+            "If cooked, remove the rice cake from the water. Drain, put on a stand so the water can easily escape. Cool, then cut according to taste"
+          ]
+        },
+        {
+          "headers": "Opor Ayam",
+          "steps": [
+            "Heat oil, saute spices paste, lemon grass, bay leaf and lime leaves. Saute until fragrant and the spices are cooked.",
+            "Add chicken and water, mix well and cook until chicken is cooked and tender.",
+            "Season with salt, pepper and sugar according to individual taste.",
+            "Add thick coconut milk, stir well and cook until boiling.",
+            "Serve with a sprinkling of fried shallots "
+          ]
+        },
+        {
+          "headers": "Sambal Goreng Ati Ampela",
+          "steps": [
+            "With 3-5 tablespoons of cooking oil, saute spiced paste until fragrant. ",
+            "Add red chilies and cook until wilted. Give + 100 ml of water. Reduce the heat and cook + 10 minutes until the gravy is bright red.",
+            "Add the liver, gizzard, eggs, coconut milk, shrimp, tamarind water, salt and sugar.",
+            "Cook over low heat, stirring occasionally, until gizzard and liver are cooked.",
+            "Ready to serve.  Sprinkle with fried shallot."
+          ]
+        },
+        {
+          "headers": "Sayur Lodeh",
+          "steps": [
+            "Stir chayote pieces with salt and let stand for + 10 minutes. Rinse clean and set aside.",
+            "While stirring, bring the thin coconut milk to a boil along with the ground spices, salam leaf, and galangal. ",
+            "Add tempeh and chayote. Cook over medium heat, stirring occasionally.",
+            "Reduce heat and add green chilies, long beans, thick coconut milk, salt and 1 tsp brown sugar. Stir until it boils again.",
+            "Ready to Serve"
+          ]
+        }
+      ],
+      "ingredients": [
+        {
+          "headers": "Lontong (6-8 pc)",
+          "items": [
+            {
+              "name": "Good Quality Rice",
+              "amount": "300 gr"
+            },
+            {
+              "name": "Water",
+              "amount": "500 gr",
+              "description": "For cooking rice"
+            },
+            {
+              "name": "Banana leaves",
+              "amount": "to taste"
+            },
+            {
+              "name": "Biting",
+              "description": "Stick cut into small pieces"
+            }
+          ]
+        },
+        {
+          "headers": "Chicken Opor",
+          "items": [
+            {
+              "name": "Free-range chicken",
+              "amount": "1 pc",
+              "description": "Cut into 6"
+            },
+            {
+              "name": "Thick coconut milk",
+              "amount": "250 ml"
+            },
+            {
+              "name": "Lime",
+              "amount": "2 pcs"
+            },
+            {
+              "name": "Salam Leaves",
+              "amount": "2 pcs"
+            },
+            {
+              "name": "Lemongrass",
+              "amount": "2 pcs"
+            },
+            {
+              "name": "Peppercorns",
+              "amount": "1/2 tbsp"
+            },
+            {
+              "name": "Granulated Sugar",
+              "amount": "1 tsp",
+              "description": "Sangrai"
+            },
+            {
+              "name": "Salt",
+              "amount": "1 tsp"
+            },
+            {
+              "name": "Oil",
+              "amount": "4-5 tbsp"
+            }
+          ]
+        },
+        {
+          "headers": "Spiced Paste (Chicken Opor)",
+          "items": [
+            {
+              "name": "Garlic",
+              "amount": "4 cloves"
+            },
+            {
+              "name": "Shallots",
+              "amount": "10 cloves"
+            },
+            {
+              "name": "Candlenut",
+              "amount": "5 grains"
+            },
+            {
+              "name": "Ginger",
+              "amount": "2 cm"
+            },
+            {
+              "name": "Galangal",
+              "amount": "1 cm"
+            },
+            {
+              "name": "Turmeric",
+              "amount": "1 segment"
+            },
+            {
+              "name": "Coriander",
+              "amount": "1 tbsp"
+            },
+            {
+              "name": "Water",
+              "amount": "5 tbsp"
+            }
+          ]
+        },
+        {
+          "headers": "Sambal Goreng Ati Ampela",
+          "items": [
+            {
+              "name": "Chicken Gizzards",
+              "amount": "5 pcs",
+              "description": "Boiled, thinly sliced"
+            },
+            {
+              "name": "Chicken Livers",
+              "amount": "5 pcs",
+              "description": "Boiled, cut into cubes"
+            },
+            {
+              "name": "Quail Eggs",
+              "amount": "20 pcs",
+              "description": "Boiled and peeled"
+            },
+            {
+              "name": "Small Shrimp",
+              "amount": "200 gr",
+              "description": "Peeled"
+            },
+            {
+              "name": "Red Chillies",
+              "amount": "10 pcs",
+              "description": "Without seed, thinly sliced"
+            },
+            {
+              "name": "Coconut Milk",
+              "amount": "500 ml"
+            },
+            {
+              "name": "Tamarind Water",
+              "amount": "1 tsp",
+              "description": "Thick"
+            },
+            {
+              "name": "Salam Leaves",
+              "amount": "2 pcs"
+            },
+            {
+              "name": "Galangal",
+              "amount": "2 cm",
+              "description": "crushed"
+            },
+            {
+              "name": "Salt",
+              "amount": "to taste"
+            },
+            {
+              "name": "Brown Sugar",
+              "amount": "1 tbsp"
+            }
+          ]
+        },
+        {
+          "headers": "Spiced Paste (Sambal Goreng Ati Ampela)",
+          "items": [
+            {
+              "name": "Red Chilli",
+              "amount": "2 pcs"
+            },
+            {
+              "name": "Shallot",
+              "amount": "6 pcs"
+            },
+            {
+              "name": "Garlic",
+              "amount": "3 cloves"
+            },
+            {
+              "name": "Shrimp Paste",
+              "amount": "1 tsp"
+            }
+          ]
+        },
+        {
+          "headers": "Sayur Lodeh",
+          "items": [
+            {
+              "name": "Chayote (Labu Siam)",
+              "amount": "2 pc",
+              "description": "Cut into matchsticks"
+            },
+            {
+              "name": "Long Beans",
+              "amount": "100 gr",
+              "description": "Cut into 1 cm"
+            },
+            {
+              "name": "Thick Coconut Milk",
+              "amount": "250 ml"
+            },
+            {
+              "name": "Thin Coconut Milk",
+              "amount": "750 ml"
+            },
+            {
+              "name": "Tempeh",
+              "amount": "1 pc",
+              "description": "Cut into 3x4 cm"
+            },
+            {
+              "name": "Green Chilli",
+              "amount": "2 pcs"
+            },
+            {
+              "name": "Salam Leave",
+              "amount": "3 pcs"
+            },
+            {
+              "name": "Galangal",
+              "amount": "2 cm",
+              "description": "Crushed"
+            }
+          ]
+        },
+        {
+          "headers": "Spiced Paste (Sayur Lodeh)",
+          "items": [
+            {
+              "name": "Shallot",
+              "amount": "5 pcs"
+            },
+            {
+              "name": "Garlic",
+              "amount": "2 cloves"
+            },
+            {
+              "name": "Kencur",
+              "amount": "1 tsp"
+            },
+            {
+              "name": "Shrimp Paste",
+              "amount": "1 tsp",
+              "description": "Cooked"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "4096baf5-7fca-4141-9aae-2db29212e73f",
