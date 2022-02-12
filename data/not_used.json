@@ -1,0 +1,24 @@
+{
+  "foods": [
+    {
+      "id": "70552965-d750-48c2-9c70-be1ad63fc2b9",
+      "name": "Alo Rajma",
+      "category": "traditional",
+      "description": "Rājmā[2] [raːdʒmaː] (Hindi: राजमा, Urdu: راجما), also known as rajmah, rāzmā, or lal lobia, is a vegetarian dish, originating from the Indian subcontinent, consisting of red kidney beans in a thick gravy with many Indian whole spices, and is usually served with rice. It is a part of regular diet in India, Nepal, Bangladesh and Punjab province of Pakistan.[1] The dish developed after the red kidney bean was brought to the Indian subcontinent from Mexico.[3] Rajma chawal is kidney beans served with boiled rice.",
+      "modelUrl": "/models/Alo Rajma.glb",
+      "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
+      "imageUrl": "/images/alo-rajma.jpg",
+      "pointOfInterests": []
+    },
+    {
+      "id": "bde17f81-2e30-4ecc-adef-8d4de9c67f6c",
+      "name": "Sushi",
+      "category": "dessert",
+      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam libero quidem itaque eum esse officiis quis sit obcaecati inventore, ratione harum? Minus dolorum hic tenetur sequi! Repudiandae sequi mollitia adipisci.",
+      "modelUrl": "/models/sushi.glb",
+      "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
+      "imageUrl": "/images/sushi.jpg",
+      "pointOfInterests": []
+    }
+  ]
+}

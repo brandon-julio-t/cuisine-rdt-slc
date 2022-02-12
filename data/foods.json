@@ -1,84 +1,535 @@
 {
   "foods": [
     {
-      "id": "70552965-d750-48c2-9c70-be1ad63fc2b9",
-      "name": "Alo Rajma",
-      "category": "traditional",
-      "description": "Rājmā[2] [raːdʒmaː] (Hindi: राजमा, Urdu: راجما), also known as rajmah, rāzmā, or lal lobia, is a vegetarian dish, originating from the Indian subcontinent, consisting of red kidney beans in a thick gravy with many Indian whole spices, and is usually served with rice. It is a part of regular diet in India, Nepal, Bangladesh and Punjab province of Pakistan.[1] The dish developed after the red kidney bean was brought to the Indian subcontinent from Mexico.[3] Rajma chawal is kidney beans served with boiled rice.",
-      "modelUrl": "/models/Alo Rajma.glb",
-      "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
-      "imageUrl": "/images/alo-rajma.jpg",
-      "pointOfInterests": []
-    },
-    {
       "id": "8021765f-0347-49ff-ba90-955fdeb8ba63",
       "name": "Asam Udeng",
-      "category": "traditional",
-      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam libero quidem itaque eum esse officiis quis sit obcaecati inventore, ratione harum? Minus dolorum hic tenetur sequi! Repudiandae sequi mollitia adipisci.",
+      "category": "Appetizer",
+      "description": "Asam Udeung is a typical Aceh dish made from boiled shrimp that is chopped into small pieces and seasoned with sour and spicy spices. Asam Udeung is popularly known as ‘sambal ganja’. This is not at all because this food contains marijuana, but because this chili sauce makes people addicted to it.",
       "modelUrl": "/models/asam udeng.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
       "imageUrl": "/images/asam-udeng.jpg",
-      "pointOfInterests": []
+      "pointOfInterests": [],
+      "cookingProcess": [
+        {
+          "headers": "Asam Udeng",
+          "steps": [
+            "Steam the prawns until they change colour, remove from heat.",
+            "Mix the prawns with ground spices, lime leaves, and sliced chilies. Stir well.",
+            "Ready to serve"
+          ]
+        }
+      ],
+      "ingredients": [
+        {
+          "header": "Ingredients",
+          "items": [
+            {
+              "name": "Peeled Prawn",
+              "amount": "1/2 kg"
+            },
+            {
+              "name": "Lime Leaf",
+              "amount": "3 lbs",
+              "description": "Finely sliced"
+            },
+            {
+              "name": "Red Chilli",
+              "amount": "2 pc",
+              "description": "Finely sliced"
+            }
+          ]
+        },
+        {
+          "header": "Paste Spices",
+          "items": [
+            {
+              "name": "Red Chilli",
+              "amount": "10 pcs"
+            },
+            {
+              "name": "Red Onion",
+              "amount": "3 pcs"
+            },
+            {
+              "name": "Star Fruit Wuluh",
+              "amount": "2-3 pcs",
+              "description": "Finely sliced"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "a7147808-2cb2-4b31-8231-d4ad3bf86170",
       "name": "Ayam Tangkap",
-      "category": "traditional",
-      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam libero quidem itaque eum esse officiis quis sit obcaecati inventore, ratione harum? Minus dolorum hic tenetur sequi! Repudiandae sequi mollitia adipisci.",
+      "category": "Main Course",
+      "description": "Captured chicken is a typical Aceh Besar food, made from fried chicken with green chilies and Teumuru leaves or Salam Koja or Curry Leaves. Captured chicken is usually served with sweet soy sauce mixed with chopped onions and chilies as a dipping sauce.",
       "modelUrl": "/models/ayam_tangkap_med.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
       "imageUrl": "/images/ayam-tangkap.jpg",
-      "pointOfInterests": []
+      "pointOfInterests": [],
+      "cookingProcess": [
+        {
+          "headers": "Ayam Tangkap",
+          "steps": [
+            "Knead chicken with ground spices and tamarind water, drain after 15 minutes.",
+            "Heat 200 ml of cooking oil. Add half the chicken, fry half cooked, remove.",
+            "Fry the rest is also half cooked.",
+            "Mix all the chicken with the remaining ingredients, mix well.",
+            "Over medium heat, fry all ingredients and chicken until golden brown.",
+            "Lift and drain.",
+            "Serve with fried curry/temuru leaves"
+          ]
+        }
+      ],
+      "ingredients": [
+        {
+          "header": "Ingredients",
+          "items": [
+            {
+              "name": "Chicken",
+              "amount": "1 pcs",
+              "description": "Cut into 16 - 20 pcs"
+            },
+            {
+              "name": "Red Onion",
+              "amount": "6 pcs",
+              "description": "Coarsely chopped"
+            },
+            {
+              "name": "Garlic",
+              "amount": "2 cloves",
+              "description": "Chopped"
+            },
+            {
+              "name": "Koja Bay Leaf/Curry Leaf",
+              "amount": "20 lbs/5 lbs"
+            },
+            {
+              "name": "Pandan Leaf",
+              "amount": "3 pcs",
+              "description": "Cut into 2 cm"
+            },
+            {
+              "name": "Lime Leaf",
+              "amount": "6 lbs",
+              "description": "Torn"
+            },
+            {
+              "name": "Green Chilli",
+              "amount": "3 pcs",
+              "description": "Finely sliced"
+            },
+            {
+              "name": "Lemongrass",
+              "amount": "3 stalks",
+              "description": "White part, bruised"
+            },
+            {
+              "name": "Sour Water",
+              "amount": "1 tbsp"
+            }
+          ]
+        },
+        {
+          "header": "Spiced Paste",
+          "items": [
+            {
+              "name": "Red Onion",
+              "amount": "6 pcs"
+            },
+            {
+              "name": "Garlic",
+              "amount": "3 cloves"
+            },
+            {
+              "name": "Cayenne Pepper",
+              "amount": "6 pcs"
+            },
+            {
+              "name": "Tuermeric",
+              "amount": "2 tsp"
+            },
+            {
+              "name": "Ginger",
+              "amount": "2 tsp"
+            },
+            {
+              "name": "Salt",
+              "amount": "to taste"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "195ea4a1-400f-4544-a183-cf9b1b3c849a",
-      "name": "Anyang",
-      "category": "traditional",
-      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam libero quidem itaque eum esse officiis quis sit obcaecati inventore, ratione harum? Minus dolorum hic tenetur sequi! Repudiandae sequi mollitia adipisci.",
+      "name": "Anyang Daun",
+      "category": "Appetizer",
+      "description": "Anyang daun, which is a food consisting of fern leaves, bean sprouts, ground spices and grated coconut. Its appearance is almost like the urap that Javanese people usually call it, but it is very different, starting from the ingredients and the spices used are very different.",
       "modelUrl": "/models/anyang.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
       "imageUrl": "/images/anyang.jpg",
-      "pointOfInterests": []
+      "pointOfInterests": [],
+      "cookingProcess": [
+        {
+          "headers": "Anyang Daun",
+          "steps": [
+            "Roast grated coconut until brown. Finely ground without being greasy.",
+            "Mix well with ground spices and lime flesh.",
+            "Boil cassava leaves together with papaya leaves until cooked. Drain well.",
+            "Cut according to taste. Together with bean sprouts mixed with seasoned grated coconut.",
+            "Ready to Serve"
+          ]
+        }
+      ],
+      "ingredients": [
+        {
+          "header": "Ingredients",
+          "items": [
+            {
+              "name": "Cassava Leaf",
+              "amount": "150 gr"
+            },
+            {
+              "name": "Young Papaya Leaf",
+              "amount": "150 gr"
+            },
+            {
+              "name": "Bean Sprout",
+              "amount": "200 gr",
+              "description": "Brew boiling water, drain"
+            },
+            {
+              "name": "Medium Coconut",
+              "amount": "1 pc",
+              "description": "Grated"
+            },
+            {
+              "name": "Lime",
+              "amount": "1 pc",
+              "description": "Take the flesh only"
+            }
+          ]
+        },
+        {
+          "header": "Paste Spices",
+          "items": [
+            {
+              "name": "Red Chilli",
+              "amount": "3 pcs"
+            },
+            {
+              "name": "Red Onion",
+              "amount": "3 pcs"
+            },
+            {
+              "name": "Brown Sugar",
+              "amount": "1 tsp"
+            },
+            {
+              "name": "Salt",
+              "amount": "to taste"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "59618bc6-03e9-407e-af96-88e49be96742",
       "name": "Rendang",
-      "category": "traditional",
-      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam libero quidem itaque eum esse officiis quis sit obcaecati inventore, ratione harum? Minus dolorum hic tenetur sequi! Repudiandae sequi mollitia adipisci.",
+      "category": "Main Course",
+      "description": "Rendang is a meat dish originating from Minangkabau, West Sumatra, Indonesia. The process of cooking rendang at low temperatures for a long time, using coconut milk and a variety of typical Indonesian spices, which is slightly spicy, adds to its uniqueness and delicacy.",
       "modelUrl": "/models/rendang.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
       "imageUrl": "/images/rendang.jpg",
-      "pointOfInterests": []
+      "pointOfInterests": [],
+      "cookingProcess": [
+        {
+          "headers": "Rendang",
+          "steps": [
+            "Bring light coconut milk to a boil with ground spices and turmeric leaves.",
+            "Add meat, bring to a boil.",
+            "Reduce the heat, and cook until the meat is tender, pour in the thick coconut milk",
+            "Cook again with asam kandis and stir occasionally.",
+            "After the coconut milk thickens and becomes oily, turn off the heat",
+            "Rendang is ready to be served"
+          ]
+        }
+      ],
+      "ingredients": [
+        {
+          "header": "Ingredients",
+          "items": [
+            {
+              "name": "Beef Meat",
+              "amount": "500 gr",
+              "description": "Cut into large squares"
+            },
+            {
+              "name": "Thick Coconut Milk",
+              "amount": "250 ml"
+            },
+            {
+              "name": "Light Coconut Milk",
+              "amount": "650 ml"
+            },
+            {
+              "name": "Asam Kandis",
+              "amount": "1 pc"
+            },
+            {
+              "name": "Turmeric Leaf",
+              "amount": "1 lb"
+            }
+          ]
+        },
+        {
+          "header": "Spiced Paste",
+          "items": [
+            {
+              "name": "Curly Red Chilli",
+              "amount": "5 pcs"
+            },
+            {
+              "name": "Red Onion",
+              "amount": "6 pcs"
+            },
+            {
+              "name": "Garlic",
+              "amount": "3 cloves"
+            },
+            {
+              "name": "Coriander Sangria and Ground",
+              "amount": "1 tsp"
+            },
+            {
+              "name": "Turmeric",
+              "amount": "1 tsp",
+              "description": "Chopped"
+            },
+            {
+              "name": "Ginger",
+              "amount": "1 tbsp",
+              "description": "Chopped"
+            },
+            {
+              "name": "Galangal",
+              "amount": "1 tbsp"
+            },
+            {
+              "name": "Salt",
+              "amount": "to taste"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "21c13683-b0fe-4c20-9693-13614d12aa2c",
-      "name": "Selada Padang",
-      "category": "dessert",
-      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam libero quidem itaque eum esse officiis quis sit obcaecati inventore, ratione harum? Minus dolorum hic tenetur sequi! Repudiandae sequi mollitia adipisci.",
+      "name": "Slada Padang",
+      "category": "Appetizer",
+      "description": "Slada Padang is one of the best dishes from the Minangkabau area of Padang, West Sumatra. This one menu is usually present during important events there, such as a salvation event or Eid al-Fitr. The cuisine originally comes from the Netherlands which is then processed into Minang-flavored dishes.",
       "modelUrl": "/models/selada_padang.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
       "imageUrl": "/images/selada-padang.jpg",
-      "pointOfInterests": []
-    },
-    {
-      "id": "bde17f81-2e30-4ecc-adef-8d4de9c67f6c",
-      "name": "Sushi",
-      "category": "dessert",
-      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam libero quidem itaque eum esse officiis quis sit obcaecati inventore, ratione harum? Minus dolorum hic tenetur sequi! Repudiandae sequi mollitia adipisci.",
-      "modelUrl": "/models/sushi.glb",
-      "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
-      "imageUrl": "/images/sushi.jpg",
-      "pointOfInterests": []
+      "pointOfInterests": [],
+      "cookingProcess": [
+        {
+          "headers": "Slada Padang",
+          "steps": [
+            "Arrange cucumber, lettuce, egg white pieces, tomato, and potato chips in a serving bowl.",
+            "Pour the sauce, mix well.",
+            "Serve with sprinkles"
+          ]
+        }
+      ],
+      "ingredients": [
+        {
+          "header": "Ingredients",
+          "items": [
+            {
+              "name": "Cucumber",
+              "amount": "2 pcs",
+              "description": "Halved, thinly sliced"
+            },
+            {
+              "name": "Curly Lettuce Leaf",
+              "amount": "100 gr",
+              "description": "Roughly chopped"
+            },
+            {
+              "name": "Chicken Egg",
+              "amount": "3 pcs",
+              "description": "Boiled, peeled, separate the whites and yolks, set aside the yolks for the sauce, thinly slice the whites"
+            },
+            {
+              "name": "Red Tomato",
+              "amount": "1 pc",
+              "description": "Seeds removed, cut into 2 cm dice"
+            },
+            {
+              "name": "Potato",
+              "amount": "250 gr",
+              "description": "Peeled, thinly sliced, fried until crispy"
+            }
+          ]
+        },
+        {
+          "header": "Sauce, puree together",
+          "items": [
+            {
+              "name": "Potato",
+              "amount": "200 gr",
+              "description": "Steamed, peeled"
+            },
+            {
+              "name": "Chicken Egg Yolk",
+              "amount": "3 pcs",
+              "description": "Boiled"
+            },
+            {
+              "name": "Sugar",
+              "amount": "1 1/2 tbsp"
+            },
+            {
+              "name": "Fried Red Onion",
+              "amount": "4 tbsp"
+            },
+            {
+              "name": "Unsalted Butter",
+              "amount": "75 gr",
+              "description": "Melted"
+            },
+            {
+              "name": "Hot Water",
+              "amount": "100 ml"
+            },
+            {
+              "name": "Cooking Vinegar",
+              "amount": "2 tbsp"
+            },
+            {
+              "name": "Salt",
+              "amount": "1 tsp"
+            },
+            {
+              "name": "Pepper Powder",
+              "amount": "1 tsp"
+            }
+          ]
+        },
+        {
+          "header": "Sprinkled",
+          "items": [
+            {
+              "name": "Red Cracker"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "d8aea1f8-2676-4c1e-8c15-814f354083b3",
-      "name": "Timphan",
-      "category": "dessert",
-      "description": "Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nam libero quidem itaque eum esse officiis quis sit obcaecati inventore, ratione harum? Minus dolorum hic tenetur sequi! Repudiandae sequi mollitia adipisci.",
+      "name": "Timpan",
+      "category": "Dessert",
+      "description": "Timpan cake is one of the typical foods from Aceh. This sweet snack made from glutinous rice flour has become a favourite food for the Acehnese people on major Islamic holidays such as holidays. In addition to big days, Kue Timpan is also often found at parties, social gatherings and other important banquets held in Acehnese society.",
       "modelUrl": "/models/timpan.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
       "imageUrl": "/images/timpan.jpg",
-      "pointOfInterests": []
+      "pointOfInterests": [],
+      "cookingProcess": [
+        {
+          "headers": "Timpan",
+          "steps": [
+            "Make the skin dough first with the input of glutinous rice flour and bananas that have been mashed previously in one container, stir until well blended.",
+            "Pour in the thick coconut milk, whiting water, and salt, stir until thoroughly mixed. Then set aside.",
+            "Next to make the filling, mix the chicken eggs and granulated sugar using a mixer until thick.",
+            "Add the flour and thick coconut milk while stirring until evenly distributed.",
+            "Enter the cooked jackfruit that has been chopped, grated young coconut and pandan leaves, stir until blended and cook until thickened.",
+            "Remove and add vanilla powder while stirring well.",
+            "Prepare a banana leaf, cut it to the size of the timpan cake and brush it with oil.",
+            "Take enough skin dough and then thin it over a banana leaf that has been given oil.",
+            "Then roll and wrap neatly, arrange in the steamer and steam for 10 minutes or until cooked.",
+            "Remove the timpan cake and serve in a container"
+          ]
+        }
+      ],
+      "ingredients": [
+        {
+          "header": "Ingredients",
+          "items": [
+            {
+              "name": "Glutinous Rice Flour",
+              "amount": "200 gr"
+            },
+            {
+              "name": "Plantain",
+              "amount": "250 gr",
+              "description": "Mash first"
+            },
+            {
+              "name": "Thick Coconut Milk",
+              "amount": "2 tbsp"
+            },
+            {
+              "name": "Table Salt",
+              "amount": "1/4 tsp"
+            },
+            {
+              "name": "Whiting Water",
+              "amount": "1 tbsp"
+            }
+          ]
+        },
+        {
+          "header": "Filling",
+          "items": [
+            {
+              "name": "Jackfruit",
+              "amount": "25 gr",
+              "description": "Cooked, chopped small"
+            },
+            {
+              "name": "Chicken Egg",
+              "amount": "2 pcs"
+            },
+            {
+              "name": "Thick Coconut Milk",
+              "amount": "50 ml"
+            },
+            {
+              "name": "Sugar",
+              "amount": "100 gr"
+            },
+            {
+              "name": "Young Coconut",
+              "amount": "50 gr",
+              "description": "Finely grated"
+            },
+            {
+              "name": "Flour",
+              "amount": "1 tsp"
+            },
+            {
+              "name": "Pandan Leaf",
+              "amount": "1 pc"
+            },
+            {
+              "name": "Vanilla Powder",
+              "amount": "1 tsp"
+            }
+          ]
+        },
+        {
+          "header": "Sprinkled",
+          "items": [
+            {
+              "name": "Red Crackers"
+            }
+          ]
+        }
+      ]
     },
     {
       "id": "f9c92a84-05bd-423b-b2da-303cc9d99c67",
@@ -110,12 +561,13 @@
           "header": "Ingredients",
           "items": [
             {
-              "name": "Red Beans",
+              "name": "Red Bean",
               "amount": "250 gr"
             },
             {
-              "name": "Beef Reebs/Shank Meat (Diced)",
-              "amount": "1kg/500 gr"
+              "name": "Beef Reeb/Shank Meat",
+              "amount": "1kg/500 gr",
+              "description": "Diced (shank meat)"
             },
             {
               "name": "Tomato",
@@ -128,27 +580,27 @@
               "description": "thinly sliced"
             },
             {
-              "name": "nutmeg powder",
+              "name": "Nutmeg Powder",
               "amount": "1 tsp"
             },
             {
-              "name": "pepper powder",
+              "name": "Pepper Powder",
               "amount": "1 tsp"
             },
             {
-              "name": "scallions",
+              "name": "Scallion",
               "amount": "2 pcs"
             },
             {
-              "name": "cellery",
+              "name": "Cellery",
               "amount": "2 stalks"
             },
             {
-              "name": "water",
+              "name": "Water",
               "amount": "2 liters"
             },
             {
-              "name": "salt",
+              "name": "Salt",
               "amount": "as per taste"
             }
           ]
@@ -185,7 +637,7 @@
               "description": "diced"
             },
             {
-              "name": "Tapioca Pearls",
+              "name": "Tapioca Pearl",
               "amount": "150gr"
             },
             {
@@ -205,7 +657,7 @@
               "amount": "a pinch"
             },
             {
-              "name": "Mint Leaves",
+              "name": "Mint Leaf",
               "description": "For garnish purpose"
             }
           ]
@@ -290,7 +742,7 @@
           "headers": "Ingredients",
           "items": [
             {
-              "name": "Lemongrass ",
+              "name": "Lemongrass",
               "amount": "2 slices",
               "description": "slice thinly"
             },
@@ -373,7 +825,7 @@
           "headers": "Ingredients",
           "items": [
             {
-              "name": "Spring Roll Skin ",
+              "name": "Spring Roll Skin",
               "amount": "20 pcs"
             },
             {
@@ -396,15 +848,15 @@
               "description": "Soaked and crushed"
             },
             {
-              "name": "minced garlic",
+              "name": "Minced Garlic",
               "amount": "1 tbsp"
             },
             {
-              "name": "sweet soy sauce",
+              "name": "Sweet Soy Sauce",
               "amount": "1 tbsp"
             },
             {
-              "name": "tauco",
+              "name": "Tauco",
               "amount": "1 tablespon",
               "description": "Mashed"
             },
@@ -443,7 +895,7 @@
               "amount": "1 tsp"
             },
             {
-              "name": "Sago flour",
+              "name": "Sago Flour",
               "amount": "1 tbsp",
               "description": "mix with 2 tbsp of water"
             }
@@ -453,7 +905,7 @@
           "headers": "Accompaniment",
           "items": [
             {
-              "name": "Pickled  cucumber"
+              "name": "Pickled Cucumber"
             },
             {
               "name": "Onion"
@@ -478,7 +930,7 @@
         {
           "headers": "Cooking Process",
           "steps": [
-            "with 3-4 tablespoons of oil, stir-fry spiced paste, keluak, galangal, and all the leaves until fragrant",
+            "with 3-4 tablespoons of oil, stir-fry spiced paste, keluak, galangal, and all the Leaf until fragrant",
             "Add meat, stir until stiff.",
             "Pour the water keluak and 1 liter of water. Bring to a boil.",
             "Reduce the heat, cook until the meat is tender and the remaining gravy + 800 ml.",
@@ -505,7 +957,7 @@
               "amount": "2 cm"
             },
             {
-              "name": "Salam Leaves",
+              "name": "Salam Leaf",
               "amount": "3 pcs"
             },
             {
@@ -514,7 +966,7 @@
               "description": "Crushed"
             },
             {
-              "name": "Lime Leaves",
+              "name": "Lime Leaf",
               "amount": "5 pcs",
               "description": "Shredded"
             },
@@ -528,7 +980,7 @@
           "headers": "Spiced Paste",
           "items": [
             {
-              "name": "Shallots",
+              "name": "Shallot",
               "amount": "6 pcs"
             },
             {
@@ -642,8 +1094,9 @@
           "headers": "Lontong (6-8 pc)",
           "items": [
             {
-              "name": "Good Quality Rice",
-              "amount": "300 gr"
+              "name": "Rice",
+              "amount": "300 gr",
+              "description": "Good quality"
             },
             {
               "name": "Water",
@@ -651,7 +1104,7 @@
               "description": "For cooking rice"
             },
             {
-              "name": "Banana leaves",
+              "name": "Banana Leaf",
               "amount": "to taste"
             },
             {
@@ -677,7 +1130,7 @@
               "amount": "2 pcs"
             },
             {
-              "name": "Salam Leaves",
+              "name": "Salam Leaf",
               "amount": "2 pcs"
             },
             {
@@ -711,7 +1164,7 @@
               "amount": "4 cloves"
             },
             {
-              "name": "Shallots",
+              "name": "Shallot",
               "amount": "10 cloves"
             },
             {
@@ -744,17 +1197,17 @@
           "headers": "Sambal Goreng Ati Ampela",
           "items": [
             {
-              "name": "Chicken Gizzards",
+              "name": "Chicken Gizzard",
               "amount": "5 pcs",
               "description": "Boiled, thinly sliced"
             },
             {
-              "name": "Chicken Livers",
+              "name": "Chicken Liver",
               "amount": "5 pcs",
               "description": "Boiled, cut into cubes"
             },
             {
-              "name": "Quail Eggs",
+              "name": "Quail Egg",
               "amount": "20 pcs",
               "description": "Boiled and peeled"
             },
@@ -764,7 +1217,7 @@
               "description": "Peeled"
             },
             {
-              "name": "Red Chillies",
+              "name": "Red Chilli",
               "amount": "10 pcs",
               "description": "Without seed, thinly sliced"
             },
@@ -778,7 +1231,7 @@
               "description": "Thick"
             },
             {
-              "name": "Salam Leaves",
+              "name": "Salam Leaf",
               "amount": "2 pcs"
             },
             {
@@ -826,7 +1279,7 @@
               "description": "Cut into matchsticks"
             },
             {
-              "name": "Long Beans",
+              "name": "Long Bean",
               "amount": "100 gr",
               "description": "Cut into 1 cm"
             },
