@@ -21,13 +21,16 @@ const Home: FunctionComponent = () => {
     const fetchFoods = async () => {
       const foods = await FoodService.getAll();
       const categorizedFoods = {} as CategoryFoodsMapping;
-      foods.forEach(
-        (food) =>
-          (categorizedFoods[food.category] = [
-            ...(categorizedFoods[food.category] ?? []),
-            food,
-          ]),
-      );
+      foods.forEach((food) => {
+        const categories = food.category.split(',');
+        categories.forEach(
+          (category) =>
+            (categorizedFoods[category.trim()] = [
+              ...(categorizedFoods[category.trim()] ?? []),
+              food,
+            ]),
+        );
+      });
       setCategoryFoodsMapping(categorizedFoods);
     };
     fetchFoods();
