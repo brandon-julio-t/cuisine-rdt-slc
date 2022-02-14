@@ -14,7 +14,7 @@ const IngredientsModal: FunctionComponent<{
     <Modal show={show} onClose={onClose}>
       {food ? (
         <div className='w-full px-1 mx-auto bg-white rounded-2xl max-h-[60vh] overflow-auto space-y-3'>
-          {dummyIngredients.map((ingredient) => (
+          {food.ingredients.map((ingredient) => (
             <Disclosure key={ingredient.header}>
               {({ open }) => (
                 <>
@@ -75,105 +75,8 @@ const renderDesc = (item: any) => {
   if (item.amount && item.description)
     return `${item.amount}, ${item.description}`;
   else if (item.amount) return `${item.amount}`;
-  else return `${item.description}`;
+  else if (item.description) return `${item.description}`;
+  else return '';
 };
-
-const dummyIngredients = [
-  {
-    header: 'Ingredients',
-    items: [
-      {
-        name: 'Chicken',
-        amount: '1 pc',
-        description: 'cut into 16 – 20 pieces',
-      },
-      {
-        name: 'Red Onions',
-        amount: '6 pcs',
-        description: 'coarsely chopped',
-      },
-      {
-        name: 'Garlic',
-        amount: '3 cloves',
-        description: 'chopped',
-      },
-      {
-        name: 'Koja Bay Leaves/Curry Leaves',
-        amount: '20 lbs/5 lbs',
-        description: '',
-      },
-      {
-        name: 'Pandan Leaves',
-        amount: '3 pcs',
-        description: 'Cut into 2 cm',
-      },
-      {
-        name: 'Lime leaves',
-        amount: '6 lbs',
-        description: 'torn',
-      },
-      {
-        name: 'Green Chillies',
-        amount: '3 pcs',
-        description: 'finely sliced',
-      },
-      {
-        name: 'Lemongrass',
-        amount: '3 stalks',
-        description: 'White part, bruised',
-      },
-      {
-        name: 'Sour Water',
-        amount: '1 tbsp',
-        description: '',
-      },
-    ],
-  },
-  {
-    header: 'Paste Spices',
-    items: [
-      {
-        name: 'Curly Red Chilly',
-        amount: '5 pcs',
-        description: '',
-      },
-      {
-        name: 'Red Onions',
-        amount: '6 pcs',
-        description: '',
-      },
-      {
-        name: 'Garlic',
-        amount: '3 cloves',
-        description: '',
-      },
-      {
-        name: 'Coriander Sangria and Ground',
-        amount: '1 tsp',
-        description: '',
-      },
-      {
-        name: 'Chopped Turmeric',
-        amount: '1 tsp',
-        description: '',
-      },
-      {
-        name: 'Chopped Ginger',
-        amount: '1 tbsp',
-        description: '',
-      },
-      {
-        name: 'Galangal',
-        amount: '1 tbsp',
-        description: '',
-      },
-      {
-        name: 'Salt',
-        amount: '',
-        description: 'to taste',
-      },
-    ],
-  },
-];
 
 export default IngredientsModal;

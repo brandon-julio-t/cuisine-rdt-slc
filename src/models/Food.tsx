@@ -10,5 +10,26 @@ export default class Food {
     public videoUrl: string = '',
     public imageUrl: string = '',
     public pointOfInterests: PointOfInterest[] = [],
+    public cookingProcess: CookingProcess[],
+    public ingredients: Ingredient[],
+  ) {}
+}
+
+export class CookingProcess {
+  constructor(public header: string = '', public steps: string[] = []) {}
+}
+
+export class Ingredient {
+  constructor(
+    public header: string = '',
+    public items: IngredientStep[] = [],
+  ) {}
+}
+
+export class IngredientStep {
+  constructor(
+    public name: string = '',
+    public amount: string = '',
+    public description: string = '',
   ) {}
 }
