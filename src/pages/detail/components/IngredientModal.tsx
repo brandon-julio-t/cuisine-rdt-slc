@@ -41,7 +41,7 @@ const IngredientsModal: FunctionComponent<{
                             <div className='w-12 h-12'>
                               <img
                                 className='w-full object-cover rounded-lg'
-                                src='https://files.nccih.nih.gov/ginger-thinkstockphotos-531052216-square.jpg'
+                                src='/images/ingredient.png'
                                 alt=''
                               />
                             </div>

@@ -82,7 +82,7 @@ const Detail: FunctionComponent = () => {
 
           {/* Top Middle */}
           <div>
-            <Card className='w-52 md:min-w-xl mx-auto bg-white/80 backdrop-blur'>
+            <Card className='w-52 md:w-72 lg:w-96 md:min-w-xl mx-auto bg-white/80 backdrop-blur'>
               <h1 className='text-md sm:text-lg md:text-xl lg:text-2xl font-semibold text-center'>
                 {food ? food.name : <Skeleton />}
               </h1>
@@ -91,7 +91,7 @@ const Detail: FunctionComponent = () => {
 
           {/* Top Right */}
           <div className='absolute top-3 right-4'>
-            <div className='relative rounded-full border shadow hover:shadow-md p-2 bg-white/80 max-w-min'>
+            <div className='cursor-pointer relative rounded-full border shadow hover:shadow-md p-2 bg-white/80 max-w-min'>
               <MenuIcon
                 onClick={() => {
                   setShowPopupMenu(!showPopupMenu);
