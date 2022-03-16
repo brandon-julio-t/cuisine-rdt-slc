@@ -73,28 +73,30 @@ const Home: FunctionComponent = () => {
           placeholder='Search by name, category, or description...'
         />
 
-        <div className='flex space-x-4'>
-          <span className='block'>Show by:</span>
-          <label className='flex items-center space-x-2'>
-            <input
-              type='radio'
-              defaultChecked={true}
-              onChange={() => fetchFoods('course')}
-              name='show_by'
-            />
-            <span className='block'>Course session</span>
-          </label>
-          <label className='flex items-center space-x-2'>
-            <input
-              type='radio'
-              onChange={() => fetchFoods('category')}
-              name='show_by'
-            />
-            <span className='block'>Category</span>
-          </label>
+        <div className='mt-4 flex flex-col md:flex-row'>
+          <span className='block mr-2'>Show by:</span>
+          <div className='flex space-x-4'>
+            <label className='flex items-center space-x-2'>
+              <input
+                type='radio'
+                defaultChecked={true}
+                onChange={() => fetchFoods('course')}
+                name='show_by'
+              />
+              <span className='block'>Course session</span>
+            </label>
+            <label className='flex items-center space-x-2'>
+              <input
+                type='radio'
+                onChange={() => fetchFoods('category')}
+                name='show_by'
+              />
+              <span className='block'>Category</span>
+            </label>
+          </div>
         </div>
 
-        <div className='grid grid-cols-1 gap-4'>
+        <div className='grid grid-cols-1 gap-4 mt-4'>
           {Object.entries(foodsMapping).map(([category, foods]) => (
             <div key={category}>
               <h2 className='text-xl font-medium mb-4 capitalize'>
