@@ -1,0 +1,103 @@
+{
+  "courseCode": "HTMN6076",
+  "courseName": "Indonesian Cuisine",
+  "weeks": [
+    {
+      "number": 1,
+      "title": "Aceh",
+      "foods": [
+        {
+          "id": "8021765f-0347-49ff-ba90-955fdeb8ba63"
+        },
+        {
+          "id": "a7147808-2cb2-4b31-8231-d4ad3bf86170"
+        },
+        {
+          "id": "195ea4a1-400f-4544-a183-cf9b1b3c849a"
+        },
+        {
+          "id": "d8aea1f8-2676-4c1e-8c15-814f354083b3"
+        }
+      ]
+    },
+    {
+      "number": 2,
+      "title": "Sumatera Barat",
+      "foods": [
+        {
+          "id": "21c13683-b0fe-4c20-9693-13614d12aa2c"
+        },
+        {
+          "id": "4096baf5-7fca-4141-9aae-2db29212e73f"
+        }
+      ]
+    },
+    {
+      "number": 3,
+      "title": "Sumatera Selatan",
+      "foods": [
+        {
+          "id": "b4bf684e-497f-4fb3-8574-efcd0ea5f152"
+        }
+      ]
+    },
+    {
+      "number": 4,
+      "title": "Jakarta",
+      "foods": []
+    },
+    {
+      "number": 5,
+      "title": "Jawa Barat",
+      "foods": []
+    },
+    {
+      "number": 6,
+      "title": "Jawa Tengah",
+      "foods": [
+        { "id": "bbeb80f2-72b0-48b4-bd09-64d53835e2a4" },
+        { "id": "81cb0d99-6312-45cc-ba95-e581b6af2eee" },
+        { "id": "b4bf684d-497f-4fb3-8574-efcd0ea5f152" }
+      ]
+    },
+    {
+      "number": 7,
+      "title": "Jawa Timur",
+      "foods": [{ "id": "759f9ce0-8a5d-4a31-ab65-be0502c43640" }]
+    },
+    {
+      "number": 8,
+      "title": "Bali (Lunch Box)",
+      "foods": [
+        { "id": "b4bf684d-497f-4fc3-8574-efcd0ea5f152" },
+        { "id": "b4bf684d-427f-4fb3-8574-efcd0ea5f152" },
+        { "id": "3d3f8f9f-81ce-4119-b6df-714592924c5c" }
+      ]
+    },
+    {
+      "number": 9,
+      "title": "Kalimantan",
+      "foods": []
+    },
+    {
+      "number": 10,
+      "title": "Nusa Tenggara Barat",
+      "foods": []
+    },
+    {
+      "number": 11,
+      "title": "Manado",
+      "foods": [{ "id": "f9c92a84-05bd-423b-b2da-303cc9d99c67" }]
+    },
+    {
+      "number": 12,
+      "title": "Makassar",
+      "foods": []
+    },
+    {
+      "number": 13,
+      "title": "Tumpang",
+      "foods": [{ "id": "3bd0dfe9-d6b5-4833-8abf-2950f8f94047" }]
+    }
+  ]
+}
