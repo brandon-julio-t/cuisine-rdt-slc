@@ -1847,7 +1847,7 @@
     {
       "id": "b14ca154-c123-458b-b2b4-0cafd1b9deb8",
       "name": "Makanan A",
-      "category": "Main Course",
+      "category": "New",
       "description": "Lorem ipsum dolor sit amet.",
       "modelUrl": "/models/Makanan_A.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
@@ -1863,7 +1863,7 @@
     {
       "id": "437eab2f-8ea3-495b-9191-6ccfeed3dc9c",
       "name": "Makanan B",
-      "category": "Main Course",
+      "category": "New",
       "description": "Lorem ipsum dolor sit amet.",
       "modelUrl": "/models/Makanan_B.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
@@ -1879,7 +1879,7 @@
     {
       "id": "a6c7969a-cf81-4212-86ae-92afcdfc3612",
       "name": "Makanan C",
-      "category": "Main Course",
+      "category": "New",
       "description": "Lorem ipsum dolor sit amet.",
       "modelUrl": "/models/Makanan_C.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
@@ -1895,7 +1895,7 @@
     {
       "id": "c3ef04ce-e12e-4827-9b1e-7d8dc177e23a",
       "name": "Makanan D",
-      "category": "Main Course",
+      "category": "New",
       "description": "Lorem ipsum dolor sit amet.",
       "modelUrl": "/models/Makanan_D.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
@@ -1911,7 +1911,7 @@
     {
       "id": "044831b6-e925-43ef-b9de-d08b6f7118e8",
       "name": "Makanan E",
-      "category": "Main Course",
+      "category": "New",
       "description": "Lorem ipsum dolor sit amet.",
       "modelUrl": "/models/Makanan_E.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
@@ -1927,7 +1927,7 @@
     {
       "id": "db06acc9-f5f3-4fce-9989-4132ab541a73",
       "name": "Makanan F",
-      "category": "Main Course",
+      "category": "New",
       "description": "Lorem ipsum dolor sit amet.",
       "modelUrl": "/models/Makanan_F.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
@@ -1943,7 +1943,7 @@
     {
       "id": "e487cb9f-b553-481a-9481-fafbde29e1cf",
       "name": "Makanan G",
-      "category": "Main Course",
+      "category": "New",
       "description": "Lorem ipsum dolor sit amet.",
       "modelUrl": "/models/Makanan_G.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
