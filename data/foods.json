@@ -1851,7 +1851,7 @@
       "description": "Lorem ipsum dolor sit amet.",
       "modelUrl": "/models/Makanan_A.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
-      "imageUrl": "/images/makanan16.jpg",
+      "imageUrl": "/images/Makanan A.png",
       "cookingProcess": [
         {
           "header": "Cooking Process",
@@ -1867,7 +1867,7 @@
       "description": "Lorem ipsum dolor sit amet.",
       "modelUrl": "/models/Makanan_B.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
-      "imageUrl": "/images/makanan16.jpg",
+      "imageUrl": "/images/Makanan B.png",
       "cookingProcess": [
         {
           "header": "Cooking Process",
@@ -1883,7 +1883,7 @@
       "description": "Lorem ipsum dolor sit amet.",
       "modelUrl": "/models/Makanan_C.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
-      "imageUrl": "/images/makanan16.jpg",
+      "imageUrl": "/images/Makanan C.png",
       "cookingProcess": [
         {
           "header": "Cooking Process",
@@ -1899,7 +1899,7 @@
       "description": "Lorem ipsum dolor sit amet.",
       "modelUrl": "/models/Makanan_D.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
-      "imageUrl": "/images/makanan16.jpg",
+      "imageUrl": "/images/Makanan D.png",
       "cookingProcess": [
         {
           "header": "Cooking Process",
@@ -1915,7 +1915,7 @@
       "description": "Lorem ipsum dolor sit amet.",
       "modelUrl": "/models/Makanan_E.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
-      "imageUrl": "/images/makanan16.jpg",
+      "imageUrl": "/images/Makanan E.png",
       "cookingProcess": [
         {
           "header": "Cooking Process",
@@ -1931,7 +1931,7 @@
       "description": "Lorem ipsum dolor sit amet.",
       "modelUrl": "/models/Makanan_F.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
-      "imageUrl": "/images/makanan16.jpg",
+      "imageUrl": "/images/Makanan F.png",
       "cookingProcess": [
         {
           "header": "Cooking Process",
@@ -1947,7 +1947,7 @@
       "description": "Lorem ipsum dolor sit amet.",
       "modelUrl": "/models/Makanan_G.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
-      "imageUrl": "/images/makanan16.jpg",
+      "imageUrl": "/images/Makanan G.png",
       "cookingProcess": [
         {
           "header": "Cooking Process",
