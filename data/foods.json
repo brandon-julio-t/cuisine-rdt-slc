@@ -2083,6 +2083,102 @@
         }
       ],
       "ingredients": []
+    },
+    {
+      "id": "3ae4d1f6-9b6a-497e-9689-ac5f0fb7ac1d",
+      "name": "Makanan AAA",
+      "category": "New 2",
+      "description": "Lorem ipsum dolor sit amet.",
+      "modelUrl": "/models/Makanan_AAA.glb",
+      "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
+      "imageUrl": "/images/Makanan AAA.png",
+      "cookingProcess": [
+        {
+          "header": "Cooking Process",
+          "steps": []
+        }
+      ],
+      "ingredients": []
+    },
+    {
+      "id": "bbb0d448-51ac-46b1-9afb-81f2efef5d0f",
+      "name": "Makanan BBB",
+      "category": "New 2",
+      "description": "Lorem ipsum dolor sit amet.",
+      "modelUrl": "/models/Makanan_BBB.glb",
+      "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
+      "imageUrl": "/images/Makanan BBB.png",
+      "cookingProcess": [
+        {
+          "header": "Cooking Process",
+          "steps": []
+        }
+      ],
+      "ingredients": []
+    },
+    {
+      "id": "485a7b0c-4c23-45b6-8b0a-d3554478d34b",
+      "name": "Makanan CCC",
+      "category": "New 2",
+      "description": "Lorem ipsum dolor sit amet.",
+      "modelUrl": "/models/Makanan_CCC.glb",
+      "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
+      "imageUrl": "/images/Makanan CCC.png",
+      "cookingProcess": [
+        {
+          "header": "Cooking Process",
+          "steps": []
+        }
+      ],
+      "ingredients": []
+    },
+    {
+      "id": "7289a1f1-65b6-4910-aae3-e9c9f6c3daf6",
+      "name": "Makanan DDD",
+      "category": "New 2",
+      "description": "Lorem ipsum dolor sit amet.",
+      "modelUrl": "/models/Makanan_DDD.glb",
+      "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
+      "imageUrl": "/images/Makanan DDD.png",
+      "cookingProcess": [
+        {
+          "header": "Cooking Process",
+          "steps": []
+        }
+      ],
+      "ingredients": []
+    },
+    {
+      "id": "10b9d701-a587-4889-a2ae-932f1232a2ba",
+      "name": "Makanan EEE",
+      "category": "New 2",
+      "description": "Lorem ipsum dolor sit amet.",
+      "modelUrl": "/models/Makanan_EEE.glb",
+      "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
+      "imageUrl": "/images/Makanan EEE.png",
+      "cookingProcess": [
+        {
+          "header": "Cooking Process",
+          "steps": []
+        }
+      ],
+      "ingredients": []
+    },
+    {
+      "id": "e8b963fb-8add-49a0-9187-2a65b1588bc1",
+      "name": "Makanan FFF",
+      "category": "New 2",
+      "description": "Lorem ipsum dolor sit amet.",
+      "modelUrl": "/models/Makanan_FFF.glb",
+      "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
+      "imageUrl": "/images/Makanan FFF.png",
+      "cookingProcess": [
+        {
+          "header": "Cooking Process",
+          "steps": []
+        }
+      ],
+      "ingredients": []
     }
   ]
 }
