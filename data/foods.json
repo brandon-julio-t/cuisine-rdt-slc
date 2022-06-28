@@ -5,9 +5,9 @@
       "name": "Asam Udeng",
       "category": "Appetizer",
       "description": "Asam Udeung is a typical Aceh dish made from boiled shrimp that is chopped into small pieces and seasoned with sour and spicy spices. Asam Udeung is popularly known as ‘sambal ganja’. This is not at all because this food contains marijuana, but because this chili sauce makes people addicted to it.",
-      "modelUrl": "/models/asam udeng.glb",
+      "modelUrl": "models/asam udeng.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
-      "imageUrl": "/images/asam-udeng.jpg",
+      "imageUrl": "images/asam-udeng.jpg",
       "cookingProcess": [
         {
           "header": "Asam Udeng",
@@ -63,9 +63,9 @@
       "name": "Ayam Tangkap",
       "category": "Main Course",
       "description": "Captured chicken is a typical Aceh Besar food, made from fried chicken with green chilies and Teumuru leaves or Salam Koja or Curry Leaves. Captured chicken is usually served with sweet soy sauce mixed with chopped onions and chilies as a dipping sauce.",
-      "modelUrl": "/models/ayam_tangkap_med.glb",
+      "modelUrl": "models/ayam_tangkap_med.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
-      "imageUrl": "/images/ayam-tangkap.jpg",
+      "imageUrl": "images/ayam-tangkap.jpg",
       "cookingProcess": [
         {
           "header": "Ayam Tangkap",
@@ -165,9 +165,9 @@
       "name": "Anyang Daun",
       "category": "Appetizer",
       "description": "Anyang daun, which is a food consisting of fern leaves, bean sprouts, ground spices and grated coconut. Its appearance is almost like the urap that Javanese people usually call it, but it is very different, starting from the ingredients and the spices used are very different.",
-      "modelUrl": "/models/anyang.glb",
+      "modelUrl": "models/anyang.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
-      "imageUrl": "/images/anyang.jpg",
+      "imageUrl": "images/anyang.jpg",
       "cookingProcess": [
         {
           "header": "Anyang Daun",
@@ -237,9 +237,9 @@
       "name": "Rendang",
       "category": "Main Course",
       "description": "Rendang is a meat dish originating from Minangkabau, West Sumatra, Indonesia. The process of cooking rendang at low temperatures for a long time, using coconut milk and a variety of typical Indonesian spices, which is slightly spicy, adds to its uniqueness and delicacy.",
-      "modelUrl": "/models/rendang.glb",
+      "modelUrl": "models/rendang.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
-      "imageUrl": "/images/rendang.jpg",
+      "imageUrl": "images/rendang.jpg",
       "cookingProcess": [
         {
           "header": "Rendang",
@@ -326,9 +326,9 @@
       "name": "Slada Padang",
       "category": "Appetizer",
       "description": "Slada Padang is one of the best dishes from the Minangkabau area of Padang, West Sumatra. This one menu is usually present during important events there, such as a salvation event or Eid al-Fitr. The cuisine originally comes from the Netherlands which is then processed into Minang-flavored dishes.",
-      "modelUrl": "/models/selada_padang.glb",
+      "modelUrl": "models/selada_padang.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
-      "imageUrl": "/images/selada-padang.jpg",
+      "imageUrl": "images/selada-padang.jpg",
       "cookingProcess": [
         {
           "header": "Slada Padang",
@@ -429,9 +429,9 @@
       "name": "Timpan",
       "category": "Dessert",
       "description": "Timpan cake is one of the typical foods from Aceh. This sweet snack made from glutinous rice flour has become a favourite food for the Acehnese people on major Islamic holidays such as holidays. In addition to big days, Kue Timpan is also often found at parties, social gatherings and other important banquets held in Acehnese society.",
-      "modelUrl": "/models/timpan.glb",
+      "modelUrl": "models/timpan.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
-      "imageUrl": "/images/timpan.jpg",
+      "imageUrl": "images/timpan.jpg",
       "cookingProcess": [
         {
           "header": "Timpan",
@@ -530,9 +530,9 @@
       "name": "Brenebon Soup",
       "category": "Soup",
       "description": "Brenebon is a soup from the Netherlands. Its name comes from the Dutch language, namely Bruine Bonen, Bruine means Brown (Brown Color) and Bonen means Peanut, which means Brown / red beans. Brenebon is one of the typical dishes from North Sulawesi.  Usually, to strengthen the taste of the brenebon soup, which is originally bland, Indonesian spices are added such as nutmeg, cloves, garlic and pepper.",
-      "modelUrl": "/models/Makanan_1.glb",
+      "modelUrl": "models/Makanan_1.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
-      "imageUrl": "/images/makanan1.jpg",
+      "imageUrl": "images/makanan1.jpg",
       "cookingProcess": [
         {
           "header": "Brenebon Soup",
@@ -605,9 +605,9 @@
       "name": "Melon Sago",
       "category": "Dessert",
       "description": "Sago Melon is a dessert which is a combination of Sago Pearl, Melon balls, Melon Juice and coconut milk. Included in the cold dessert category. One light dessert that can complement any type of heavy meal.",
-      "modelUrl": "/models/Makanan_3.glb",
+      "modelUrl": "models/Makanan_3.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
-      "imageUrl": "/images/makanan3.jpg",
+      "imageUrl": "images/makanan3.jpg",
       "cookingProcess": [
         {
           "header": "Melon Sago",
@@ -661,9 +661,9 @@
       "name": "Bok Choy Singaporean Style",
       "category": "Side Dish",
       "description": "It is a side dish. Can accompany meat, chicken or fish and seafood dishes.",
-      "modelUrl": "/models/Makanan_4.glb",
+      "modelUrl": "models/Makanan_4.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
-      "imageUrl": "/images/makanan4.jpg",
+      "imageUrl": "images/makanan4.jpg",
       "cookingProcess": [
         {
           "header": "Bok Choy",
@@ -708,9 +708,9 @@
       "name": "Bo Xao Xa (Vietnam)",
       "category": "Main Course",
       "description": "Main course from Vietnam which is made from beef. The cooking technique used is Saute. Served with steam white rice, and can also include vegetable side dish",
-      "modelUrl": "/models/Makanan_5.glb",
+      "modelUrl": "models/Makanan_5.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
-      "imageUrl": "/images/makanan5.jpg",
+      "imageUrl": "images/makanan5.jpg",
       "cookingProcess": [
         {
           "header": "Bo Xao Xa",
@@ -786,9 +786,9 @@
       "name": "Lumpia Semarang",
       "category": "Appetizer",
       "description": "A typical snack from Semarang, Central Java, which was first introduced in the 19th century.  Lumpia is an Indonesian food that is influenced by Chinese culture.  The name spring roll or lunpia comes from the Hokkien dialect, 'lun' or 'lum' means soft and 'pia' means cake. In the beginning, Semarang spring rolls were not fried, so in accordance with the meaning of spring rolls, soft cakes.  There are two types of spring rolls in Semarang, namely ‘basah’ and ‘goreng’. This typical Semarang dish has a delicious taste and a crunchy texture.  The sweet taste of spring rolls adapts to the taste that the local people like.",
-      "modelUrl": "/models/Makanan_6.glb",
+      "modelUrl": "models/Makanan_6.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
-      "imageUrl": "/images/makanan6.jpg",
+      "imageUrl": "images/makanan6.jpg",
       "cookingProcess": [
         {
           "header": "Lumpia",
@@ -911,9 +911,9 @@
       "name": "Rawon",
       "category": "Main Course",
       "description": "Rawon is a typical black soup from East Java. Rawon is a food made from various herbs, spices, and pieces of beef. One of the spices used to make rawon is kluwek or keluak, which gives it a black color.  The specialty of rawon which is usually eaten with rice is the addition of rawon chili sauce. Like a match, rawon will never be complete without chili sauce,  short bean sprouts, fried onions, and don't miss the crackers, both shrimp crackers and white crackers. The slightly sweet taste of the sauce will make this black soup a delicious",
-      "modelUrl": "/models/Makanan_2_2.glb",
+      "modelUrl": "models/Makanan_2_2.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
-      "imageUrl": "/images/makanan7.jpg",
+      "imageUrl": "images/makanan7.jpg",
       "cookingProcess": [
         {
           "header": "Cooking Process",
@@ -1028,9 +1028,9 @@
       "name": "Lontong Cap Gomeh",
       "category": "Main Course",
       "description": "Lontong Cap Go Meh is an adaptation of the Chinese Indonesian community to local Indonesian cuisine, especially in Java.  Lontong Cap Go Meh is believed to be a food that brings good luck, such as dense lontong which is the opposite of porridge which is not eaten when celebrating Chinese New Year.  The long shape of the rice cake is also considered to symbolize a long life. Eggs in various cultures are also believed to be a symbol of good luck, while coconut milk and spices with turmeric are believed to be symbols of gold and luck.  ",
-      "modelUrl": "/models/Makanan_2_3.glb",
+      "modelUrl": "models/Makanan_2_3.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
-      "imageUrl": "/images/makanan8.jpg",
+      "imageUrl": "images/makanan8.jpg",
       "cookingProcess": [
         {
           "header": "Lontong",
@@ -1327,9 +1327,9 @@
       "name": "Ketan Srikaya",
       "category": "Dessert, Snack",
       "description": "A steamed soft glutinous rice coated with smooth coconut milk custard is Ketan Srikaya, an Indonesian traditional sweet snack or dessert. Traditional food from West Sumatra.",
-      "modelUrl": "/models/Makanan_2_4.glb",
+      "modelUrl": "models/Makanan_2_4.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
-      "imageUrl": "/images/makanan9.jpg",
+      "imageUrl": "images/makanan9.jpg",
       "cookingProcess": [
         {
           "header": "Ketan",
@@ -1425,9 +1425,9 @@
       "name": "Lawar",
       "category": "Side Dish",
       "description": "Lawar is a versatile Balinese meal made with coconut, chili powder, shrimp paste, kaffir lime leaves, galangal, and turmeric, and commonly consists of minced meat and vegetables. Lawar is traditionally cooked with pork or turtle, but it can also be made with chicken, duck, or beef.",
-      "modelUrl": "/models/Makanan_3_2.glb",
+      "modelUrl": "models/Makanan_3_2.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
-      "imageUrl": "/images/makanan10.jpg",
+      "imageUrl": "images/makanan10.jpg",
       "cookingProcess": [
         {
           "header": "Cooking Process",
@@ -1485,9 +1485,9 @@
       "name": "Sambal Goreng Hati Kentang",
       "category": "Main Course, Side Dish",
       "description": "Sambal Goreng hati kentang is one of the typical foods on Eid day. and often also a complementary food in Nasi Tumpeng.",
-      "modelUrl": "/models/Makanan_3_5.glb",
+      "modelUrl": "models/Makanan_3_5.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
-      "imageUrl": "/images/makanan11.jpg",
+      "imageUrl": "images/makanan11.jpg",
       "cookingProcess": [
         {
           "header": "Cooking Process",
@@ -1539,9 +1539,9 @@
       "name": "Sambal Matah",
       "category": "Side Dish",
       "description": "Sambal Matah is a raw Indonesian sambal that hails from Bali. Sambal is an Indian and South Asian condiment made from a combination of fiery chilies and fresh aromatics such as shallots and ginger. Serve as a relish with noodles or fried rice, or as a side dish with fish, steak, or fritters.",
-      "modelUrl": "/models/Makanan_3_6.glb",
+      "modelUrl": "models/Makanan_3_6.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
-      "imageUrl": "/images/makanan12.jpg",
+      "imageUrl": "images/makanan12.jpg",
       "cookingProcess": [
         {
           "header": "Cooking Process",
@@ -1595,9 +1595,9 @@
       "name": "Es Dawet",
       "category": "Dessert",
       "description": "Es dawet comes from Banjarnegara, Central Java. Made from rice flour, and to produce a green color, using suji leaf juice. Es dawet has a soft and smooth texture and is usually added with ‘Tape ketan’ to serve it.",
-      "modelUrl": "/models/Makanan_3_7.glb",
+      "modelUrl": "models/Makanan_3_7.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
-      "imageUrl": "/images/makanan13.jpg",
+      "imageUrl": "images/makanan13.jpg",
       "cookingProcess": [
         {
           "header": "Dawet",
@@ -1662,9 +1662,9 @@
       "name": "Ayam Sisit/Pelalah",
       "category": "Main Course",
       "description": "Pelalah chicken is a Balinese dish with a pungent, spicy flavor. Boiling, grilled, or ungkep chicken with a mixture of ground spices will be cooked in one of three ways: boiled, grilled, or ungkep. The chicken meat will then be shredded and properly combined with chili seasoning before being served.",
-      "modelUrl": "/models/Makanan_3_1.glb",
+      "modelUrl": "models/Makanan_3_1.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
-      "imageUrl": "/images/makanan14.jpg",
+      "imageUrl": "images/makanan14.jpg",
       "cookingProcess": [
         {
           "header": "Cooking Process",
@@ -1730,9 +1730,9 @@
       "name": "Sate Lilit",
       "category": "Main Course",
       "description": "Sate lilit is an Indonesian satay variation that originated in Balinese cuisine. Minced pork, fish, chicken, beef, or even turtle meat is blended with grated coconut, thick coconut milk, lemon juice, shallots, and pepper to make this satay. Spiced minced beef is wrapped in bamboo, sugar cane, or lemongrass sticks and roasted over charcoal.",
-      "modelUrl": "/models/Makanan_3_3.glb",
+      "modelUrl": "models/Makanan_3_3.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
-      "imageUrl": "/images/makanan15.jpg",
+      "imageUrl": "images/makanan15.jpg",
       "cookingProcess": [
         {
           "header": "Cooking Process",
@@ -1796,9 +1796,9 @@
       "name": "Malbi",
       "category": "Main Course",
       "description": "Malbi is known as a typical ‘Semur Palembang’. Because the appearance and seasoning are similar to semur.  It tastes sweet and savory and goes well with chili sauce and rice.  The main ingredient of this malbi is beef cooked with spices such as cinnamon, cardamom, cloves, tamarind and several other spices.",
-      "modelUrl": "/models/Makanan_3_4.glb",
+      "modelUrl": "models/Makanan_3_4.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
-      "imageUrl": "/images/makanan16.jpg",
+      "imageUrl": "images/makanan16.jpg",
       "cookingProcess": [
         {
           "header": "Cooking Process",
@@ -1849,9 +1849,9 @@
       "name": "Makanan A",
       "category": "New",
       "description": "Lorem ipsum dolor sit amet.",
-      "modelUrl": "/models/Makanan_A.glb",
+      "modelUrl": "models/Makanan_A.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
-      "imageUrl": "/images/Makanan A.png",
+      "imageUrl": "images/Makanan A.png",
       "cookingProcess": [
         {
           "header": "Cooking Process",
@@ -1865,9 +1865,9 @@
       "name": "Makanan B",
       "category": "New",
       "description": "Lorem ipsum dolor sit amet.",
-      "modelUrl": "/models/Makanan_B.glb",
+      "modelUrl": "models/Makanan_B.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
-      "imageUrl": "/images/Makanan B.png",
+      "imageUrl": "images/Makanan B.png",
       "cookingProcess": [
         {
           "header": "Cooking Process",
@@ -1881,9 +1881,9 @@
       "name": "Makanan C",
       "category": "New",
       "description": "Lorem ipsum dolor sit amet.",
-      "modelUrl": "/models/Makanan_C.glb",
+      "modelUrl": "models/Makanan_C.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
-      "imageUrl": "/images/Makanan C.png",
+      "imageUrl": "images/Makanan C.png",
       "cookingProcess": [
         {
           "header": "Cooking Process",
@@ -1897,9 +1897,9 @@
       "name": "Makanan D",
       "category": "New",
       "description": "Lorem ipsum dolor sit amet.",
-      "modelUrl": "/models/Makanan_D.glb",
+      "modelUrl": "models/Makanan_D.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
-      "imageUrl": "/images/Makanan D.png",
+      "imageUrl": "images/Makanan D.png",
       "cookingProcess": [
         {
           "header": "Cooking Process",
@@ -1913,9 +1913,9 @@
       "name": "Makanan E",
       "category": "New",
       "description": "Lorem ipsum dolor sit amet.",
-      "modelUrl": "/models/Makanan_E.glb",
+      "modelUrl": "models/Makanan_E.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
-      "imageUrl": "/images/Makanan E.png",
+      "imageUrl": "images/Makanan E.png",
       "cookingProcess": [
         {
           "header": "Cooking Process",
@@ -1929,9 +1929,9 @@
       "name": "Makanan F",
       "category": "New",
       "description": "Lorem ipsum dolor sit amet.",
-      "modelUrl": "/models/Makanan_F.glb",
+      "modelUrl": "models/Makanan_F.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
-      "imageUrl": "/images/Makanan F.png",
+      "imageUrl": "images/Makanan F.png",
       "cookingProcess": [
         {
           "header": "Cooking Process",
@@ -1945,9 +1945,9 @@
       "name": "Makanan G",
       "category": "New",
       "description": "Lorem ipsum dolor sit amet.",
-      "modelUrl": "/models/Makanan_G.glb",
+      "modelUrl": "models/Makanan_G.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
-      "imageUrl": "/images/Makanan G.png",
+      "imageUrl": "images/Makanan G.png",
       "cookingProcess": [
         {
           "header": "Cooking Process",
@@ -1961,9 +1961,9 @@
       "name": "Makanan AA",
       "category": "New 1",
       "description": "Lorem ipsum dolor sit amet.",
-      "modelUrl": "/models/Makanan_AA.glb",
+      "modelUrl": "models/Makanan_AA.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
-      "imageUrl": "/images/Makanan AA.png",
+      "imageUrl": "images/Makanan AA.png",
       "cookingProcess": [
         {
           "header": "Cooking Process",
@@ -1977,9 +1977,9 @@
       "name": "Makanan BB",
       "category": "New 1",
       "description": "Lorem ipsum dolor sit amet.",
-      "modelUrl": "/models/Makanan_BB.glb",
+      "modelUrl": "models/Makanan_BB.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
-      "imageUrl": "/images/Makanan BB.png",
+      "imageUrl": "images/Makanan BB.png",
       "cookingProcess": [
         {
           "header": "Cooking Process",
@@ -1993,9 +1993,9 @@
       "name": "Makanan CC",
       "category": "New 1",
       "description": "Lorem ipsum dolor sit amet.",
-      "modelUrl": "/models/Makanan_CC.glb",
+      "modelUrl": "models/Makanan_CC.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
-      "imageUrl": "/images/Makanan CC.png",
+      "imageUrl": "images/Makanan CC.png",
       "cookingProcess": [
         {
           "header": "Cooking Process",
@@ -2009,9 +2009,9 @@
       "name": "Makanan DD",
       "category": "New 1",
       "description": "Lorem ipsum dolor sit amet.",
-      "modelUrl": "/models/Makanan_DD.glb",
+      "modelUrl": "models/Makanan_DD.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
-      "imageUrl": "/images/Makanan DD.png",
+      "imageUrl": "images/Makanan DD.png",
       "cookingProcess": [
         {
           "header": "Cooking Process",
@@ -2025,9 +2025,9 @@
       "name": "Makanan EE",
       "category": "New 1",
       "description": "Lorem ipsum dolor sit amet.",
-      "modelUrl": "/models/Makanan_EE.glb",
+      "modelUrl": "models/Makanan_EE.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
-      "imageUrl": "/images/Makanan EE.png",
+      "imageUrl": "images/Makanan EE.png",
       "cookingProcess": [
         {
           "header": "Cooking Process",
@@ -2041,9 +2041,9 @@
       "name": "Makanan FF",
       "category": "New 1",
       "description": "Lorem ipsum dolor sit amet.",
-      "modelUrl": "/models/Makanan_FF.glb",
+      "modelUrl": "models/Makanan_FF.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
-      "imageUrl": "/images/Makanan FF.png",
+      "imageUrl": "images/Makanan FF.png",
       "cookingProcess": [
         {
           "header": "Cooking Process",
@@ -2057,9 +2057,9 @@
       "name": "Makanan GG",
       "category": "New 1",
       "description": "Lorem ipsum dolor sit amet.",
-      "modelUrl": "/models/Makanan_GG.glb",
+      "modelUrl": "models/Makanan_GG.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
-      "imageUrl": "/images/Makanan GG.png",
+      "imageUrl": "images/Makanan GG.png",
       "cookingProcess": [
         {
           "header": "Cooking Process",
@@ -2073,9 +2073,9 @@
       "name": "Makanan HH",
       "category": "New 1",
       "description": "Lorem ipsum dolor sit amet.",
-      "modelUrl": "/models/Makanan_HH.glb",
+      "modelUrl": "models/Makanan_HH.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
-      "imageUrl": "/images/Makanan HH.png",
+      "imageUrl": "images/Makanan HH.png",
       "cookingProcess": [
         {
           "header": "Cooking Process",
@@ -2089,9 +2089,9 @@
       "name": "Makanan AAA",
       "category": "New 2",
       "description": "Lorem ipsum dolor sit amet.",
-      "modelUrl": "/models/Makanan_AAA.glb",
+      "modelUrl": "models/Makanan_AAA.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
-      "imageUrl": "/images/Makanan AAA.png",
+      "imageUrl": "images/Makanan AAA.png",
       "cookingProcess": [
         {
           "header": "Cooking Process",
@@ -2105,9 +2105,9 @@
       "name": "Makanan BBB",
       "category": "New 2",
       "description": "Lorem ipsum dolor sit amet.",
-      "modelUrl": "/models/Makanan_BBB.glb",
+      "modelUrl": "models/Makanan_BBB.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
-      "imageUrl": "/images/Makanan BBB.png",
+      "imageUrl": "images/Makanan BBB.png",
       "cookingProcess": [
         {
           "header": "Cooking Process",
@@ -2121,9 +2121,9 @@
       "name": "Makanan CCC",
       "category": "New 2",
       "description": "Lorem ipsum dolor sit amet.",
-      "modelUrl": "/models/Makanan_CCC.glb",
+      "modelUrl": "models/Makanan_CCC.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
-      "imageUrl": "/images/Makanan CCC.png",
+      "imageUrl": "images/Makanan CCC.png",
       "cookingProcess": [
         {
           "header": "Cooking Process",
@@ -2137,9 +2137,9 @@
       "name": "Makanan DDD",
       "category": "New 2",
       "description": "Lorem ipsum dolor sit amet.",
-      "modelUrl": "/models/Makanan_DDD.glb",
+      "modelUrl": "models/Makanan_DDD.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
-      "imageUrl": "/images/Makanan DDD.png",
+      "imageUrl": "images/Makanan DDD.png",
       "cookingProcess": [
         {
           "header": "Cooking Process",
@@ -2153,9 +2153,9 @@
       "name": "Makanan EEE",
       "category": "New 2",
       "description": "Lorem ipsum dolor sit amet.",
-      "modelUrl": "/models/Makanan_EEE.glb",
+      "modelUrl": "models/Makanan_EEE.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
-      "imageUrl": "/images/Makanan EEE.png",
+      "imageUrl": "images/Makanan EEE.png",
       "cookingProcess": [
         {
           "header": "Cooking Process",
@@ -2169,9 +2169,9 @@
       "name": "Makanan FFF",
       "category": "New 2",
       "description": "Lorem ipsum dolor sit amet.",
-      "modelUrl": "/models/Makanan_FFF.glb",
+      "modelUrl": "models/Makanan_FFF.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
-      "imageUrl": "/images/Makanan FFF.png",
+      "imageUrl": "images/Makanan FFF.png",
       "cookingProcess": [
         {
           "header": "Cooking Process",
@@ -2185,9 +2185,9 @@
       "name": "Makanan a1",
       "category": "New 3",
       "description": "Lorem ipsum dolor sit amet.",
-      "modelUrl": "/models/Makanan_a1.glb",
+      "modelUrl": "models/Makanan_a1.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
-      "imageUrl": "/images/Makanan a1.png",
+      "imageUrl": "images/Makanan a1.png",
       "cookingProcess": [
         {
           "header": "Cooking Process",
@@ -2201,9 +2201,9 @@
       "name": "Makanan a2",
       "category": "New 3",
       "description": "Lorem ipsum dolor sit amet.",
-      "modelUrl": "/models/Makanan_a2.glb",
+      "modelUrl": "models/Makanan_a2.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
-      "imageUrl": "/images/Makanan a2.png",
+      "imageUrl": "images/Makanan a2.png",
       "cookingProcess": [
         {
           "header": "Cooking Process",
@@ -2217,9 +2217,9 @@
       "name": "Makanan a3",
       "category": "New 3",
       "description": "Lorem ipsum dolor sit amet.",
-      "modelUrl": "/models/Makanan_a3.glb",
+      "modelUrl": "models/Makanan_a3.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
-      "imageUrl": "/images/Makanan a3.png",
+      "imageUrl": "images/Makanan a3.png",
       "cookingProcess": [
         {
           "header": "Cooking Process",
@@ -2233,9 +2233,9 @@
       "name": "Makanan a4",
       "category": "New 3",
       "description": "Lorem ipsum dolor sit amet.",
-      "modelUrl": "/models/Makanan_a4.glb",
+      "modelUrl": "models/Makanan_a4.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
-      "imageUrl": "/images/Makanan a4.png",
+      "imageUrl": "images/Makanan a4.png",
       "cookingProcess": [
         {
           "header": "Cooking Process",
@@ -2249,9 +2249,9 @@
       "name": "Makanan a5",
       "category": "New 3",
       "description": "Lorem ipsum dolor sit amet.",
-      "modelUrl": "/models/Makanan_a5.glb",
+      "modelUrl": "models/Makanan_a5.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
-      "imageUrl": "/images/Makanan a5.png",
+      "imageUrl": "images/Makanan a5.png",
       "cookingProcess": [
         {
           "header": "Cooking Process",
@@ -2265,9 +2265,9 @@
       "name": "Makanan a6",
       "category": "New 3",
       "description": "Lorem ipsum dolor sit amet.",
-      "modelUrl": "/models/Makanan_a6.glb",
+      "modelUrl": "models/Makanan_a6.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
-      "imageUrl": "/images/Makanan a6.png",
+      "imageUrl": "images/Makanan a6.png",
       "cookingProcess": [
         {
           "header": "Cooking Process",
@@ -2281,9 +2281,9 @@
       "name": "Makanan a7",
       "category": "New 3",
       "description": "Lorem ipsum dolor sit amet.",
-      "modelUrl": "/models/Makanan_a7.glb",
+      "modelUrl": "models/Makanan_a7.glb",
       "videoUrl": "https://www.youtube.com/embed/ThJC7LwgidU",
-      "imageUrl": "/images/Makanan a7.png",
+      "imageUrl": "images/Makanan a7.png",
       "cookingProcess": [
         {
           "header": "Cooking Process",
