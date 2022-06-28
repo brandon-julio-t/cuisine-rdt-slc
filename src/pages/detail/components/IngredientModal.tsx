@@ -21,9 +21,7 @@ const IngredientsModal: FunctionComponent<{
                   <Disclosure.Button className='flex justify-between w-full px-4 py-2 text-sm font-medium text-left text-blue-900 bg-blue-100 rounded-lg hover:bg-blue-200 focus:outline-none focus-visible:ring focus-visible:ring-blue-500 focus-visible:ring-opacity-75'>
                     <span>{ingredient.header}</span>
                     <ChevronUpIcon
-                      className={`${
-                        open ? 'transform rotate-180' : ''
-                      } w-5 h-5 text-blue-500`}
+                      className={`${open ? 'transform rotate-180' : ''} w-5 h-5 text-blue-500`}
                     />
                   </Disclosure.Button>
 
@@ -47,12 +45,8 @@ const IngredientsModal: FunctionComponent<{
                             </div>
 
                             <div className='ml-2'>
-                              <span className='block font-semibold'>
-                                {item.name}
-                              </span>
-                              <span className='block text-sm'>
-                                {renderDesc(item)}
-                              </span>
+                              <span className='block font-semibold'>{item.name}</span>
+                              <span className='block text-sm'>{renderDesc(item)}</span>
                             </div>
                           </div>
                         ))}
@@ -72,8 +66,7 @@ const IngredientsModal: FunctionComponent<{
 };
 
 const renderDesc = (item: any) => {
-  if (item.amount && item.description)
-    return `${item.amount}, ${item.description}`;
+  if (item.amount && item.description) return `${item.amount}, ${item.description}`;
   else if (item.amount) return `${item.amount}`;
   else if (item.description) return `${item.description}`;
   else return '';
